@@ -1,0 +1,33 @@
+body {
+  min-height: 100%;
+  background: #fff;
+  font-family: 'Asap', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1em;
+  color: #bdc3c7;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1020px;
+  width: 90%;
+  margin: 0 auto;
+}
+.container span {
+  display: block;
+}
+.container .name {
+  color: #2c3e50;
+  display: inline-block;
+}
+.container .work {
+  color: #16a085;
+  display: inline-block;
+}
+
+@media all and (max-width: 480px) {
+  body {
+    font-size: 20px;
+  }
+}
