@@ -94,6 +94,9 @@
       bottom: 0;
       font-size: 16px;
     }
+    .about-me {
+      display: none;
+    }
     .strut-surface .step {
       opacity: 0;
     }
@@ -125,9 +128,12 @@
       border-bottom: 5px solid #0084b4;
     }
         
-    @media (min-width:960px) {
+    @media (min-width:768px) {
       .hint {
         visibility: hidden;
+      }
+      .about-me {
+        display: inline;
       }
     }
   </style>
@@ -177,12 +183,12 @@ transform: scale(1, 1)">
                 </div>
               </div>
 
-              <div class="componentContainer " style="top: 500px; left: 220px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+              <div class="componentContainer about-me" style="top: 500px; left: 220px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
                 <div class="transformContainer" style="-webkit-transform: scale(1, 1);
 -moz-transform: scale(1, 1);
 transform: scale(1, 1)">
-                  <div style="font-size: 23.5px;" class="antialias">
-                    <font face="Ubuntu" color="#bdc3c7">Use your keyboard arrow keys to know more about me.</font>
+                  <div style="font-size: 27px;" class="antialias">
+                    <font face="Ubuntu" color="#bdc3c7">Use your keyboard arrow keys to know my story.</font>
                     <br>
                   </div>
                 </div>
