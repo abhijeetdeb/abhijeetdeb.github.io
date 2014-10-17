@@ -1,0 +1,462 @@
+{
+  "slides": [
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 215,
+          "y": 250,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "text": "<div style=\"text-align: left;\"><font face=\"Ubuntu, sans-serif\" color=\"#eeeeee\">Hi. I am</font></div><font><font face=\"Ubuntu, sans-serif\" color=\"#eeeeee\">Abhijeet Deb</font><br></font>",
+          "size": 100,
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 220,
+          "y": 500,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 24,
+          "text": "<font face=\"Ubuntu\" color=\"#b0b0b0\">Use your keyboard arrow keys to know more about me.</font><br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 0,
+      "selected": true,
+      "active": true,
+      "background": "bg-transparent",
+      "markdown": "",
+      "x": 160,
+      "y": 220,
+      "surface": "bg-surf-grad-purple"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 69,
+          "y": 312,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 60,
+          "text": "<font face=\"Ubuntu\"><font color=\"#eeeeee\">I am a web designer now,<br>but this was not the case always!</font><br></font>",
+          "selected": false
+        }
+      ],
+      "z": 10,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 1,
+      "selected": false,
+      "active": false,
+      "x": 440,
+      "y": 220,
+      "surface": "bg-surf-grad-purple",
+      "background": "bg-default"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 47,
+          "y": 300,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 30,
+          "text": "<font face=\"Ubuntu\" color=\"#eeeeee\">When I was a kid, I wanted to be a great many things when I grew up.</font><br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 40,
+          "y": 351,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 54,
+          "text": "<font face=\"Ubuntu\" color=\"#eeeeee\">But then I found out about computers!</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 652,
+          "y": 423,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 26,
+          "text": "<font face=\"Ubuntu\" color=\"#b0b0b0\">Yeah, it took me some time!</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 2,
+      "selected": false,
+      "active": false,
+      "surface": "bg-surf-grad-purple",
+      "x": 440,
+      "y": 320
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 122,
+          "y": 300,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 70,
+          "text": "<font face=\"Ubuntu\"><font color=\"#eeeeee\">Once I did that,<br>EVERYTHING CHANGED!</font><br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 1,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 3,
+      "selected": false,
+      "active": false,
+      "surface": "bg-surf-grad-orange",
+      "x": 440,
+      "y": 320,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 122,
+          "y": 274,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 36,
+          "text": "<font color=\"#eeeeee\" face=\"Ubuntu\">I started understanding how a computer works,<br>and then started to learn more about technology.<br><br>After few years of studying,<br>I gathered a fair knowledge of how things worked!<br></font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 1,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 4,
+      "selected": false,
+      "active": false,
+      "background": "bg-transparent",
+      "surface": "bg-surf-grad-orange",
+      "x": 560,
+      "y": 320
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 55,
+          "y": 250,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 40,
+          "text": "<font color=\"#eeeeee\" face=\"Ubuntu\">For a few years, I used my technical knowledge to&nbsp;<br><div style=\"text-align: center;\">work for&nbsp;services from hot-shot companies such as</div></font>",
+          "selected": false,
+          "skewY": 0,
+          "rotate": 0
+        },
+        {
+          "TextBox": {},
+          "x": 46,
+          "y": 370,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 60,
+          "text": "<font color=\"#eeeeee\" face=\"Ubuntu\">DELL &nbsp;MICROSOFT &nbsp;ANZ &nbsp;AMAZON</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 49,
+          "y": 450,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 39,
+          "text": "<font color=\"#797777\"><font face=\"Ubuntu, sans-serif\">But none of these jobs really had any '</font>oomph'&nbsp;<font face=\"Ubuntu, sans-serif\">for me!&nbsp;</font></font><br>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 1,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 5,
+      "selected": false,
+      "active": false,
+      "surface": "bg-surf-grad-orange",
+      "x": 680,
+      "y": 320,
+      "background": "bg-transparent"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 113,
+          "y": 240,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 38,
+          "text": "<font color=\"#dedcdc\" face=\"Ubuntu\">Thankfully, one day I realised my calling. It was</font><br>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 99,
+          "y": 252,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 220,
+          "text": "<font color=\"#dedcdc\" face=\"Ubuntu\">DESIGN!</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 6,
+      "selected": false,
+      "active": false,
+      "x": 680,
+      "y": 320,
+      "surface": "bg-surf-grad-grass"
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 30,
+          "y": 280,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 37,
+          "text": "<font color=\"#dedcdc\" face=\"Ubuntu\">So I learned some skills to become a web designer such as</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 27,
+          "y": 336,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 80,
+          "text": "<font color=\"#dedcdc\" face=\"Ubuntu\">CSS3 &nbsp;HTML5 &nbsp;jQuery &nbsp;SCSS</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 7,
+      "selected": false,
+      "active": false,
+      "surface": "bg-surf-grad-grass",
+      "x": 960,
+      "y": 320
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 250,
+          "y": 280,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 37,
+          "text": "<font color=\"#dedcdc\" face=\"Ubuntu\">I also learned how to work with</font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 74,
+          "y": 335,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 80,
+          "text": "<font color=\"#dedcdc\" face=\"Ubuntu\">Photoshop&nbsp;</font><font color=\"#dedcdc\" face=\"Droid Sans Mono, monospace\">&amp;</font><font color=\"#dedcdc\" face=\"Ubuntu\"> WordPress</font>",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 8,
+      "selected": false,
+      "active": false,
+      "surface": "bg-surf-grad-grass",
+      "x": 960,
+      "y": 380
+    },
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 78,
+          "y": 280,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "size": 57,
+          "text": "<font face=\"Ubuntu\"><font color=\"#eeeeee\">And so..&nbsp;I became a web designer!</font><br></font>",
+          "selected": false
+        },
+        {
+          "TextBox": {},
+          "x": 261,
+          "y": 420,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "text": "<div style=\"text-align: center;\"><span style=\"color: rgb(238, 238, 238);\"><a href=\"https://www.linkedin.com/in/abhijeetdeb/\">Connect / Linkedin</a> &nbsp; &nbsp; <a href=\"https://twitter.com/abhijeetdeb\">Contact / Twitter</a></span></div>",
+          "size": 30,
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 9,
+      "selected": false,
+      "active": false,
+      "surface": "bg-surf-grad-purple",
+      "x": 960,
+      "y": 280
+    }
+  ],
+  "background": "bg-transparent",
+  "activeSlide": {
+    "components": [
+      {
+        "TextBox": {},
+        "x": 215,
+        "y": 250,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "type": "TextBox",
+        "text": "<div style=\"text-align: left;\"><font face=\"Ubuntu, sans-serif\" color=\"#eeeeee\">Hi. I am</font></div><font><font face=\"Ubuntu, sans-serif\" color=\"#eeeeee\">Abhijeet Deb</font><br></font>",
+        "size": 100,
+        "selected": false
+      },
+      {
+        "TextBox": {},
+        "x": 220,
+        "y": 500,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "type": "TextBox",
+        "size": 24,
+        "text": "<font face=\"Ubuntu\" color=\"#b0b0b0\">Use your keyboard arrow keys to know more about me.</font><br>",
+        "selected": false
+      }
+    ],
+    "z": 0,
+    "impScale": 3,
+    "rotateX": 0,
+    "rotateY": 0,
+    "rotateZ": 0,
+    "index": 0,
+    "selected": true,
+    "active": true,
+    "background": "bg-transparent",
+    "markdown": "",
+    "x": 160,
+    "y": 220,
+    "surface": "bg-surf-grad-purple"
+  },
+  "fileName": "abhijeet.strut",
+  "surface": "bg-default",
+  "customStylesheet": "/*.example {\n\tborder: 4px groove orange;\n}*/\n\n.strut-surface .step {\n  opacity: 0;\n}",
+  "deckVersion": "1.0",
+  "customBackgrounds": {
+    "bgs": []
+  },
+  "overviewX": 560,
+  "overviewY": 300
+}
