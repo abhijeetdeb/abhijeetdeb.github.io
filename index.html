@@ -73,6 +73,12 @@
         document.querySelector(".hint").innerHTML =
           "<p>Tap on the left or right to navigate</p>";
       }
+      
+      document.addEventListener("mousewheel", function( event ) {        
+        next = steps.indexOf( active ) - event.wheelDelta / Math.abs(event.wheelDelta);
+        next = next >= 0 ? steps[ next ] : steps[ steps.length-1 ];
+        select(next);
+      }, false); 
     });
   </script>
 </head>
