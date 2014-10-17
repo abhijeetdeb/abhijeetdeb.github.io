@@ -52,6 +52,9 @@
       height: 100%;
     }
   </style>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
 
   <script async="" src="./impress/analytics.js"></script>
   <script type="text/javascript" src="./impress/dataset-shim.js"></script>
@@ -477,6 +480,11 @@ transform: scale(1, 1)">
       </div>
     </div>
   </div>
+  <script>
+  $(document).bind('touchmove', function(e) {
+      e.preventDefault();
+  });
+  </script>
 </body>
 
 </html>
