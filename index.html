@@ -73,7 +73,7 @@
 
       if ("ontouchstart" in document.documentElement) {
         document.querySelector(".hint").innerHTML =
-          "<p>Tap on the right of your screen to continue</p>";
+          "<p>Tap on the right of your screen to know my story</p>";
       }
       
       document.addEventListener("mousewheel", function( event ) {        
@@ -92,7 +92,7 @@
     .hint {
       position: absolute;
       bottom: 0;
-      font-size: 16px;
+      font-size: 14px;
     }
     .strut-surface .step {
       opacity: 0;
@@ -126,6 +126,9 @@
     }
         
     @media (min-width:768px) {
+      .hint {
+        font-size: 20px;
+      }
       .about-me {
         display: inline;
       }
@@ -465,7 +468,7 @@ transform: scale(1, 1)">
         </div>
       </div>
       <div class="hint">
-        <p>Use your keyboard down / right arrow key to continue</p>
+        <p>Press the spacebar key to know my story</p>
       </div>
     </div>
   </div>
