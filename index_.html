@@ -1,0 +1,476 @@
+<!doctype html>
+
+<html style="height: 100%; overflow:hidden">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Abhijeet Deb - Web Designer and Developer</title>
+
+  <meta name="description" content="Web Designer and Developer based in Bangalore, India">
+  <meta name="author" content="Abhijeet Deb">
+
+  <style>
+    .componentContainer {
+      position: absolute;
+      line-height: normal;
+      /*-webkit-transform-origin: 135% 135%;
+      -moz-transform-origin: 135% 135%;
+      transform-origin: 135% 135%;*/
+    }
+    .transformContainer {
+      -webkit-transform-origin: 0 0;
+      -moz-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+    .bg {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="http://strut.io/editor/preview_export/css/themes/default-reset.css">
+  <link href="./impress/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://strut.io/editor/preview_export/reveal/css/theme/default.css" id="theme">
+  <link href="./impress/web-fonts.css" rel="stylesheet" type="text/css">
+  <link href="./impress/backgroundClasses.css" rel="stylesheet" type="text/css">
+  <link href="./impress/surfaceClasses.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+
+  <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+  <style>
+    .reveal.themedArea {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <script async="" src="./impress/analytics.js"></script>
+  <script type="text/javascript" src="./impress/dataset-shim.js"></script>
+  <script type="text/javascript" src="./impress/impress.js"></script>
+
+  <script src="./impress/onready.js"></script>
+  <script src="./impress/loadPresentation.js"></script>
+  <script>
+    ready(function () {
+      if (document.getElementById('launched-placeholder'))
+        loadPresentation();
+
+      if (!window.presStarted) {
+        startPres(document, window);
+        impress().init();
+      }
+
+      if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML =
+          "<p>Tap on the right of your screen to know my story</p>";
+      }
+      
+      document.addEventListener("mousewheel", function( event ) {        
+        next = steps.indexOf( active ) - event.wheelDelta / Math.abs(event.wheelDelta);
+        next = next >= 0 ? steps[ next ] : steps[ steps.length-1 ];
+        select(next);
+      }, false); 
+    });
+  </script>
+  
+</head>
+
+<body class="impress-supported impress-enabled" style="height: 100%; overflow: hidden;">
+  <style type="text/css">
+    
+    .hint {
+      position: absolute;
+      bottom: 0;
+      font-size: 14px;
+    }
+    .strut-surface .step {
+      opacity: 0;
+    }
+    .bg-surf-grad-orange {
+      background-color: #e74c3c;
+    }
+    .bg-surf-grad-grass {
+      background-color: #16a085;
+    }
+    
+    a, a:visited, a:active {
+      color: #eee;
+      text-decoration: none;
+      padding: 10px;
+      background: none;
+      transition: .2s ease all;
+      border-bottom: 5px solid none;
+    }
+    
+    a.linkedin:hover {
+      color: #069;
+      background: #fff;
+      border-bottom: 5px solid #069;
+    }
+    
+    a.twitter:hover {
+      color: #0084b4;
+      background: #fff;
+      border-bottom: 5px solid #0084b4;
+    }
+        
+    @media (min-width:768px) {
+      .hint {
+        font-size: 20px;
+      }
+      .about-me {
+        display: inline;
+      }
+    }
+  </style>
+  <!-- This is a work around / hack to get the user's browser to download the fonts 
+ if they decide to save the presentation. -->
+  <div style="visibility: hidden; width: 0px; height: 0px">
+    <img src="./impress/Lato-Bold.woff">
+    <img src="./impress/HammersmithOne.woff">
+    <img src="./impress/Droid-Sans-Mono.woff">
+    <img src="./impress/Gorditas-Regular.woff">
+    <img src="./impress/FredokaOne-Regular.woff">
+    <img src="./impress/Ubuntu.woff">
+    <img src="./impress/Ubuntu-Bold.woff">
+    <img src="./impress/PressStart2P-Regular.woff">
+    <img src="./impress/Lato-BoldItalic.woff">
+    <img src="./impress/AbrilFatface-Regular.woff">
+    <img src="./impress/Lato-Regular.woff">
+  </div>
+
+  <div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+
+  <div class="bg bg-default strut-surface">
+    <div class="bg innerBg strut-slide-0 bg-surf-grad-purple">
+      <div id="impress" style="position: absolute; transform-origin: left top 0px; transition: all 0ms ease-in-out 0ms; -webkit-transition: all 0ms ease-in-out 0ms; transform-style: preserve-3d; top: 50%; left: 50%; transform: perspective(3692.30769230769px) scale(0.270833333333333);">
+        <div style="position: absolute; transform-origin: left top 0px; transition: all 0ms ease-in-out 0ms; -webkit-transition: all 0ms ease-in-out 0ms; transform-style: preserve-3d; transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg) translate3d(-2184.53333333333px, -3379.2px, 0px);">
+
+
+          <div class="step active present" data-state="strut-slide-0 bg-surf-grad-purple " data-x="2184.5333333333333" data-y="3379.2" data-scale="3" id="step-1" style="position: absolute; transform: translate(-50%, -50%) translate3d(2184.53333333333px, 3379.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-0" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 264px; left: 215px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 100px;" class="antialias">
+                    <div style="text-align: left;"><font face="Ubuntu, sans-serif" color="#eeeeee">Hi. I am</font>
+                    </div><font><font face="Ubuntu, sans-serif" color="#eeeeee">Abhijeet Deb</font>
+                    <br>
+                    </font>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="step future" data-state="strut-slide-1 bg-surf-grad-purple " data-x="6007.466666666666" data-y="3379.2" data-z="10" data-scale="3" id="step-2" style="position: absolute; transform: translate(-50%, -50%) translate3d(6007.46666666667px, 3379.2px, 10px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-1" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 312px; left: 69px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 60px;" class="antialias">
+                    <font face="Ubuntu"><font color="#eeeeee">I am a web designer now,<br>but this was not the case always!</font>
+                    <br>
+                    </font>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="step future" data-state="strut-slide-2 bg-surf-grad-purple " data-x="6007.466666666666" data-y="4915.2" data-scale="3" id="step-3" style="position: absolute; transform: translate(-50%, -50%) translate3d(6007.46666666667px, 4915.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-2" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 300px; left: 47px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 30px;" class="antialias">
+                    <font face="Ubuntu" color="#eeeeee">When I was a kid, I wanted to be a great many things when I grew up.</font>
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+              <div class="componentContainer " style="top: 351px; left: 40px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 54px;" class="antialias">
+                    <font face="Ubuntu" color="#eeeeee">But then I found out about computers!</font>
+                  </div>
+                </div>
+              </div>
+
+              <div class="componentContainer " style="top: 423px; left: 652px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 26px;" class="antialias">
+                    <font face="Ubuntu" color="#bdc3c7">Yeah, it took me some time!</font>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="step future" data-state="strut-slide-3 bg-surf-grad-orange " data-x="6007.466666666666" data-y="4915.2" data-scale="1" id="step-4" style="position: absolute; transform: translate(-50%, -50%) translate3d(6007.46666666667px, 4915.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-3" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 300px; left: 122px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 70px;" class="antialias">
+                    <font face="Ubuntu"><font color="#eeeeee">Once I did that,<br>EVERYTHING CHANGED!</font>
+                    <br>
+                    </font>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="step future" data-state="strut-slide-4 bg-surf-grad-orange " data-x="7645.866666666667" data-y="4915.2" data-scale="1" id="step-5" style="position: absolute; transform: translate(-50%, -50%) translate3d(7645.86666666667px, 4915.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-4" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 274px; left: 122px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 36px;" class="antialias">
+                    <font color="#eeeeee" face="Ubuntu">I started to understand how a computer works,<br>and then started to learn more about technology.<br><br>After few years of studying,<br>I gathered a fair knowledge of how things worked!<br></font>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="step future" data-state="strut-slide-5 bg-surf-grad-orange " data-x="9284.266666666666" data-y="4915.2" data-scale="1" id="step-6" style="position: absolute; transform: translate(-50%, -50%) translate3d(9284.26666666667px, 4915.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-5" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 250px; left: 49px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 40.7px; text-align:center" class="antialias">
+                    <font color="#eeeeee" face="Ubuntu">For few years, I used my technical knowledge to<br><div style="text-align: center;">work for&nbsp;services from hot-shot companies such as</div></font>
+                  </div>
+                </div>
+              </div>
+
+              <div class="componentContainer " style="top: 370px; left: 46px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 60px;" class="antialias">
+                    <font color="#eeeeee" face="Ubuntu">DELL &nbsp;MICROSOFT &nbsp;ANZ &nbsp;AMAZON</font>
+                  </div>
+                </div>
+              </div>
+
+              <div class="componentContainer " style="top: 450px; left: 49px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 38.3px;" class="antialias">
+                    <font face="Ubuntu, sans-serif" color="#bdc3c7">But none of these jobs really had any 'oomph' for me!</font>
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="step future" data-state="strut-slide-6 bg-surf-grad-grass " data-x="9284.266666666666" data-y="4915.2" data-scale="3" id="step-7" style="position: absolute; transform: translate(-50%, -50%) translate3d(9284.26666666667px, 4915.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-6" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 240px; left: 113px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 38px;" class="antialias">
+                    <font color="#dedcdc" face="Ubuntu">Thankfully, one day I realised my calling. It was</font>
+                    <br>
+                  </div>
+                </div>
+              </div>
+
+              <div class="componentContainer " style="top: 252px; left: 99px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 220px;" class="antialias">
+                    <font color="#dedcdc" face="Ubuntu">DESIGN!</font>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="step future" data-state="strut-slide-7 bg-surf-grad-grass " data-x="13107.2" data-y="4915.2" data-scale="3" id="step-8" style="position: absolute; transform: translate(-50%, -50%) translate3d(13107.2px, 4915.2px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-7" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 280px; left: 30px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 36.7px;" class="antialias">
+                    <font color="#dedcdc" face="Ubuntu">So I learned some skills to become a web designer such as</font>
+                  </div>
+                </div>
+              </div>
+
+              <div class="componentContainer " style="top: 336px; left: 27px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 80px;" class="antialias">
+                    <font color="#dedcdc" face="Ubuntu">CSS3 &nbsp;HTML5 &nbsp;jQuery &nbsp;SCSS</font>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="step future" data-state="strut-slide-8 bg-surf-grad-grass " data-x="13107.2" data-y="5836.8" data-scale="3" id="step-9" style="position: absolute; transform: translate(-50%, -50%) translate3d(13107.2px, 5836.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-8" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 280px; left: 250px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 37px;" class="antialias">
+                    <font color="#dedcdc" face="Ubuntu">I also learned how to work with</font>
+                  </div>
+                </div>
+              </div>
+
+              <div class="componentContainer " style="top: 335px; left: 74px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 80px;" class="antialias">
+                    <font color="#dedcdc" face="Ubuntu">Photoshop&nbsp;</font><font color="#dedcdc" face="Droid Sans Mono, monospace">&amp;</font><font color="#dedcdc" face="Ubuntu"> WordPress</font>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="step future" data-state="strut-slide-9 bg-surf-grad-purple " data-x="13107.2" data-y="4300.8" data-scale="3" id="step-10" style="position: absolute; transform: translate(-50%, -50%) translate3d(13107.2px, 4300.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+            <div class=" slideContainer strut-slide-9" style="width: 1024px; height: 768px;">
+              <div class="themedArea">
+
+              </div>
+
+              <div class="componentContainer " style="top: 280px; left: 78px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 57px;" class="antialias">
+                    <font face="Ubuntu"><font color="#eeeeee">And so..&nbsp;I became a web designer!</font>
+                    <br>
+                    </font>
+                  </div>
+                </div>
+              </div>
+
+              <div class="componentContainer " style="top: 420px; left: 261px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+                <div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+                  <div style="font-size: 30px;" class="antialias">
+                    <div style="text-align: center;"><span style="color: rgb(238, 238, 238);"><a href="https://www.linkedin.com/in/abhijeetdeb/" target="_blank" class="linkedin">Connect / Linkedin</a> &nbsp; &nbsp; <a href="https://twitter.com/abhijeetdeb" target="_blank" class="twitter">Contact / Twitter</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!--<div id="overview" class="step future" data-state="strut-slide-overview" data-x="7645.866666666667" data-y="4608" data-scale="9" style="position: absolute; transform: translate(-50%, -50%) translate3d(7645.86666666667px, 4608px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(9); transform-style: preserve-3d;"></div>-->
+
+        </div>
+      </div>
+      <div class="hint">
+        <p>Press the spacebar / arrow keys to know my story</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
