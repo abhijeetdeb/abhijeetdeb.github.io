@@ -109,3 +109,12 @@ ul.menu {
     }
   }
 }
+
+// flex values
+.container {
+  display: flex;
+  flex-flow: row wrap;  
+  header, ul.menu, .contact {
+    width: 100%;
+  }
+}

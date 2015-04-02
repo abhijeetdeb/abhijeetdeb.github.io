@@ -105,3 +105,14 @@ ul.menu {
     box-shadow: -16px -16px 0px 0px #f1c40f; }
     .contact form input.submit:hover {
       background: #d35400; }
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .container header, .container ul.menu, .container .contact {
+    width: 100%; }
