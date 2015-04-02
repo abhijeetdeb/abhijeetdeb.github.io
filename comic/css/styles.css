@@ -10,11 +10,9 @@ h1, h2, h3 {
     cursor: url(../images/circle.png), auto; }
 
 body {
-  font-family: 'Comfortaa','Fredoka One', cursive;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  font-family: 'Comfortaa','Fredoka One', cursive; }
+  body p {
+    margin: 0 0 0.75em 0; }
 
 .container {
   background: -webkit-gradient(linear, left top, left bottom, from(#6b0000), to(#111111)) no-repeat;
@@ -56,7 +54,8 @@ ul.menu {
       box-shadow: 3px 3px 0px 1px #d35400; }
 
 aside.fun {
-  background: #fff;
+  background: #9b59b6;
+  color: #fff;
   padding: 16px 20px;
   margin-bottom: 1.5em;
   position: relative;
@@ -65,7 +64,7 @@ aside.fun {
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all; }
   aside.fun span.close {
-    background: #1abc9c;
+    background: #e74c3c;
     color: #fff;
     padding: 5px 10px;
     line-height: 1em;
@@ -75,18 +74,29 @@ aside.fun {
     font-size: 16px;
     cursor: pointer; }
     aside.fun span.close:hover {
-      background: #16a085; }
+      background: #c0392b; }
 
-.contact form {
+#aboutMe {
+  background: #fff;
+  padding: 12px 20px;
+  margin-bottom: 2.5em;
+  position: relative;
+  line-height: 1.5em;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  -webkit-box-shadow: 8px 8px 0px #2c3e50;
+  box-shadow: 8px 8px 0px #2c3e50; }
+
+#contactMe form {
   font-size: 1.2em;
   font-family: 'Comfortaa', cursive; }
-  .contact form label {
+  #contactMe form label {
     z-index: 99;
     position: relative;
     padding: 0 20px; }
-  .contact form label.message {
+  #contactMe form label.message {
     padding: 0 10px; }
-  .contact form .input-bg {
+  #contactMe form .input-bg {
     display: block;
     width: 75%;
     padding: 10px 25px;
@@ -97,25 +107,26 @@ aside.fun {
     transform: skewX(-30deg);
     -webkit-box-shadow: -8px -20px 0px 8px #f1c40f;
     box-shadow: -8px -20px 0px 8px #f1c40f; }
-  .contact form input {
+  #contactMe form input {
     border: none;
     -webkit-transform: skewX(30deg);
     -ms-transform: skewX(30deg);
     transform: skewX(30deg);
     outline: none;
     width: 100%; }
-  .contact form .textarea-bg {
+  #contactMe form .textarea-bg {
     display: block;
     padding: 10px;
     margin: 0.15em 0 2em 0;
     background: #fff;
     -webkit-box-shadow: -8px -20px 0px 8px #f1c40f;
     box-shadow: -8px -20px 0px 8px #f1c40f; }
-  .contact form textarea {
+  #contactMe form textarea {
     border: none;
     outline: none;
-    height: 112px; }
-  .contact form input.submit {
+    height: 112px;
+    width: 100%; }
+  #contactMe form input.submit {
     -webkit-transform: skewX(0deg);
     -ms-transform: skewX(0deg);
     transform: skewX(0deg);
@@ -125,16 +136,19 @@ aside.fun {
     padding: 16px 0;
     -webkit-box-shadow: -16px -16px 0px 0px #f1c40f;
     box-shadow: -16px -16px 0px 0px #f1c40f; }
-    .contact form input.submit:hover {
+    #contactMe form input.submit:hover {
       background: #d35400; }
 
-#container {
+.container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
-  #container header, #container ul.menu, #container .contact {
-    width: 100%; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
