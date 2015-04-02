@@ -22,7 +22,7 @@ body {
   background: linear-gradient(to bottom, #6b0000 0%, #111111 100%) no-repeat;
   background-image: url(../images/bg-top.png), linear-gradient(to bottom, #6b0000 0%, #111111 100%);
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
   
 .wrap {
@@ -53,6 +53,30 @@ ul.menu {
     &:hover {
       box-shadow: 3px 3px 0px 1px #d35400;
       //cursor: url(../images/h.png), auto;
+    }
+  }
+}
+
+aside.fun {
+  background: #fff;
+  padding: 16px 20px;
+  margin-bottom: 1.5em;
+  position: relative;
+  line-height: 1.5em;
+  opacity: 1;
+  transition: 0.2s ease all;
+  span.close {
+    background: #1abc9c;
+    color: #fff;
+    padding: 5px 10px;
+    line-height: 1em;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+      background: #16a085;
     }
   }
 }
@@ -111,7 +135,7 @@ ul.menu {
 }
 
 // flex values
-.container {
+#container {
   display: flex;
   flex-flow: row wrap;  
   header, ul.menu, .contact {

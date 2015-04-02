@@ -25,7 +25,7 @@ body {
   background-image: url(../images/bg-top.png), linear-gradient(to bottom, #6b0000 0%, #111111 100%);
   -webkit-background-size: cover;
   background-size: cover;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .wrap {
   width: 1020px;
@@ -54,6 +54,28 @@ ul.menu {
     ul.menu li:hover {
       -webkit-box-shadow: 3px 3px 0px 1px #d35400;
       box-shadow: 3px 3px 0px 1px #d35400; }
+
+aside.fun {
+  background: #fff;
+  padding: 16px 20px;
+  margin-bottom: 1.5em;
+  position: relative;
+  line-height: 1.5em;
+  opacity: 1;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all; }
+  aside.fun span.close {
+    background: #1abc9c;
+    color: #fff;
+    padding: 5px 10px;
+    line-height: 1em;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    font-size: 16px;
+    cursor: pointer; }
+    aside.fun span.close:hover {
+      background: #16a085; }
 
 .contact form {
   font-size: 1.2em;
@@ -106,7 +128,7 @@ ul.menu {
     .contact form input.submit:hover {
       background: #d35400; }
 
-.container {
+#container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -114,5 +136,5 @@ ul.menu {
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap; }
-  .container header, .container ul.menu, .container .contact {
+  #container header, #container ul.menu, #container .contact {
     width: 100%; }
