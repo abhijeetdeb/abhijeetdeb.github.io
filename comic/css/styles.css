@@ -23,6 +23,7 @@ body {
   background-image: url(../images/bg-top.png), linear-gradient(to bottom, #6b0000 0%, #111111 100%);
   -webkit-background-size: cover;
   background-size: cover;
+  background-position: center 0;
   min-height: 100vh; }
 
 .wrap {
@@ -106,7 +107,9 @@ aside.fun {
     -ms-transform: skewX(-30deg);
     transform: skewX(-30deg);
     -webkit-box-shadow: -8px -20px 0px 8px #f1c40f;
-    box-shadow: -8px -20px 0px 8px #f1c40f; }
+    box-shadow: -8px -20px 0px 8px #f1c40f;
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all; }
   #contactMe form input {
     border: none;
     -webkit-transform: skewX(30deg);
@@ -120,7 +123,9 @@ aside.fun {
     margin: 0.15em 0 2em 0;
     background: #fff;
     -webkit-box-shadow: -8px -20px 0px 8px #f1c40f;
-    box-shadow: -8px -20px 0px 8px #f1c40f; }
+    box-shadow: -8px -20px 0px 8px #f1c40f;
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all; }
   #contactMe form textarea {
     border: none;
     outline: none;
