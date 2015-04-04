@@ -1,0 +1,58 @@
+doctype
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Abhijeet Deb
+    meta(name='description',content='Abhijeet Deb')
+    meta(name='author',content='Abhijeet Deb')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet',href='http://yui.yahooapis.com/pure/0.6.0/pure-min.css')
+    link(rel='stylesheet',href='css/grids.css')
+    link(rel='stylesheet',href='css/styles.css')
+    //if lt IE 9 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    
+  body.container.wrap
+  
+    header
+      .title
+        h1 Abhijeet Deb
+          
+    ul.menu
+      li About Me
+      li My Portfolio
+      li My Skills
+      li Contact Me
+      
+    aside.fun
+      span <strong>Fun Fact:</strong> Thiswebsite was created using JADE and SCSS, and not using standard HTML and CSS coding. Also, this site utilizes FLEXBOX for structure. As Jesse Pinkman would have said, 'Technology, yo!'
+      span.close Hide This
+      
+    section#aboutMe
+      p I guess you have figured out that I like comics. We will come back to that in a bit.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      
+    section#contactMe
+      form.pure-g(method='post')
+        .grid-6-12
+          label Your Name
+          .input-bg
+            input(type='text')
+          label Your Email Address
+          .input-bg
+            input(type='email')
+          label Your Phone Number
+          .input-bg
+            input(type='tel')
+        .grid-6-12
+          label Your Message
+          .textarea-bg
+            textarea
+          input.submit(type='submit',value='Send Message')
+          
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='js/min/nicescroll.js')
+    script(src='js/min/scripts.min.js')
+  
+  
