@@ -37,12 +37,18 @@ header h1 {
   text-shadow: 5px 5px 3px #111;
   text-align: center; }
 
-ul.menu {
-  padding: 0;
-  text-align: center;
-  list-style-type: none;
+nav.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 1em;
   margin-bottom: 1.5em; }
-  ul.menu li {
+  nav.menu div {
     display: inline-block;
     background: #fff;
     margin: 0 10px;
@@ -50,14 +56,14 @@ ul.menu {
     -webkit-box-shadow: 3px 3px 0px 1px #e67e22;
     box-shadow: 3px 3px 0px 1px #e67e22;
     cursor: pointer; }
-    ul.menu li:hover {
+    nav.menu div:hover {
       -webkit-box-shadow: 3px 3px 0px 1px #d35400;
       box-shadow: 3px 3px 0px 1px #d35400; }
 
 aside.fun {
   background: #9b59b6;
   color: #fff;
-  padding: 16px 20px;
+  padding: 20px 20px 16px;
   margin-bottom: 1.5em;
   position: relative;
   line-height: 1.5em;
@@ -88,6 +94,56 @@ aside.fun {
   -webkit-box-shadow: 8px 8px 0px #2c3e50;
   box-shadow: 8px 8px 0px #2c3e50; }
 
+#skills {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1.5em; }
+  #skills .skill-bg {
+    width: 32%;
+    background: #ecf0f1;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: -4px 4px 0 0 #2c3e50;
+    box-shadow: -4px 4px 0 0 #2c3e50;
+    position: relative; }
+    #skills .skill-bg .overlay {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+      #skills .skill-bg .overlay .val {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        z-index: 49;
+        background: rgba(189, 195, 199, 0.75);
+        border-right: 1px solid #555; }
+    #skills .skill-bg .skill {
+      position: relative;
+      padding: 10px;
+      width: 50%;
+      background: #d35400;
+      color: #fff;
+      opacity: 0.8;
+      z-index: 99;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+
 #contactMe form {
   font-size: 1.2em;
   font-family: 'Comfortaa', cursive; }
@@ -101,13 +157,13 @@ aside.fun {
     display: block;
     width: 75%;
     padding: 10px 25px;
-    margin: 0.1em 0 1.15em 0;
+    margin: 0.2em 0 1.15em 0;
     background: #fff;
     -webkit-transform: skewX(-30deg);
     -ms-transform: skewX(-30deg);
     transform: skewX(-30deg);
-    -webkit-box-shadow: -8px -20px 0px 8px #f1c40f;
-    box-shadow: -8px -20px 0px 8px #f1c40f;
+    -webkit-box-shadow: -8px -24px 0px 8px #f1c40f;
+    box-shadow: -8px -24px 0px 8px #f1c40f;
     -webkit-transition: .2s ease all;
     transition: .2s ease all; }
   #contactMe form input {
@@ -122,8 +178,8 @@ aside.fun {
     padding: 10px;
     margin: 0.15em 0 2em 0;
     background: #fff;
-    -webkit-box-shadow: -8px -20px 0px 8px #f1c40f;
-    box-shadow: -8px -20px 0px 8px #f1c40f;
+    -webkit-box-shadow: -8px -24px 0px 8px #f1c40f;
+    box-shadow: -8px -24px 0px 8px #f1c40f;
     -webkit-transition: .2s ease all;
     transition: .2s ease all; }
   #contactMe form textarea {

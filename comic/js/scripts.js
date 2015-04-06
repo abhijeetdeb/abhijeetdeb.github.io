@@ -32,10 +32,10 @@ $(document).ready(function() {
     var $contactMe = $('#contactMe');
     $contactMe.find('input, textarea').on({
       focus: function() {
-        $(this).parent().css({boxShadow: '-8px -20px 0px 8px #f39c12'});
+        $(this).parent().css({boxShadow: '-8px -24px 0px 8px #f39c12'});
       },
       focusout: function() {
-        $(this).parent().css({boxShadow: '-8px -20px 0px 8px #f1c40f'});
+        $(this).parent().css({boxShadow: '-8px -24px 0px 8px #f1c40f'});
       }
     })
   }

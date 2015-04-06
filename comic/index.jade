@@ -19,11 +19,11 @@ html(lang='en')
       .title
         h1 Abhijeet Deb
           
-    ul.menu
-      li About Me
-      li My Portfolio
-      li My Skills
-      li Contact Me
+    nav.menu
+      div About Me
+      div My Portfolio
+      div My Skills
+      div Contact Me
       
     aside.fun
       span <strong>Fun Fact:</strong> Thiswebsite was created using JADE and SCSS, and not using standard HTML and CSS coding. Also, this site utilizes FLEXBOX for structure. As Jesse Pinkman would have said, 'Technology, yo!'
@@ -32,6 +32,38 @@ html(lang='en')
     section#aboutMe
       p I guess you have figured out that I like comics. We will come back to that in a bit.
       p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      
+    section#skills
+      .skill-bg
+        .overlay
+          each val in [1,2,3,4,5,6,7,8,9,10]
+            .val
+        .skill(data-skill='val') HTML5
+      .skill-bg
+        .overlay
+          each val in [1,2,3,4,5,6,7,8,9,10]
+            .val
+        .skill(data-skill='val') CSS
+      .skill-bg
+        .overlay
+          each val in [1,2,3,4,5,6,7,8,9,10]
+            .val
+        .skill(data-skill='val') jQuery
+      .skill-bg
+        .overlay
+          each val in [1,2,3,4,5,6,7,8,9,10]
+            .val
+        .skill(data-skill='val') JADE
+      .skill-bg
+        .overlay
+          each val in [1,2,3,4,5,6,7,8,9,10]
+            .val
+        .skill(data-skill='val') SCSS
+      .skill-bg
+        .overlay
+          each val in [1,2,3,4,5,6,7,8,9,10]
+            .val
+        .skill(data-skill='val') PHP
       
     section#contactMe
       form.pure-g(method='post')
@@ -46,7 +78,7 @@ html(lang='en')
           .input-bg
             input(type='tel')
         .grid-6-12
-          label Your Message
+          label.message Your Message
           .textarea-bg
             textarea
           input.submit(type='submit',value='Send Message')
