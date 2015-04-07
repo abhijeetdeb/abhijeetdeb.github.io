@@ -64,24 +64,34 @@ nav.menu {
 aside.fun {
   background: #9b59b6;
   color: #fff;
-  padding: 20px 20px 16px;
+  padding: 24px 20px 16px;
+  margin-top: 1em;
   margin-bottom: 1.5em;
   position: relative;
   line-height: 1.5em;
   opacity: 1;
-  transition: 0.2s ease all;
-  span.close {
+  transition: 0.5s ease all;
+  p.info-block {
+    display: none;
+  }
+  span.tod, span.info {
     background: #e74c3c;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 10px;
     line-height: 1em;
     position: absolute;
-    top: -8px;
+    top: -16px;
     right: -8px;
     font-size: 16px;
     cursor: pointer;
     &:hover {
       background: #c0392b;
+    }
+    span.i, span.x {
+      background: #fff;
+      border-radius: 50%;
+      padding: 0 10px;
+      color: #555;
     }
   }
 }
@@ -103,10 +113,10 @@ aside.fun {
   margin-bottom: 1.5em;
   .skill-bg {
     width: 32%;
-    background: #ecf0f1;
     margin-bottom: 1.5em;
     box-shadow: -4px 4px 0 0 #2c3e50;
     position: relative;
+    overflow: hidden;
     .overlay {
       display: flex;
       position: absolute;
@@ -117,7 +127,7 @@ aside.fun {
       .val {
         flex: 1;
         z-index: 49;
-        background: rgba(189, 195, 199, 0.75);
+        background: #bdc3c7;
         border-right: 1px solid #555;
       }
     }

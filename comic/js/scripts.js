@@ -28,6 +28,15 @@ $(document).ready(function() {
   }  
   funFact();
   
+  function skills() {
+    var $skills = $('#skills');
+    $skills.find('.skill').each(function(){
+      var $val = $(this).data('skill')*10 + '%';
+      $(this).css({width: $val});
+    });    
+  }
+  skills();
+  
   function contactForm() {
     var $contactMe = $('#contactMe');
     $contactMe.find('input, textarea').on({
