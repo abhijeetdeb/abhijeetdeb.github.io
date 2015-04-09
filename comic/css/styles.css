@@ -2,40 +2,46 @@
 @import url(http://fonts.googleapis.com/css?family=Fredoka+One);
 @import url(http://fonts.googleapis.com/css?family=Comfortaa);
 html {
-  cursor: url(../images/cursor.png), auto; }
+  cursor: url(../images/cursor.png), auto;
+}
 
 h1, h2, h3 {
-  font-family: 'Bangers', serif; }
-  h1 span:hover, h2 span:hover, h3 span:hover {
-    cursor: url(../images/circle.png), auto; }
+  font-family: "Bangers", serif;
+}
+h1 span:hover, h2 span:hover, h3 span:hover {
+  cursor: url(../images/circle.png), auto;
+}
 
 body {
-  font-family: 'Comfortaa','Fredoka One', cursive; }
-  body p {
-    margin: 0 0 0.75em 0; }
+  font-family: "Comfortaa", "Fredoka One", sans-serif;
+}
+body p {
+  margin: 0 0 0.75em 0;
+}
 
 .container {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6b0000), to(#111111)) no-repeat;
-  background: -webkit-linear-gradient(top, #6b0000 0%, #111111 100%) no-repeat;
-  background: linear-gradient(to bottom, #6b0000 0%, #111111 100%) no-repeat;
-  background-image: url(../images/bg-top.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), to(#111111));
-  background-image: url(../images/bg-top.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 100%);
-  background-image: url(../images/bg-top.png), linear-gradient(to bottom, #6b0000 0%, #111111 100%);
-  -webkit-background-size: cover;
-  background-size: cover;
+  background-image: url(../images/bg-top.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(75%, #111111));
+  background-image: url(../images/bg-top.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 75%);
+  background-image: url(../images/bg-top.png), linear-gradient(to bottom, #6b0000 0%, #111111 75%);
+  -webkit-background-size: 150%;
+  background-size: 150%;
   background-position: center 0;
-  min-height: 100vh; }
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
 
 .wrap {
   width: 1020px;
-  margin: auto; }
+  margin: auto;
+}
 
 header h1 {
   font-size: 6em;
   color: #f39c12;
   margin: 0.5em 0 0;
-  text-shadow: 5px 5px 3px #111;
-  text-align: center; }
+  text-shadow: 5px 5px 3px #111111;
+  text-align: center;
+}
 
 nav.menu {
   display: -webkit-box;
@@ -47,52 +53,65 @@ nav.menu {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 1em;
-  margin-bottom: 1.5em; }
-  nav.menu div {
-    display: inline-block;
-    background: #fff;
-    margin: 0 10px;
-    padding: 10px 16px;
-    -webkit-box-shadow: 3px 3px 0px 1px #e67e22;
-    box-shadow: 3px 3px 0px 1px #e67e22;
-    cursor: pointer; }
-    nav.menu div:hover {
-      -webkit-box-shadow: 3px 3px 0px 1px #d35400;
-      box-shadow: 3px 3px 0px 1px #d35400; }
+  margin-bottom: 1.5em;
+}
+nav.menu div {
+  display: inline-block;
+  background: white;
+  margin: 0 10px;
+  padding: 10px 16px;
+  -webkit-box-shadow: 3px 3px 0px 1px #e67e22;
+  box-shadow: 3px 3px 0px 1px #e67e22;
+  cursor: pointer;
+}
+nav.menu div:hover {
+  -webkit-box-shadow: 3px 3px 0px 1px #d35400;
+  box-shadow: 3px 3px 0px 1px #d35400;
+}
 
 aside.fun {
   background: #9b59b6;
-  color: #fff;
-  padding: 24px 20px 16px;
+  color: white;
+  padding: 30px 20px 16px;
   margin-top: 1em;
   margin-bottom: 1.5em;
   position: relative;
   line-height: 1.5em;
-  opacity: 1;
-  -webkit-transition: 0.5s ease all;
-  transition: 0.5s ease all; }
-  aside.fun p.info-block {
-    display: none; }
-  aside.fun span.tod, aside.fun span.info {
-    background: #e74c3c;
-    color: #fff;
-    padding: 10px 10px;
-    line-height: 1em;
-    position: absolute;
-    top: -16px;
-    right: -8px;
-    font-size: 16px;
-    cursor: pointer; }
-    aside.fun span.tod:hover, aside.fun span.info:hover {
-      background: #c0392b; }
-    aside.fun span.tod span.i, aside.fun span.tod span.x, aside.fun span.info span.i, aside.fun span.info span.x {
-      background: #fff;
-      border-radius: 50%;
-      padding: 0 10px;
-      color: #555; }
+}
+aside.fun p.info-block {
+  display: none;
+}
+aside.fun span.tod, aside.fun span.how {
+  background: #e74c3c;
+  color: white;
+  padding: 10px 10px;
+  line-height: 1em;
+  position: absolute;
+  top: -16px;
+  right: -8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+aside.fun span.tod span.i, aside.fun span.how span.i {
+  background: white;
+  border-radius: 50%;
+  padding: 0 10px;
+  color: #555555;
+}
+aside.fun span.how {
+  display: none;
+  background: white;
+  color: #555555;
+}
+aside.fun span.how span.x {
+  background: #e74c3c;
+  border-radius: 50%;
+  padding: 0 5px;
+  color: white;
+}
 
 #aboutMe {
-  background: #fff;
+  background: white;
   padding: 12px 20px;
   margin-bottom: 2.5em;
   position: relative;
@@ -100,7 +119,8 @@ aside.fun {
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
   -webkit-box-shadow: 8px 8px 0px #2c3e50;
-  box-shadow: 8px 8px 0px #2c3e50; }
+  box-shadow: 8px 8px 0px #2c3e50;
+}
 
 #skills {
   display: -webkit-box;
@@ -114,99 +134,133 @@ aside.fun {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 1.5em; }
-  #skills .skill-bg {
-    width: 32%;
-    margin-bottom: 1.5em;
-    -webkit-box-shadow: -4px 4px 0 0 #2c3e50;
-    box-shadow: -4px 4px 0 0 #2c3e50;
-    position: relative;
-    overflow: hidden; }
-    #skills .skill-bg .overlay {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
-      #skills .skill-bg .overlay .val {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        z-index: 49;
-        background: #bdc3c7;
-        border-right: 1px solid #555; }
-    #skills .skill-bg .skill {
-      position: relative;
-      padding: 10px;
-      width: 50%;
-      background: #d35400;
-      color: #fff;
-      opacity: 0.8;
-      z-index: 99;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box; }
+  margin-bottom: 1.5em;
+}
+#skills .skill-bg {
+  width: 32%;
+  margin-bottom: 1.5em;
+  -webkit-box-shadow: -4px 4px 0 0 #2c3e50;
+  box-shadow: -4px 4px 0 0 #2c3e50;
+  position: relative;
+  overflow: hidden;
+}
+#skills .skill-bg .overlay {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#skills .skill-bg .overlay .val {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 49;
+  background: #bdc3c7;
+  color: #aaaaaa;
+  border-right: 1px solid #555555;
+}
+#skills .skill-bg .skill {
+  position: relative;
+  padding: 10px;
+  width: 10%;
+  color: white;
+  opacity: 1;
+  z-index: 99;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 2s ease all;
+  transition: 2s ease all;
+}
 
 #contactMe form {
   font-size: 1.2em;
-  font-family: 'Comfortaa', cursive; }
-  #contactMe form label {
-    z-index: 99;
-    position: relative;
-    padding: 0 20px; }
-  #contactMe form label.message {
-    padding: 0 10px; }
-  #contactMe form .input-bg {
-    display: block;
-    width: 75%;
-    padding: 10px 25px;
-    margin: 0.2em 0 1.15em 0;
-    background: #fff;
-    -webkit-transform: skewX(-30deg);
-    -ms-transform: skewX(-30deg);
-    transform: skewX(-30deg);
-    -webkit-box-shadow: -8px -24px 0px 8px #f1c40f;
-    box-shadow: -8px -24px 0px 8px #f1c40f;
-    -webkit-transition: .2s ease all;
-    transition: .2s ease all; }
-  #contactMe form input {
-    border: none;
-    -webkit-transform: skewX(30deg);
-    -ms-transform: skewX(30deg);
-    transform: skewX(30deg);
-    outline: none;
-    width: 100%; }
-  #contactMe form .textarea-bg {
-    display: block;
-    padding: 10px;
-    margin: 0.15em 0 2em 0;
-    background: #fff;
-    -webkit-box-shadow: -8px -24px 0px 8px #f1c40f;
-    box-shadow: -8px -24px 0px 8px #f1c40f;
-    -webkit-transition: .2s ease all;
-    transition: .2s ease all; }
-  #contactMe form textarea {
-    border: none;
-    outline: none;
-    height: 112px;
-    width: 100%; }
-  #contactMe form input.submit {
-    -webkit-transform: skewX(0deg);
-    -ms-transform: skewX(0deg);
-    transform: skewX(0deg);
-    background: #e67e22;
-    color: #ecf0f1;
-    text-shadow: 1px 1px 1px #111;
-    padding: 16px 0;
-    -webkit-box-shadow: -16px -16px 0px 0px #f1c40f;
-    box-shadow: -16px -16px 0px 0px #f1c40f; }
-    #contactMe form input.submit:hover {
-      background: #d35400; }
+  font-family: "Comfortaa", sans-serif;
+}
+#contactMe form label {
+  z-index: 99;
+  position: relative;
+  padding: 0 20px;
+}
+#contactMe form label.message {
+  padding: 0 10px;
+}
+#contactMe form .input-bg {
+  display: block;
+  width: 75%;
+  padding: 10px 25px;
+  margin: 0.2em 0 1.15em 0;
+  background: white;
+  -webkit-transform: skewX(-30deg);
+  -ms-transform: skewX(-30deg);
+  transform: skewX(-30deg);
+  -webkit-box-shadow: -8px -24px 0px 8px #f1c40f;
+  box-shadow: -8px -24px 0px 8px #f1c40f;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+#contactMe form input {
+  border: none;
+  -webkit-transform: skewX(30deg);
+  -ms-transform: skewX(30deg);
+  transform: skewX(30deg);
+  outline: none;
+  width: 100%;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 16px;
+}
+#contactMe form .textarea-bg {
+  display: block;
+  padding: 10px;
+  margin: 0.15em 0 2em 0;
+  background: white;
+  -webkit-box-shadow: -8px -24px 0px 8px #f1c40f;
+  box-shadow: -8px -24px 0px 8px #f1c40f;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+#contactMe form textarea {
+  border: none;
+  outline: none;
+  height: 112px;
+  width: 100%;
+  font-family: "Comfortaa", sans-serif;
+}
+#contactMe form input.submit {
+  -webkit-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  transform: skewX(0deg);
+  background: #e67e22;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 1px #111111;
+  padding: 16px 0;
+  font-size: 20px;
+  -webkit-box-shadow: -16px -16px 0px 0px #f1c40f;
+  box-shadow: -16px -16px 0px 0px #f1c40f;
+}
+#contactMe form input.submit:hover {
+  background: #d35400;
+}
 
 .container {
   display: -webkit-box;
@@ -220,4 +274,17 @@ aside.fun {
   flex-direction: column;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
+.container form.contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.container form.contact .col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}

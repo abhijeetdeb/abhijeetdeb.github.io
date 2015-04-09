@@ -8,8 +8,6 @@ html(lang='en')
     meta(name='description',content='Abhijeet Deb')
     meta(name='author',content='Abhijeet Deb')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet',href='http://yui.yahooapis.com/pure/0.6.0/pure-min.css')
-    link(rel='stylesheet',href='css/grids.css')
     link(rel='stylesheet',href='css/styles.css')
     //if lt IE 9 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     
@@ -27,10 +25,10 @@ html(lang='en')
       
     aside.fun
       p.thought Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      p.info-block <strong>Fun Fact:</strong> Thiswebsite was created using JADE and SCSS, and not using standard HTML and CSS coding. Also, this site utilizes FLEXBOX for structure. As Jesse Pinkman would have said, 'Technology, yo!'
+      p.info-block I created this website using JADE and SASS, and not using traditional HTML and CSS. Also, I used FLEXBOX for structure. I also made use of some CSS techniques, jQuery and PHP to make everything work together. As Jesse Pinkman would have said, 'Technology, yo!'
       span.tod Thought of the day 
         span.i i
-      //span.info How this site was made 
+      span.how How this site was made 
         span.x x
       
     section#aboutMe
@@ -42,7 +40,7 @@ html(lang='en')
       mixin overlay
         .overlay
           - for (var val=1; val <= 10; val ++)
-            .val
+            .val(data-skill-level=val)=val
       //- the skill list
       .skill-bg
         +overlay
@@ -55,10 +53,10 @@ html(lang='en')
         .skill(data-skill='8') jQuery
       .skill-bg
         +overlay
-        .skill(data-skill='6') JADE
+        .skill(data-skill='7') JADE
       .skill-bg
         +overlay
-        .skill(data-skill='8') SCSS
+        .skill(data-skill='8') SASS/SCSS
       .skill-bg
         +overlay
         .skill(data-skill='6') PHP
@@ -70,11 +68,11 @@ html(lang='en')
         .skill(data-skill='7') WordPress
       .skill-bg
         +overlay
-        .skill(data-skill='8') Gen. Tech Knowledge
+        .skill(data-skill='8') as
       
     section#contactMe
-      form.pure-g(method='post')
-        .grid-6-12
+      form.contact(method='post')
+        .col
           label Your Name
           .input-bg
             input(type='text')
@@ -84,14 +82,14 @@ html(lang='en')
           label Your Phone Number
           .input-bg
             input(type='tel')
-        .grid-6-12
+        .col
           label.message Your Message
           .textarea-bg
             textarea
           input.submit(type='submit',value='Send Message')
           
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
-    script(src='js/min/nicescroll.js')
+    script(src='js/min/jquery.min.js')
+    script(src='js/min/nicescroll.min.js')
     script(src='js/min/scripts.min.js')
   
   

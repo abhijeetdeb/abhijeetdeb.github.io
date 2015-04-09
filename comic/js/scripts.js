@@ -12,34 +12,36 @@ $(document).ready(function() {
   }  
   scroll();
   
-  function funFact() {
-    var $asideFun = $('aside.fun');
-    $('aside > .close').on({
-      mouseenter: function() {
-        $asideFun.css({opacity: '0.5'});
-      },
-      mouseleave: function() {
-        $asideFun.css({opacity: '1'});
-      },
-      click: function() {
-        $asideFun.hide();
-      }
+  function how() {
+    $('.tod .i').on('click', function() {
+      $('.tod').fadeOut();
+      $('.how').fadeIn();
+      $('.thought').slideUp(function() {
+        $('.info-block').slideDown();        
+      });
     });
-  }  
-  funFact();
+    $('.how .x').on('click', function() {
+      $('.how').fadeOut();
+      $('.tod').fadeIn();
+      $('.info-block').slideUp(function() {
+        $('.thought').slideDown();
+      });
+    })
+  }
+  how();
   
   function skills() {
     var $skills = $('#skills');
     $skills.find('.skill').each(function(){
       var $val = $(this).data('skill')*10 + '%';
-      $(this).css({width: $val});
+      $(this).css({width: $val, background: '#d35400', opacity: '0.8'});
     });    
   }
   skills();
   
   function contactForm() {
     var $contactMe = $('#contactMe');
-    $contactMe.find('input, textarea').on({
+    $contactMe.find('input, textarea').not('input.submit').on({
       focus: function() {
         $(this).parent().css({boxShadow: '-8px -24px 0px 8px #f39c12'});
       },
