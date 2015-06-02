@@ -1,6 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Bangers);
 @import url(http://fonts.googleapis.com/css?family=Fredoka+One);
 @import url(http://fonts.googleapis.com/css?family=Comfortaa);
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   cursor: url(../images/cursor.png), auto;
 }
@@ -106,8 +111,9 @@ aside.fun span.how {
 aside.fun span.how span.x {
   background: #e74c3c;
   border-radius: 50%;
-  padding: 0 5px;
+  padding: 2px 6px;
   color: white;
+  font-size: 14px;
 }
 
 #aboutMe {
@@ -120,6 +126,28 @@ aside.fun span.how span.x {
   transition: 0.2s ease all;
   -webkit-box-shadow: 8px 8px 0px #2c3e50;
   box-shadow: 8px 8px 0px #2c3e50;
+}
+
+#portfolio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#portfolio div {
+  display: block;
+  height: 250px;
+  width: 32%;
+  margin-bottom: 1.5em;
+  position: relative;
+  background: #eeeeee;
 }
 
 #skills {
@@ -178,6 +206,10 @@ aside.fun span.how span.x {
   background: #bdc3c7;
   color: #aaaaaa;
   border-right: 1px solid #555555;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #skills .skill-bg .skill {
   position: relative;

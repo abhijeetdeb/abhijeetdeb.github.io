@@ -12,12 +12,6 @@ $(function() {
   }  
   scroll();
   
-  function quote() {
-    var $quote = $('.thought');
-    $quote.find('b, a, br, script').remove();
-  }
-  quote();
-  
   function how() {
     $('.tod .i').on('click', function() {
       $('.tod').fadeOut();
