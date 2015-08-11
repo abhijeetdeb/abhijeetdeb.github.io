@@ -241,6 +241,23 @@ aside.fun span.how span.x {
 
 #contactMe {
   margin-top: 0.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#contactMe .social {
+  background: white;
+  padding: 1em 0.5em;
+  width: 30%;
+  text-align: center;
 }
 #contactMe form {
   font-size: 1.2em;
@@ -249,6 +266,7 @@ aside.fun span.how span.x {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  display: none;
 }
 #contactMe form .col {
   -webkit-box-flex: 1;
@@ -321,10 +339,12 @@ aside.fun span.how span.x {
   background: #d35400;
 }
 
-footer a {
+footer {
   padding: 3em 0 1.5em;
+  text-align: center;
+}
+footer a {
   color: #999999;
   text-align: center;
   text-decoration: none;
-  display: block;
 }

@@ -166,10 +166,19 @@ aside.fun
     
 #contactMe
   margin-top: 0.5em
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  .social
+    background: #fff
+    padding: 1em 0.5em
+    width: 30%
+    text-align: center
   form
     font-size: 1.2em
     font-family: 'Comfortaa', sans-serif
     display: flex
+    display: none
     .col
       flex: 1
     label
@@ -219,9 +228,9 @@ aside.fun
         background: #d35400
       
 footer
+  padding: 3em 0 1.5em
+  text-align: center
   a
-    padding: 3em 0 1.5em
     color: #999
     text-align: center
     text-decoration: none
-    display: block
