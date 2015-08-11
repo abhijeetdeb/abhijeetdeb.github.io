@@ -253,11 +253,46 @@ aside.fun span.how span.x {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-#contactMe .social {
-  background: white;
+#contactMe a.social {
   padding: 1em 0.5em;
   width: 30%;
+  color: white;
   text-align: center;
+  -webkit-box-shadow: 3px 3px 0px 1px #bdc3c7;
+  box-shadow: 3px 3px 0px 1px #bdc3c7;
+  border-right: 3px solid;
+  border-bottom: 3px solid;
+  text-decoration: none;
+}
+#contactMe a.facebook {
+  background: #3b5998;
+  border-color: #2f4779;
+}
+#contactMe a.facebook:hover {
+  background: #2f4779;
+  border-color: #23355b;
+  -webkit-box-shadow: 3px 3px 0px 1px #dddddd;
+  box-shadow: 3px 3px 0px 1px #dddddd;
+}
+#contactMe a.linkedin {
+  background: #4875b4;
+  border-color: #395d90;
+}
+#contactMe a.linkedin:hover {
+  background: #395d90;
+  border-color: #2b466c;
+  -webkit-box-shadow: 3px 3px 0px 1px #dddddd;
+  box-shadow: 3px 3px 0px 1px #dddddd;
+}
+#contactMe a.twitter {
+  background: #33ccff;
+  border-color: #28a3cc;
+}
+#contactMe a.twitter:hover {
+  background: #28a3cc;
+  border-color: #1e7a99;
+  -webkit-box-shadow: 3px 3px 0px 1px #dddddd;
+  box-shadow: 3px 3px 0px 1px #dddddd;
 }
 #contactMe form {
   font-size: 1.2em;

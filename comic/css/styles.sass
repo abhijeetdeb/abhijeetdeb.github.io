@@ -169,11 +169,36 @@ aside.fun
   display: flex
   flex-flow: row wrap
   justify-content: space-between
-  .social
-    background: #fff
+  a.social
     padding: 1em 0.5em
     width: 30%
+    color: #fff
     text-align: center
+    box-shadow: 3px 3px 0px 1px #bdc3c7
+    border-right: 3px solid
+    border-bottom: 3px solid
+    text-decoration: none
+  a.facebook
+    background: #3b5998
+    border-color: #2f4779
+    &:hover
+      background: #2f4779
+      border-color: #23355b
+      box-shadow: 3px 3px 0px 1px #ddd
+  a.linkedin
+    background: #4875B4
+    border-color: #395d90
+    &:hover
+      background: #395d90
+      border-color: #2b466c
+      box-shadow: 3px 3px 0px 1px #ddd
+  a.twitter
+    background: #3cf
+    border-color: #28a3cc
+    &:hover
+      background: #28a3cc
+      border-color: #1e7a99
+      box-shadow: 3px 3px 0px 1px #ddd
   form
     font-size: 1.2em
     font-family: 'Comfortaa', sans-serif
