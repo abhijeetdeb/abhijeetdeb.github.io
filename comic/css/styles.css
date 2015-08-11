@@ -47,12 +47,15 @@ header h1 {
   text-align: center;
 }
 
+section {
+  margin: 3em auto 1.5em;
+}
 section h2 {
   color: #d35400;
   font-size: 3em;
   text-align: center;
   text-shadow: 3px 3px 3px #111111;
-  margin: 1.5em auto 0.5em;
+  margin: 0.5em auto;
   width: 100%;
 }
 section h2:before {
@@ -133,7 +136,6 @@ aside.fun span.how span.x {
 #aboutMe .container {
   background: white;
   padding: 12px 20px;
-  margin-bottom: 1.5em;
   position: relative;
   line-height: 1.5em;
   -webkit-transition: 0.2s ease all;
@@ -176,7 +178,6 @@ aside.fun span.how span.x {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 1.5em;
 }
 #skills .skill-bg {
   width: 32%;
@@ -240,7 +241,6 @@ aside.fun span.how span.x {
 }
 
 #contactMe {
-  margin-top: 0.5em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

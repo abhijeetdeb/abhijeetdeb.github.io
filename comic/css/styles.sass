@@ -38,17 +38,19 @@ header
     text-shadow: 5px 5px 3px #111
     text-align: center
   
-section h2
-  color: #d35400
-  font-size: 3em
-  text-align: center
-  text-shadow: 3px 3px 3px #111
-  margin: 1.5em auto 0.5em
-  width: 100%
-  &:before
-    content: '- '
-  &:after
-    content: ' -'
+section
+  margin: 3em auto 1.5em
+  h2
+    color: #d35400
+    font-size: 3em
+    text-align: center
+    text-shadow: 3px 3px 3px #111
+    margin: 0.5em auto
+    width: 100%
+    &:before
+      content: '- '
+    &:after
+      content: ' -'
 
 nav.menu
   display: flex
@@ -107,7 +109,6 @@ aside.fun
   .container    
     background: #fff
     padding: 12px 20px
-    margin-bottom: 1.5em
     position: relative
     line-height: 1.5em
     transition: 0.2s ease all
@@ -129,7 +130,6 @@ aside.fun
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  margin-bottom: 1.5em
   .skill-bg
     width: 32%
     margin-bottom: 1.5em
@@ -165,7 +165,6 @@ aside.fun
       transition: 2s ease all
     
 #contactMe
-  margin-top: 0.5em
   display: flex
   flex-flow: row wrap
   justify-content: space-between
