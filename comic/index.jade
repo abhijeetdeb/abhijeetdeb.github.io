@@ -11,91 +11,105 @@ html(lang='en')
     link(rel='stylesheet',href='css/styles.css')
     //if lt IE 9 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     
-  body.container.wrap
+  body#container
   
-    header
-      .title
-        h1 Abhijeet Deb
-          
-    nav.menu
-      div About Me
-      div My Portfolio
-      div My Skills
-      div Contact Me
-      
-    aside.fun
-      p.thought 
-        script(src='http://www.brainyquote.com/link/quotefu.js')
-      p.info-block I created this website using JADE and SASS, and not using traditional HTML and CSS. Also, I used FLEXBOX for structure. I also made use of some CSS techniques, jQuery and PHP to make everything work together. As Jesse Pinkman would have said, 'Technology, yo!'
-      span.tod Thought of the day 
-        span.i i
-      span.how How this site was made 
-        span.x X
-      
-    section#aboutMe
-      p I guess you have figured out that I like comics. We will come back to that in a bit.
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      
-    section#portfolio
-      div A
-      div B
-      div C
-      div D
-      div E
-      div F
-      
-    section#skills
-      //- create overlay
-      mixin overlay
-        .overlay
-          - for (var val=1; val <= 10; val ++)
-            .val(data-skill-level=val)=val
-      //- the skill list
-      .skill-bg
-        +overlay
-        .skill(data-skill='9') HTML5
-      .skill-bg
-        +overlay
-        .skill(data-skill='9') CSS3
-      .skill-bg
-        +overlay
-        .skill(data-skill='8') jQuery
-      .skill-bg
-        +overlay
-        .skill(data-skill='7') JADE
-      .skill-bg
-        +overlay
-        .skill(data-skill='8') SASS/SCSS
-      .skill-bg
-        +overlay
-        .skill(data-skill='6') PHP
-      .skill-bg
-        +overlay
-        .skill(data-skill='7') PhotoShop
-      .skill-bg
-        +overlay
-        .skill(data-skill='7') WordPress
-      .skill-bg
-        +overlay
-        .skill(data-skill='8') as
-      
-    section#contactMe
-      form.contact(method='post')
-        .col
-          label Your Name
-          .input-bg
-            input(type='text')
-          label Your Email Address
-          .input-bg
-            input(type='email')
-          label Your Phone Number
-          .input-bg
-            input(type='tel')
-        .col
-          label.message Your Message
-          .textarea-bg
-            textarea
-          input.submit(type='submit',value='Send Message')
+    .wrap
+
+      header
+        .title
+          h1 Abhijeet Deb
+
+      nav.menu
+        div(data-link="aboutMe") About Me
+        div(data-link="portfolio") My Portfolio
+        div(data-link="skills") My Skills
+        div(data-link="contactMe") Contact Me
+
+      aside.fun
+        p.thought 
+          script(src='http://www.brainyquote.com/link/quotefu.js')
+        p.info-block This website was created using JADE and SASS, and not using traditional HTML and CSS. Also, I used FLEXBOX for structure. I also made use of some CSS techniques, jQuery and PHP to make everything work together. As Jesse Pinkman would have said, 'Technology, yo!'
+        span.tod Thought of the day 
+          span.i i
+        span.how How this site was made 
+          span.x X
+
+
+      section#aboutMe
+        h2 About me
+        .container
+          p I guess you have figured out that I like comics. We will come back to that in a bit.
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+      section#portfolio
+        h2 Portfolio
+        div A
+        div B
+        div C
+        div D
+        div E
+        div F
+
+
+      section#skills
+        h2 Skills
+        //- create overlay
+        mixin overlay
+          .overlay
+            - for (var val=1; val <= 10; val ++)
+              .val(data-skill-level=val)=val
+        //- the skill list
+        .skill-bg
+          +overlay
+          .skill(data-skill='9') HTML5
+        .skill-bg
+          +overlay
+          .skill(data-skill='9') CSS3
+        .skill-bg
+          +overlay
+          .skill(data-skill='8') jQuery
+        .skill-bg
+          +overlay
+          .skill(data-skill='7') JADE
+        .skill-bg
+          +overlay
+          .skill(data-skill='8') SASS/SCSS
+        .skill-bg
+          +overlay
+          .skill(data-skill='6') PHP
+        .skill-bg
+          +overlay
+          .skill(data-skill='7') Photoshop
+        .skill-bg
+          +overlay
+          .skill(data-skill='7') WordPress
+        .skill-bg
+          +overlay
+          .skill(data-skill='8') as
+
+
+      section#contactMe
+        h2 Contact Me
+        form.contact(method='post')
+          .col
+            label Your Name
+            .input-bg
+              input(type='text')
+            label Your Email Address
+            .input-bg
+              input(type='email')
+            label Your Phone Number
+            .input-bg
+              input(type='tel')
+          .col
+            label.message Your Message
+            .textarea-bg
+              textarea
+            input.submit(type='submit',value='Send Message')
+
+      footer
+        a(href="#") designed by me
           
     script(src='js/min/jquery.min.js')
     script(src='js/min/nicescroll.min.js')

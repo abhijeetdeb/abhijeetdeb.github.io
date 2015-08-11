@@ -24,15 +24,14 @@ body p {
   margin: 0 0 0.75em 0;
 }
 
-.container {
-  background-image: url(../images/bg-top.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(75%, #111111));
-  background-image: url(../images/bg-top.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 75%);
-  background-image: url(../images/bg-top.png), linear-gradient(to bottom, #6b0000 0%, #111111 75%);
+#container {
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(25%, #111111), color-stop(50%, #111111), to(#6b0000));
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 100%);
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 100%);
   -webkit-background-size: 150%;
   background-size: 150%;
-  background-position: center 0;
+  background-position: center top, center bottom;
   background-repeat: no-repeat;
-  min-height: 100vh;
 }
 
 .wrap {
@@ -43,9 +42,24 @@ body p {
 header h1 {
   font-size: 6em;
   color: #f39c12;
-  margin: 0.5em 0 0;
+  padding-top: 0.75em;
   text-shadow: 5px 5px 3px #111111;
   text-align: center;
+}
+
+section h2 {
+  color: #d35400;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 3px 3px 3px #111111;
+  margin: 1.5em auto 0.5em;
+  width: 100%;
+}
+section h2:before {
+  content: "- ";
+}
+section h2:after {
+  content: " -";
 }
 
 nav.menu {
@@ -57,8 +71,8 @@ nav.menu {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 1em;
-  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
 }
 nav.menu div {
   display: inline-block;
@@ -78,8 +92,8 @@ aside.fun {
   background: #9b59b6;
   color: white;
   padding: 30px 20px 16px;
-  margin-top: 1em;
-  margin-bottom: 1.5em;
+  margin-top: 3.5em;
+  margin-bottom: 3em;
   position: relative;
   line-height: 1.5em;
 }
@@ -116,10 +130,10 @@ aside.fun span.how span.x {
   font-size: 14px;
 }
 
-#aboutMe {
+#aboutMe .container {
   background: white;
   padding: 12px 20px;
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
   position: relative;
   line-height: 1.5em;
   -webkit-transition: 0.2s ease all;
@@ -225,9 +239,22 @@ aside.fun span.how span.x {
   transition: 2s ease all;
 }
 
+#contactMe {
+  margin-top: 0.5em;
+}
 #contactMe form {
   font-size: 1.2em;
   font-family: "Comfortaa", sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#contactMe form .col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 #contactMe form label {
   z-index: 99;
@@ -294,29 +321,10 @@ aside.fun span.how span.x {
   background: #d35400;
 }
 
-.container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-.container form.contact {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.container form.contact .col {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+footer a {
+  padding: 3em 0 1.5em;
+  color: #999999;
+  text-align: center;
+  text-decoration: none;
+  display: block;
 }
