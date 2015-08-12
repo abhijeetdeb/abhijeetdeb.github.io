@@ -92,6 +92,8 @@ aside.fun
   line-height: 1.5em
   p.info-block
     display: none
+  a, b, br
+    display: none
   
   span.tod, span.how
     background: #e74c3c
@@ -166,8 +168,8 @@ aside.fun
     flex-grow: 1
     margin: 0 1em
     box-shadow: 4px 4px 0px #e67e22
-    border-right: 2px solid #fff
-    border-bottom: 2px solid #fff
+    border-right: 2px solid #6B0000
+    border-bottom: 2px solid #6B0000
     overflow: hidden
     &:hover
       box-shadow: 4px 4px 0px #d35400
@@ -175,6 +177,7 @@ aside.fun
       position: relative
       justify-content: center
       display: flex
+      cursor: pointer
       img
         position: absolute
         top: 0
@@ -182,17 +185,22 @@ aside.fun
         width: 100%
         max-width: 100%
         z-index: 0
-        opacity: .5
+        opacity: 0.5
+        transition: 0.2s ease all
       .project
         position: relative
         z-index: 1
         align-self: center
-        background: rgba(155, 89, 182, 0.8)
+        background: rgba(107, 0, 0, 0.75)
         color: #fff
         text-shadow: 1px 1px 1px #555
         font-size: 1.5em
         padding: 0.5em 1em
-        box-shadow: 4px 4px 0px rgba(44, 62, 80, 0.8)
+        border-right: 2px solid rgba(255, 255, 255, 0.75)
+        border-bottom: 2px solid rgba(255, 255, 255, 0.75)
+        box-shadow: 4px 4px 0px rgba(44, 62, 80, 0.75)
+        box-sizing: border-box
+        transition: 0.2s ease all
 
 #skills
   display: flex

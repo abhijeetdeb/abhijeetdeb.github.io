@@ -36,8 +36,10 @@ $(function() {
   
   function quote() {
     var $quote = $('.thought');
-    $quote.find('b, a, br, script').remove();
+    $quote.find('b, a, br, script').remove();    
+    $quote.html('<span>' + $.trim($quote.text()) + '</span');    
   }
+  
   quote();
   
   function how() {
@@ -64,7 +66,8 @@ $(function() {
         $prev = $portfolio.find('.prev'),
         $next = $portfolio.find('.next'),
         $works = $portfolio.find('.works'),
-        $wrapper = $works.find('.wrapper');
+        $wrapper = $works.find('.wrapper'),
+        $work = $wrapper.find('.work');
     
     var $worksHeight = $works.height(),
         $totalWorks = $wrapper.find('.work').length,
@@ -88,6 +91,18 @@ $(function() {
       } else {
         $worksHeight = 0;
         $wrapper.css({marginTop: $worksHeight});
+      }
+      
+    });
+    
+    $work.on({
+      
+      mouseenter: function() {
+       $(this).find('img').css({transform: 'scale(1.1)'});
+      },
+      
+      mouseleave: function() {
+       $(this).find('img').css({transform: 'scale(1)'});
       }
       
     });
