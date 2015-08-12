@@ -25,9 +25,9 @@ body p {
 }
 
 #container {
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(25%, #111111), color-stop(50%, #111111), to(#6b0000));
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 100%);
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 100%);
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(25%, #111111), color-stop(50%, #111111), color-stop(75%, #6b0000));
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
   -webkit-background-size: 150%;
   background-size: 150%;
   background-position: center top, center bottom;
@@ -41,10 +41,22 @@ body p {
 
 header h1 {
   font-size: 6em;
-  color: #f39c12;
   padding-top: 0.75em;
-  text-shadow: 5px 5px 3px #111111;
   text-align: center;
+  position: relative;
+}
+header h1 div {
+  background: url(../images/bg-bottom.png) center/contain, -webkit-gradient(linear, left top, left bottom, from(#f39c12), to(#d35400));
+  background: url(../images/bg-bottom.png) center/contain, -webkit-linear-gradient(top, #f39c12, #d35400);
+  background: url(../images/bg-bottom.png) center/contain, linear-gradient(top, #f39c12, #d35400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  width: 100%;
+}
+header h1:after {
+  text-shadow: 5px 5px 3px #111111;
+  content: attr(title);
 }
 
 section {
@@ -82,13 +94,22 @@ nav.menu div {
   background: white;
   margin: 0 10px;
   padding: 10px 16px;
-  -webkit-box-shadow: 3px 3px 0px 1px #e67e22;
-  box-shadow: 3px 3px 0px 1px #e67e22;
+  -webkit-box-shadow: 4px 4px 0px #e67e22;
+  box-shadow: 4px 4px 0px #e67e22;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 nav.menu div:hover {
-  -webkit-box-shadow: 3px 3px 0px 1px #d35400;
-  box-shadow: 3px 3px 0px 1px #d35400;
+  -webkit-box-shadow: 4px 4px 0px #d35400;
+  box-shadow: 4px 4px 0px #d35400;
+}
+nav.menu .active {
+  margin: 1px 9px -1px 11px;
+  -webkit-box-shadow: 3px 3px 0px #d35400 !important;
+  box-shadow: 3px 3px 0px #d35400 !important;
 }
 
 aside.fun {
@@ -112,13 +133,13 @@ aside.fun span.tod, aside.fun span.how {
   top: -16px;
   right: -8px;
   font-size: 16px;
-  cursor: pointer;
 }
 aside.fun span.tod span.i, aside.fun span.how span.i {
   background: white;
   border-radius: 50%;
   padding: 0 10px;
   color: #555555;
+  cursor: pointer;
 }
 aside.fun span.how {
   display: none;
@@ -131,6 +152,7 @@ aside.fun span.how span.x {
   padding: 2px 6px;
   color: white;
   font-size: 14px;
+  cursor: pointer;
 }
 
 #aboutMe .container {
@@ -140,8 +162,8 @@ aside.fun span.how span.x {
   line-height: 1.5em;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
-  -webkit-box-shadow: 8px 8px 0px #2c3e50;
-  box-shadow: 8px 8px 0px #2c3e50;
+  -webkit-box-shadow: 4px 4px 0px #2c3e50;
+  box-shadow: 4px 4px 0px #2c3e50;
 }
 
 #portfolio {
@@ -159,11 +181,104 @@ aside.fun span.how span.x {
 }
 #portfolio div {
   display: block;
-  height: 250px;
-  width: 32%;
-  margin-bottom: 1.5em;
-  position: relative;
+  height: 180px;
   background: #eeeeee;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#portfolio .prev, #portfolio .next {
+  word-wrap: break-word;
+  width: 0.5em;
+  padding: 0 0.75em;
+  text-transform: uppercase;
+  font-family: "Bangers", serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: url(../images/bg-bottom.png) center/cover, -webkit-gradient(linear, left top, left bottom, from(#e67e22), to(#d35400));
+  background: url(../images/bg-bottom.png) center/cover, -webkit-linear-gradient(top, #e67e22, #d35400);
+  background: url(../images/bg-bottom.png) center/cover, linear-gradient(top, #e67e22, #d35400);
+  color: #dddddd;
+  border-right: 2px solid #a84300;
+  border-bottom: 2px solid #a84300;
+  text-shadow: 1px 1px 1px #111111;
+  -webkit-box-shadow: 4px 4px 0px #dddddd;
+  box-shadow: 4px 4px 0px #dddddd;
+  cursor: pointer;
+}
+#portfolio .prev:hover, #portfolio .next:hover {
+  color: white;
+  -webkit-box-shadow: 4px 4px 0px white;
+  box-shadow: 4px 4px 0px white;
+}
+#portfolio .active {
+  margin: 1px -1px -1px 1px;
+  -webkit-box-shadow: 3px 3px 0px #dddddd !important;
+  box-shadow: 3px 3px 0px #dddddd !important;
+}
+#portfolio .works {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 0 1em;
+  -webkit-box-shadow: 4px 4px 0px #e67e22;
+  box-shadow: 4px 4px 0px #e67e22;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  overflow: hidden;
+}
+#portfolio .works:hover {
+  -webkit-box-shadow: 4px 4px 0px #d35400;
+  box-shadow: 4px 4px 0px #d35400;
+}
+#portfolio .works .work {
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#portfolio .works .work img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: 0;
+  opacity: 0.5;
+}
+#portfolio .works .work .project {
+  position: relative;
+  z-index: 1;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background: rgba(155, 89, 182, 0.8);
+  color: white;
+  text-shadow: 1px 1px 1px #555555;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 4px 4px 0px rgba(44, 62, 80, 0.8);
+  box-shadow: 4px 4px 0px rgba(44, 62, 80, 0.8);
 }
 
 #skills {
@@ -182,8 +297,8 @@ aside.fun span.how span.x {
 #skills .skill-bg {
   width: 32%;
   margin-bottom: 1.5em;
-  -webkit-box-shadow: -4px 4px 0 0 #2c3e50;
-  box-shadow: -4px 4px 0 0 #2c3e50;
+  -webkit-box-shadow: 4px 4px 0px #2c3e50;
+  box-shadow: 4px 4px 0px #2c3e50;
   position: relative;
   overflow: hidden;
 }
@@ -256,13 +371,16 @@ aside.fun span.how span.x {
 #contactMe a.social {
   padding: 1em 0.5em;
   width: 30%;
-  color: white;
+  color: #dddddd;
   text-align: center;
-  -webkit-box-shadow: 3px 3px 0px 1px #bdc3c7;
-  box-shadow: 3px 3px 0px 1px #bdc3c7;
+  -webkit-box-shadow: 4px 4px 0px #bdc3c7;
+  box-shadow: 4px 4px 0px #bdc3c7;
   border-right: 3px solid;
   border-bottom: 3px solid;
   text-decoration: none;
+}
+#contactMe a.social:hover {
+  color: white;
 }
 #contactMe a.facebook {
   background: #3b5998;
@@ -271,8 +389,8 @@ aside.fun span.how span.x {
 #contactMe a.facebook:hover {
   background: #2f4779;
   border-color: #23355b;
-  -webkit-box-shadow: 3px 3px 0px 1px #dddddd;
-  box-shadow: 3px 3px 0px 1px #dddddd;
+  -webkit-box-shadow: 4px 4px 0px #dddddd;
+  box-shadow: 4px 4px 0px #dddddd;
 }
 #contactMe a.linkedin {
   background: #4875b4;
@@ -281,97 +399,23 @@ aside.fun span.how span.x {
 #contactMe a.linkedin:hover {
   background: #395d90;
   border-color: #2b466c;
-  -webkit-box-shadow: 3px 3px 0px 1px #dddddd;
-  box-shadow: 3px 3px 0px 1px #dddddd;
+  -webkit-box-shadow: 4px 4px 0px #dddddd;
+  box-shadow: 4px 4px 0px #dddddd;
 }
 #contactMe a.twitter {
-  background: #33ccff;
-  border-color: #28a3cc;
+  background: #2db7e5;
+  border-color: #2492b7;
 }
 #contactMe a.twitter:hover {
-  background: #28a3cc;
-  border-color: #1e7a99;
-  -webkit-box-shadow: 3px 3px 0px 1px #dddddd;
-  box-shadow: 3px 3px 0px 1px #dddddd;
+  background: #2492b7;
+  border-color: #1b6d89;
+  -webkit-box-shadow: 4px 4px 0px #dddddd;
+  box-shadow: 4px 4px 0px #dddddd;
 }
-#contactMe form {
-  font-size: 1.2em;
-  font-family: "Comfortaa", sans-serif;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  display: none;
-}
-#contactMe form .col {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-#contactMe form label {
-  z-index: 99;
-  position: relative;
-  padding: 0 20px;
-}
-#contactMe form label.message {
-  padding: 0 10px;
-}
-#contactMe form .input-bg {
-  display: block;
-  width: 75%;
-  padding: 10px 25px;
-  margin: 0.2em 0 1.15em 0;
-  background: white;
-  -webkit-transform: skewX(-30deg);
-  -ms-transform: skewX(-30deg);
-  transform: skewX(-30deg);
-  -webkit-box-shadow: -8px -24px 0px 8px #f1c40f;
-  box-shadow: -8px -24px 0px 8px #f1c40f;
-  -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
-}
-#contactMe form input {
-  border: none;
-  -webkit-transform: skewX(30deg);
-  -ms-transform: skewX(30deg);
-  transform: skewX(30deg);
-  outline: none;
-  width: 100%;
-  font-family: "Comfortaa", sans-serif;
-  font-size: 16px;
-}
-#contactMe form .textarea-bg {
-  display: block;
-  padding: 10px;
-  margin: 0.15em 0 2em 0;
-  background: white;
-  -webkit-box-shadow: -8px -24px 0px 8px #f1c40f;
-  box-shadow: -8px -24px 0px 8px #f1c40f;
-  -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
-}
-#contactMe form textarea {
-  border: none;
-  outline: none;
-  height: 112px;
-  width: 100%;
-  font-family: "Comfortaa", sans-serif;
-}
-#contactMe form input.submit {
-  -webkit-transform: skewX(0deg);
-  -ms-transform: skewX(0deg);
-  transform: skewX(0deg);
-  background: #e67e22;
-  color: #ecf0f1;
-  text-shadow: 1px 1px 1px #111111;
-  padding: 16px 0;
-  font-size: 20px;
-  -webkit-box-shadow: -16px -16px 0px 0px #f1c40f;
-  box-shadow: -16px -16px 0px 0px #f1c40f;
-}
-#contactMe form input.submit:hover {
-  background: #d35400;
+#contactMe .active {
+  margin: 1px -1px -1px 1px;
+  -webkit-box-shadow: 3px 3px 0px #dddddd !important;
+  box-shadow: 3px 3px 0px #dddddd !important;
 }
 
 footer {

@@ -14,20 +14,22 @@
     <div class="wrap">
       <header>
         <div class="title">
-          <h1>Abhijeet Deb</h1>
+          <h1 title="Abhijeet Deb">
+            <div>Abhijeet Deb</div>
+          </h1>
         </div>
       </header>
       <nav class="menu">
-        <div data-link="aboutMe">About Me</div>
-        <div data-link="portfolio">My Portfolio</div>
-        <div data-link="skills">My Skills</div>
-        <div data-link="contactMe">Contact Me</div>
+        <div data-link="aboutMe" class="link">About Me</div>
+        <div data-link="portfolio" class="link">My Portfolio</div>
+        <div data-link="skills" class="link">My Skills</div>
+        <div data-link="contactMe" class="link">Contact Me</div>
       </nav>
       <aside class="fun">
         <p class="thought">
           <script src="http://www.brainyquote.com/link/quotefu.js"></script>
         </p>
-        <p class="info-block">This website was created using JADE and SASS, and not using traditional HTML and CSS. Also, I used FLEXBOX for structure. I also made use of some CSS techniques, jQuery and PHP to make everything work together. As Jesse Pinkman would have said, 'Technology, yo!'</p><span class="tod">Thought of the day <span class="i">i</span></span><span class="how">How this site was made <span class="x">X</span></span>
+        <p class="info-block">This website was created using JADE and SASS, and not using traditional HTML and CSS. Also, I used FLEXBOX for structure. I also made use of some CSS techniques, jQuery and PHP to make everything work together. As Jesse Pinkman would have said, 'Technology, yo!'</p><span class="tod">Quote of the day <span class="i">i</span></span><span class="how">How this site was made <span class="x">X</span></span>
       </aside>
       <section id="aboutMe">
         <h2>About me</h2>
@@ -38,12 +40,15 @@
       </section>
       <section id="portfolio">
         <h2>Portfolio</h2>
-        <div>A</div>
-        <div>B</div>
-        <div>C</div>
-        <div>D</div>
-        <div>E</div>
-        <div>F</div>
+        <div class="prev link"><span>Prev</span></div>
+        <div class="works">
+          <div class="wrapper">         
+            <div class="work"><img src="images/works/glc.jpg" alt=""><span class="project">Global Luxury Culture</span></div>
+            <div class="work"><img src="images/works/beams.jpg" alt=""><span class="project">Beams Hospitals</span></div>
+            <div class="work"><img src="images/works/beams.jpg" alt=""><span class="project">SK Techconnect</span></div>
+          </div>
+        </div>
+        <div class="next link"><span>Next</span></div>
       </section>
       <section id="skills">
         <h2>Skills</h2>
@@ -105,7 +110,7 @@
                     <div data-skill-level='9' class="val">9</div>
                     <div data-skill-level='10' class="val">10</div>
                   </div>
-          <div data-skill="7" class="skill">Jade</div>
+          <div data-skill="8" class="skill">Jade</div>
         </div>
         <div class="skill-bg">
                   <div class="overlay">
@@ -180,34 +185,11 @@
                     <div data-skill-level='9' class="val">9</div>
                     <div data-skill-level='10' class="val">10</div>
                   </div>
-          <div data-skill="9" class="skill">Talk</div>
+          <div data-skill="9" class="skill">Talking</div>
         </div>
       </section>
       <section id="contactMe">
-        <h2>Contact Me</h2><a href="http://fb.me/abhijeetdeb" target="_blank" class="social facebook">Facebook</a><a href="http://linkedin.com/in/abhijeetdeb" target="_blank" class="social linkedin">Linkedin</a><a href="http://twitter.com/abhijeetdeb" target="_blank" class="social twitter">Twitter</a>
-        <form method="post" class="contact">
-          <div class="col">
-            <label>Your Name</label>
-            <div class="input-bg">
-              <input type="text">
-            </div>
-            <label>Your Email Address</label>
-            <div class="input-bg">
-              <input type="email">
-            </div>
-            <label>Your Phone Number</label>
-            <div class="input-bg">
-              <input type="tel">
-            </div>
-          </div>
-          <div class="col">
-            <label class="message">Your Message</label>
-            <div class="textarea-bg">
-              <textarea></textarea>
-            </div>
-            <input type="submit" value="Send Message" class="submit">
-          </div>
-        </form>
+        <h2>Contact Me</h2><a href="http://fb.me/abhijeetdeb" target="_blank" class="link social facebook">Facebook</a><a href="http://linkedin.com/in/abhijeetdeb" target="_blank" class="link social linkedin">Linkedin</a><a href="http://twitter.com/abhijeetdeb" target="_blank" class="link social twitter">Twitter</a>
       </section>
       <footer><a href="#">designed by me</a></footer>
     </div>

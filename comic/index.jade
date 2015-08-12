@@ -17,19 +17,20 @@ html(lang='en')
 
       header
         .title
-          h1 Abhijeet Deb
+          h1(title="Abhijeet Deb")
+            div Abhijeet Deb
 
       nav.menu
-        div(data-link="aboutMe") About Me
-        div(data-link="portfolio") My Portfolio
-        div(data-link="skills") My Skills
-        div(data-link="contactMe") Contact Me
+        .link(data-link="aboutMe") About Me
+        .link(data-link="portfolio") My Portfolio
+        .link(data-link="skills") My Skills
+        .link(data-link="contactMe") Contact Me
 
       aside.fun
         p.thought 
           script(src='http://www.brainyquote.com/link/quotefu.js')
         p.info-block This website was created using JADE and SASS, and not using traditional HTML and CSS. Also, I used FLEXBOX for structure. I also made use of some CSS techniques, jQuery and PHP to make everything work together. As Jesse Pinkman would have said, 'Technology, yo!'
-        span.tod Thought of the day 
+        span.tod Quote of the day 
           span.i i
         span.how How this site was made 
           span.x X
@@ -44,12 +45,21 @@ html(lang='en')
 
       section#portfolio
         h2 Portfolio
-        div A
-        div B
-        div C
-        div D
-        div E
-        div F
+        .prev.link
+          span Prev
+        .works
+          .wrapper          
+            .work
+              img(src="images/works/glc.jpg", alt="")
+              span.project Global Luxury Culture
+            .work
+              img(src="images/works/beams.jpg", alt="")
+              span.project Beams Hospitals
+            .work
+              img(src="images/works/beams.jpg", alt="")
+              span.project SK Techconnect
+        .next.link
+          span Next
 
 
       section#skills
@@ -71,7 +81,7 @@ html(lang='en')
           .skill(data-skill='8') jQuery
         .skill-bg
           +overlay
-          .skill(data-skill='7') Jade
+          .skill(data-skill='8') Jade
         .skill-bg
           +overlay
           .skill(data-skill='8') SASS/SCSS
@@ -86,30 +96,14 @@ html(lang='en')
           .skill(data-skill='8') WordPress
         .skill-bg
           +overlay
-          .skill(data-skill='9') Talk
+          .skill(data-skill='9') Talking
 
 
       section#contactMe
         h2 Contact Me
-        a.social.facebook(href="http://fb.me/abhijeetdeb", target="_blank") Facebook
-        a.social.linkedin(href="http://linkedin.com/in/abhijeetdeb", target="_blank") Linkedin
-        a.social.twitter(href="http://twitter.com/abhijeetdeb", target="_blank") Twitter
-        form.contact(method='post')
-          .col
-            label Your Name
-            .input-bg
-              input(type='text')
-            label Your Email Address
-            .input-bg
-              input(type='email')
-            label Your Phone Number
-            .input-bg
-              input(type='tel')
-          .col
-            label.message Your Message
-            .textarea-bg
-              textarea
-            input.submit(type='submit',value='Send Message')
+        a.link.social.facebook(href="http://fb.me/abhijeetdeb", target="_blank") Facebook
+        a.link.social.linkedin(href="http://linkedin.com/in/abhijeetdeb", target="_blank") Linkedin
+        a.link.social.twitter(href="http://twitter.com/abhijeetdeb", target="_blank") Twitter
 
       footer
         a(href="#") designed by me

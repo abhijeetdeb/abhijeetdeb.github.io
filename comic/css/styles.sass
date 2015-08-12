@@ -21,7 +21,7 @@ body
     margin: 0 0 0.75em 0
 
 #container
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 100%)
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%)
   background-size: 150%
   background-position: center top, center bottom
   background-repeat: no-repeat
@@ -33,10 +33,20 @@ body
 header
   h1
     font-size: 6em
-    color: #f39c12
+    //color: #f39c12
     padding-top: 0.75em
-    text-shadow: 5px 5px 3px #111
     text-align: center
+    position: relative
+    div
+      background: url(../images/bg-bottom.png) center /contain, linear-gradient(top, #f39c12, #d35400)
+      //background: linear-gradient(top, #f39c12, #d35400)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      position: absolute
+      width: 100%
+    &:after
+      text-shadow: 5px 5px 3px #111
+      content: attr(title)
   
 section
   margin: 3em auto 1.5em
@@ -62,11 +72,15 @@ nav.menu
     background: #fff
     margin: 0 10px
     padding: 10px 16px
-    box-shadow: 3px 3px 0px 1px #e67e22
+    box-shadow: 4px 4px 0px #e67e22
+    user-select: none
     cursor: pointer
     &:hover
-      box-shadow: 3px 3px 0px 1px #d35400
+      box-shadow: 4px 4px 0px #d35400
       //cursor: url(../images/h.png), auto
+  .active
+    margin: 1px 9px -1px 11px 
+    box-shadow: 3px 3px 0px #d35400 !important
     
 aside.fun
   background: #9b59b6
@@ -88,12 +102,12 @@ aside.fun
     top: -16px
     right: -8px
     font-size: 16px
-    cursor: pointer
     span.i
       background: #fff
       border-radius: 50%
       padding: 0 10px
       color: #555
+      cursor: pointer
   span.how
     display: none
     background: #fff
@@ -104,6 +118,7 @@ aside.fun
       padding: 2px 6px
       color: #fff
       font-size: 14px
+      cursor: pointer
     
 #aboutMe
   .container    
@@ -112,7 +127,7 @@ aside.fun
     position: relative
     line-height: 1.5em
     transition: 0.2s ease all
-    box-shadow: 8px 8px 0px #2c3e50
+    box-shadow: 4px 4px 0px #2c3e50
   
 #portfolio
   display: flex
@@ -120,11 +135,64 @@ aside.fun
   justify-content: space-between
   div
     display: block
-    height: 250px
-    width: 32%
-    margin-bottom: 1.5em
-    position: relative
+    height: 180px
     background: #eee
+    user-select: none
+  .prev, .next
+    word-wrap: break-word
+    width: 0.5em
+    padding: 0 0.75em
+    text-transform: uppercase
+    font-family: 'Bangers', serif
+    font-size: 1.5em
+    line-height: 1.25em
+    display: inline-flex
+    flex-direction: column
+    justify-content: center
+    background: url(../images/bg-bottom.png) center /cover, linear-gradient(top, #e67e22, #d35400)
+    color: #ddd
+    border-right: 2px solid #a84300
+    border-bottom: 2px solid #a84300
+    text-shadow: 1px 1px 1px #111
+    box-shadow: 4px 4px 0px #ddd
+    cursor: pointer
+    &:hover
+      color: #fff
+      box-shadow: 4px 4px 0px #fff
+  .active
+    margin: 1px -1px -1px 1px
+    box-shadow: 3px 3px 0px #ddd !important
+  .works
+    flex-grow: 1
+    margin: 0 1em
+    box-shadow: 4px 4px 0px #e67e22
+    border-right: 2px solid #fff
+    border-bottom: 2px solid #fff
+    overflow: hidden
+    &:hover
+      box-shadow: 4px 4px 0px #d35400
+    .work
+      position: relative
+      justify-content: center
+      display: flex
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        max-width: 100%
+        z-index: 0
+        opacity: .5
+      .project
+        position: relative
+        z-index: 1
+        align-self: center
+        background: rgba(155, 89, 182, 0.8)
+        color: #fff
+        text-shadow: 1px 1px 1px #555
+        font-size: 1.5em
+        padding: 0.5em 1em
+        box-shadow: 4px 4px 0px rgba(44, 62, 80, 0.8)
 
 #skills
   display: flex
@@ -133,7 +201,7 @@ aside.fun
   .skill-bg
     width: 32%
     margin-bottom: 1.5em
-    box-shadow: -4px 4px 0 0 #2c3e50
+    box-shadow: 4px 4px 0px #2c3e50
     position: relative
     overflow: hidden
     .overlay
@@ -171,85 +239,38 @@ aside.fun
   a.social
     padding: 1em 0.5em
     width: 30%
-    color: #fff
+    color: #ddd
     text-align: center
-    box-shadow: 3px 3px 0px 1px #bdc3c7
+    box-shadow: 4px 4px 0px #bdc3c7
     border-right: 3px solid
     border-bottom: 3px solid
     text-decoration: none
+    &:hover
+      color: #fff
   a.facebook
     background: #3b5998
     border-color: #2f4779
     &:hover
       background: #2f4779
       border-color: #23355b
-      box-shadow: 3px 3px 0px 1px #ddd
+      box-shadow: 4px 4px 0px #ddd
   a.linkedin
     background: #4875B4
     border-color: #395d90
     &:hover
       background: #395d90
       border-color: #2b466c
-      box-shadow: 3px 3px 0px 1px #ddd
+      box-shadow: 4px 4px 0px #ddd
   a.twitter
-    background: #3cf
-    border-color: #28a3cc
+    background: #2db7e5
+    border-color: #2492b7
     &:hover
-      background: #28a3cc
-      border-color: #1e7a99
-      box-shadow: 3px 3px 0px 1px #ddd
-  form
-    font-size: 1.2em
-    font-family: 'Comfortaa', sans-serif
-    display: flex
-    display: none
-    .col
-      flex: 1
-    label
-      z-index: 99
-      position: relative
-      padding: 0 20px    
-    label.message
-      padding: 0 10px    
-    .input-bg      
-      display: block
-      width: 75%
-      padding: 10px 25px
-      margin: 0.2em 0 1.15em 0
-      background: #fff
-      transform: skewX(-30deg)
-      box-shadow: -8px -24px 0px 8px #f1c40f
-      transition: .2s ease all    
-    input
-      border: none
-      transform: skewX(30deg)
-      outline: none
-      width: 100%
-      font-family: 'Comfortaa', sans-serif
-      font-size: 16px
-    .textarea-bg      
-      display: block
-      padding: 10px
-      margin: 0.15em 0 2em 0
-      background: #fff
-      box-shadow: -8px -24px 0px 8px #f1c40f
-      transition: .2s ease all
-    textarea
-      border: none
-      outline: none
-      height: 112px
-      width: 100%
-      font-family: 'Comfortaa', sans-serif
-    input.submit
-      transform: skewX(0deg)
-      background: #e67e22
-      color: #ecf0f1
-      text-shadow: 1px 1px 1px #111
-      padding: 16px 0
-      font-size: 20px
-      box-shadow: -16px -16px 0px 0px #f1c40f
-      &:hover
-        background: #d35400
+      background: #2492b7
+      border-color: #1b6d89
+      box-shadow: 4px 4px 0px #ddd
+  .active
+    margin: 1px -1px -1px 1px
+    box-shadow: 3px 3px 0px #ddd !important
       
 footer
   padding: 3em 0 1.5em

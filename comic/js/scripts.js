@@ -12,6 +12,28 @@ $(function() {
   }  
   scroll();
   
+  function links() {
+    
+    $('.link').on({
+      
+      mousedown: function() {
+        $(this).addClass('active');
+      },
+      
+      mouseup: function() {
+        $(this).removeClass('active');
+      },
+      
+      click: function(e) {
+        e.preventDefault();
+      }
+      
+    });
+    
+  }
+  
+  links();
+  
   function quote() {
     var $quote = $('.thought');
     $quote.find('b, a, br, script').remove();
@@ -35,6 +57,44 @@ $(function() {
     })
   }
   how();
+  
+  function portfolio() {
+    
+    var $portfolio = $('#portfolio'),
+        $prev = $portfolio.find('.prev'),
+        $next = $portfolio.find('.next'),
+        $works = $portfolio.find('.works'),
+        $wrapper = $works.find('.wrapper');
+    
+    var $worksHeight = $works.height(),
+        $totalWorks = $wrapper.find('.work').length,
+        $totalWorksHeight = $totalWorks * $worksHeight;
+    
+    console.log('Works Height: ' + $worksHeight);
+    console.log('Total Works Height: ' + $totalWorksHeight);
+    
+    $prev.on('click', function() {
+      
+      $wrapper.css({marginTop: $worksHeight});
+      
+    });
+    
+    $next.on('click', function() {
+      
+        console.log($worksHeight);
+      if($worksHeight < $totalWorksHeight ) {
+        $wrapper.css({marginTop: -$worksHeight});      
+        $worksHeight = $worksHeight + $works.height();
+      } else {
+        $worksHeight = 0;
+        $wrapper.css({marginTop: $worksHeight});
+      }
+      
+    });
+    
+  }
+  
+  portfolio();
   
   function skills() {
     var $skills = $('#skills');
