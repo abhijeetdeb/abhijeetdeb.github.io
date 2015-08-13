@@ -90,6 +90,9 @@ aside.fun
   margin-bottom: 3em
   position: relative
   line-height: 1.5em
+  box-shadow: 4px 4px 0 #fff
+  border-right: 2px solid #7c4791
+  border-bottom: 2px solid #7c4791
   p.info-block
     display: none
   a, b, br
@@ -102,8 +105,11 @@ aside.fun
     line-height: 1em
     position: absolute
     top: -16px
-    right: -8px
+    right: -12px
     font-size: 16px
+    box-shadow: 2px 2px 0 #2c3e50
+    border-right: 1px solid #b83c30
+    border-bottom: 1px solid #b83c30
     span.i
       background: #fff
       border-radius: 50%
@@ -178,6 +184,7 @@ aside.fun
       justify-content: center
       display: flex
       cursor: pointer
+      overflow: hidden
       img
         position: absolute
         top: 0
@@ -186,7 +193,7 @@ aside.fun
         max-width: 100%
         z-index: 0
         opacity: 0.5
-        transition: 0.2s ease all
+        transition: 0.2s linear all
       .project
         position: relative
         z-index: 1
@@ -196,9 +203,9 @@ aside.fun
         text-shadow: 1px 1px 1px #555
         font-size: 1.5em
         padding: 0.5em 1em
-        border-right: 2px solid rgba(255, 255, 255, 0.75)
-        border-bottom: 2px solid rgba(255, 255, 255, 0.75)
-        box-shadow: 4px 4px 0px rgba(44, 62, 80, 0.75)
+        border-right: 1px solid rgba(255, 255, 255, 0.75)
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75)
+        box-shadow: 3px 3px 0px rgba(44, 62, 80, 0.75)
         box-sizing: border-box
         transition: 0.2s ease all
 
@@ -244,7 +251,7 @@ aside.fun
   display: flex
   flex-flow: row wrap
   justify-content: space-between
-  a.social
+  .social
     padding: 1em 0.5em
     width: 30%
     color: #ddd
@@ -253,28 +260,29 @@ aside.fun
     border-right: 3px solid
     border-bottom: 3px solid
     text-decoration: none
+    cursor: pointer
     &:hover
       color: #fff
-  a.facebook
+  .facebook
     background: #3b5998
     border-color: #2f4779
     &:hover
       background: #2f4779
       border-color: #23355b
       box-shadow: 4px 4px 0px #ddd
-  a.linkedin
+  .linkedin
     background: #4875B4
     border-color: #395d90
     &:hover
       background: #395d90
       border-color: #2b466c
       box-shadow: 4px 4px 0px #ddd
-  a.twitter
-    background: #2db7e5
-    border-color: #2492b7
+  .twitter
+    background: #2492b7
+    border-color: #1c7492
     &:hover
-      background: #2492b7
-      border-color: #1b6d89
+      background: #1c7492
+      border-color: #15576d
       box-shadow: 4px 4px 0px #ddd
   .active
     margin: 1px -1px -1px 1px
@@ -284,6 +292,13 @@ footer
   padding: 3em 0 1.5em
   text-align: center
   a
-    color: #999
+    color: #ccc
     text-align: center
     text-decoration: none
+    text-shadow: 1px 1px 0 #111
+    transition: 0.2s ease all
+    &:hover
+      color: #fff
+  img
+    height: 2em
+    transform: translateY(32%)

@@ -120,6 +120,10 @@ aside.fun {
   margin-bottom: 3em;
   position: relative;
   line-height: 1.5em;
+  -webkit-box-shadow: 4px 4px 0 white;
+  box-shadow: 4px 4px 0 white;
+  border-right: 2px solid #7c4791;
+  border-bottom: 2px solid #7c4791;
 }
 aside.fun p.info-block {
   display: none;
@@ -134,8 +138,12 @@ aside.fun span.tod, aside.fun span.how {
   line-height: 1em;
   position: absolute;
   top: -16px;
-  right: -8px;
+  right: -12px;
   font-size: 16px;
+  -webkit-box-shadow: 2px 2px 0 #2c3e50;
+  box-shadow: 2px 2px 0 #2c3e50;
+  border-right: 1px solid #b83c30;
+  border-bottom: 1px solid #b83c30;
 }
 aside.fun span.tod span.i, aside.fun span.how span.i {
   background: white;
@@ -260,6 +268,7 @@ aside.fun span.how span.x {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  overflow: hidden;
 }
 #portfolio .works .work img {
   position: absolute;
@@ -269,8 +278,8 @@ aside.fun span.how span.x {
   max-width: 100%;
   z-index: 0;
   opacity: 0.5;
-  -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
 }
 #portfolio .works .work .project {
   position: relative;
@@ -283,10 +292,10 @@ aside.fun span.how span.x {
   text-shadow: 1px 1px 1px #555555;
   font-size: 1.5em;
   padding: 0.5em 1em;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 4px 4px 0px rgba(44, 62, 80, 0.75);
-  box-shadow: 4px 4px 0px rgba(44, 62, 80, 0.75);
+  border-right: 1px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 3px 3px 0px rgba(44, 62, 80, 0.75);
+  box-shadow: 3px 3px 0px rgba(44, 62, 80, 0.75);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -381,7 +390,7 @@ aside.fun span.how span.x {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-#contactMe a.social {
+#contactMe .social {
   padding: 1em 0.5em;
   width: 30%;
   color: #dddddd;
@@ -391,37 +400,38 @@ aside.fun span.how span.x {
   border-right: 3px solid;
   border-bottom: 3px solid;
   text-decoration: none;
+  cursor: pointer;
 }
-#contactMe a.social:hover {
+#contactMe .social:hover {
   color: white;
 }
-#contactMe a.facebook {
+#contactMe .facebook {
   background: #3b5998;
   border-color: #2f4779;
 }
-#contactMe a.facebook:hover {
+#contactMe .facebook:hover {
   background: #2f4779;
   border-color: #23355b;
   -webkit-box-shadow: 4px 4px 0px #dddddd;
   box-shadow: 4px 4px 0px #dddddd;
 }
-#contactMe a.linkedin {
+#contactMe .linkedin {
   background: #4875b4;
   border-color: #395d90;
 }
-#contactMe a.linkedin:hover {
+#contactMe .linkedin:hover {
   background: #395d90;
   border-color: #2b466c;
   -webkit-box-shadow: 4px 4px 0px #dddddd;
   box-shadow: 4px 4px 0px #dddddd;
 }
-#contactMe a.twitter {
-  background: #2db7e5;
-  border-color: #2492b7;
-}
-#contactMe a.twitter:hover {
+#contactMe .twitter {
   background: #2492b7;
-  border-color: #1b6d89;
+  border-color: #1c7492;
+}
+#contactMe .twitter:hover {
+  background: #1c7492;
+  border-color: #15576d;
   -webkit-box-shadow: 4px 4px 0px #dddddd;
   box-shadow: 4px 4px 0px #dddddd;
 }
@@ -436,7 +446,19 @@ footer {
   text-align: center;
 }
 footer a {
-  color: #999999;
+  color: #cccccc;
   text-align: center;
   text-decoration: none;
+  text-shadow: 1px 1px 0 #111111;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+footer a:hover {
+  color: white;
+}
+footer img {
+  height: 2em;
+  -webkit-transform: translateY(32%);
+  -ms-transform: translateY(32%);
+  transform: translateY(32%);
 }

@@ -24,8 +24,20 @@ $(function() {
         $(this).removeClass('active');
       },
       
-      click: function(e) {
-        e.preventDefault();
+      click: function() {
+        
+        var $link = $(this).data('link');
+        
+        if($(this).data('newtab') == "blank") {
+          
+          window.open($link);
+          
+        } else if($link) {
+          
+          $(window).scrollTop($('#contactMe').offset().top);
+          
+        }
+        
       }
       
     });
@@ -71,34 +83,43 @@ $(function() {
     
     var $worksHeight = $works.height(),
         $totalWorks = $wrapper.find('.work').length,
-        $totalWorksHeight = $totalWorks * $worksHeight;
-    
-    console.log('Works Height: ' + $worksHeight);
-    console.log('Total Works Height: ' + $totalWorksHeight);
-    
+        $totalWorksHeight = $totalWorks * $worksHeight,
+        $workCount = 1;
+        
     $prev.on('click', function() {
       
-      $wrapper.css({marginTop: $worksHeight});
+      $wrapper.animate({marginTop: '+='+$worksHeight}, 0, function() {
+        
+        $workCount--;
+        
+        if ($workCount < 1) {
+          $workCount = $totalWorks;
+          $wrapper.css({marginTop: -($totalWorksHeight - $worksHeight)});
+        }
+        
+      });
       
     });
     
     $next.on('click', function() {
       
-        console.log($worksHeight);
-      if($worksHeight < $totalWorksHeight ) {
-        $wrapper.css({marginTop: -$worksHeight});      
-        $worksHeight = $worksHeight + $works.height();
-      } else {
-        $worksHeight = 0;
-        $wrapper.css({marginTop: $worksHeight});
-      }
+      $wrapper.animate({marginTop: '-='+$worksHeight}, 0, function() {
+        
+        $workCount++;
+        
+        if ($workCount > $totalWorks) {
+          $workCount = 1;
+          $wrapper.css({marginTop: 0});
+        }
+        
+      });
       
     });
     
     $work.on({
       
       mouseenter: function() {
-       $(this).find('img').css({transform: 'scale(1.1)'});
+       $(this).find('img').css({transform: 'scale(1.025)'});
       },
       
       mouseleave: function() {
