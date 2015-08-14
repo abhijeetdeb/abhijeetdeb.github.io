@@ -1,6 +1,8 @@
 $(function() {
   
-  function scroll() {    
+  $('#cover').fadeOut();
+  
+  function scrollBar() {    
     var $html = $('html');  
     $html.niceScroll({
       scrollspeed: 80,
@@ -9,8 +11,29 @@ $(function() {
       cursorcolor: "#fff",
       cursorwidth: 8,
     });    
-  }  
-  scroll();
+  }
+  
+  scrollBar();
+  
+  function toTop() {
+    
+    var $toTop = $('.toTop'),
+        $icon = $toTop.find('img');
+    
+    $(window).on('scroll', function() {
+      
+      if ($(window).scrollTop() > 200) {
+        $toTop.fadeIn();
+      }
+      else {
+        $toTop.fadeOut();
+      }
+      
+    })
+    
+  }
+  
+  toTop();
   
   function links() {
     
@@ -34,7 +57,11 @@ $(function() {
           
         } else if($link) {
           
-          $(window).scrollTop($('#contactMe').offset().top);
+          $('html, body').animate({
+            
+            scrollTop: $($link).offset().top + -44
+            
+          });
           
         }
         
@@ -47,9 +74,10 @@ $(function() {
   links();
   
   function quote() {
-    var $quote = $('.thought');
-    $quote.find('b, a, br, script').remove();    
-    $quote.html('<span>' + $.trim($quote.text()) + '</span');    
+    var $quote = $('.thought'),
+        $author = $quote.find('a').text();
+    $quote.find('a, b, br, script').remove();
+    $quote.html('<span>' + $.trim($quote.text()) + '</span> <span class="quoteAuthor">- As said by ' + $author +'</span>');
   }
   
   quote();
@@ -124,6 +152,14 @@ $(function() {
       
       mouseleave: function() {
        $(this).find('img').css({transform: 'scale(1)'});
+      },
+      
+      click: function() {
+        
+        var $link = $(this).find('.project').data('link');
+        
+        window.open($link);
+        
       }
       
     });

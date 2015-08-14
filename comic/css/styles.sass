@@ -16,15 +16,26 @@ h1, h2, h3
 
 body
   font-family: 'Comfortaa','Fredoka One', sans-serif
-  //user-select: none
+  user-select: none
+  ::selection
+    background: rgb(107,0,0)
+    color: #f39c12
   p
     margin: 0 0 0.75em 0
 
 #container
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%)
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png),linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%)
   background-size: 150%
   background-position: center top, center bottom
   background-repeat: no-repeat
+  position: relative
+    
+#cover
+  position: absolute
+  width: 100%
+  height: 100%
+  background: #fff
+  z-index: 999
 
 .wrap
   width: 1020px
@@ -37,6 +48,7 @@ header
     padding-top: 0.75em
     text-align: center
     position: relative
+    user-select: text
     div
       background: url(../images/bg-bottom.png) center /contain, linear-gradient(top, #f39c12, #d35400)
       //background: linear-gradient(top, #f39c12, #d35400)
@@ -45,7 +57,7 @@ header
       position: absolute
       width: 100%
     &:after
-      text-shadow: 5px 5px 3px #111
+      text-shadow: 4px 4px 0px #111
       content: attr(title)
   
 section
@@ -54,13 +66,15 @@ section
     color: #d35400
     font-size: 3em
     text-align: center
-    text-shadow: 3px 3px 3px #111
+    text-shadow: 1px 1px 1px #fff, 4px 4px 0 #111
     margin: 0.5em auto
     width: 100%
+    user-select: text
     &:before
       content: '- '
     &:after
       content: ' -'
+    
 
 nav.menu
   display: flex
@@ -95,8 +109,14 @@ aside.fun
   border-bottom: 2px solid #7c4791
   p.info-block
     display: none
-  a, b, br
+  b, br
     display: none
+  
+  .thought
+    span
+      user-select: text
+    .quoteAuthor
+      color: #4d2c5b
   
   span.tod, span.how
     background: #e74c3c
@@ -120,6 +140,8 @@ aside.fun
     display: none
     background: #fff
     color: #555
+    border-right: 1px solid #fff
+    border-bottom: 1px solid #fff
     span.x
       background: #e74c3c
       border-radius: 50%
@@ -130,12 +152,12 @@ aside.fun
     
 #aboutMe
   .container    
-    background: #fff
+    background: #fff url('../images/web.svg')
     padding: 12px 20px
-    position: relative
     line-height: 1.5em
     transition: 0.2s ease all
     box-shadow: 4px 4px 0px #2c3e50
+    user-select: text
   
 #portfolio
   display: flex
@@ -291,14 +313,24 @@ aside.fun
 footer
   padding: 3em 0 1.5em
   text-align: center
-  a
+  .link
+    display: inline-block
     color: #ccc
     text-align: center
-    text-decoration: none
     text-shadow: 1px 1px 0 #111
     transition: 0.2s ease all
+    cursor: pointer
     &:hover
       color: #fff
   img
     height: 2em
-    transform: translateY(32%)
+    transform: translateY(12px)
+    
+
+.toTop
+  position: fixed
+  bottom: 16px
+  right: 24px
+  display: none
+  img
+    cursor: pointer
