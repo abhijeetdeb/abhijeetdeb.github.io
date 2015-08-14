@@ -59,27 +59,29 @@ body p {
   margin: auto;
 }
 
-header h1 {
-  font-size: 6em;
-  padding-top: 0.75em;
+header div {
+  font-size: 2.5em;
+  padding-top: 0.5em;
   text-align: center;
   position: relative;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  font-family: "Bangers", serif;
 }
-header h1 div {
+header div h1 {
+  font-size: 1em;
   color: #f39c12;
   background: url(../images/bg-bottom.png) center/contain, -webkit-gradient(linear, left top, left bottom, from(#f39c12), to(#d35400));
   background: url(../images/bg-bottom.png) center/contain, -webkit-linear-gradient(top, #f39c12, #d35400);
-  background: url(../images/bg-bottom.png) center/contain, linear-gradient(top, #f39c12, #d35400);
+  background: url(../images/bg-bottom.png) center/contain, linear-gradient(to bottom, #f39c12, #d35400);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
   width: 100%;
 }
-header h1:after {
+header div:after {
   text-shadow: 4px 4px 0px #111111;
   content: attr(title);
 }
@@ -276,7 +278,7 @@ aside.fun span.how span.x {
   background: #f39c12 url(../images/bg-bottom.png) center/cover;
   background: url(../images/bg-bottom.png) center/cover, -webkit-gradient(linear, left top, left bottom, from(#e67e22), to(#d35400));
   background: url(../images/bg-bottom.png) center/cover, -webkit-linear-gradient(top, #e67e22, #d35400);
-  background: url(../images/bg-bottom.png) center/cover, linear-gradient(top, #e67e22, #d35400);
+  background: url(../images/bg-bottom.png) center/cover, linear-gradient(to bottom, #e67e22, #d35400);
   color: #dddddd;
   border-right: 2px solid #a84300;
   border-bottom: 2px solid #a84300;
@@ -326,7 +328,6 @@ aside.fun span.how span.x {
 }
 #portfolio .works .work:hover img {
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);

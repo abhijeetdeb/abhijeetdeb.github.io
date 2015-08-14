@@ -42,15 +42,17 @@ body
   margin: auto
 
 header
-  h1
-    font-size: 6em
-    padding-top: 0.75em
+  div
+    font-size: 2.5em
+    padding-top: 0.5em
     text-align: center
     position: relative
     user-select: text
-    div
+    font-family: 'Bangers', serif
+    h1
+      font-size: 1em
       color: #f39c12
-      background: url(../images/bg-bottom.png) center /contain, linear-gradient(top, #f39c12, #d35400)
+      background: url(../images/bg-bottom.png) center /contain, linear-gradient(to bottom, #f39c12, #d35400)
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
       position: absolute
@@ -189,7 +191,7 @@ aside.fun
     justify-content: center
     background: #f39c12
     background: #f39c12 url(../images/bg-bottom.png) center /cover
-    background: url(../images/bg-bottom.png) center /cover, linear-gradient(top, #e67e22, #d35400)
+    background: url(../images/bg-bottom.png) center /cover, linear-gradient(to bottom, #e67e22, #d35400)
     color: #ddd
     border-right: 2px solid #a84300
     border-bottom: 2px solid #a84300
@@ -219,7 +221,7 @@ aside.fun
       overflow: hidden
       &:hover
         img
-          filter: grayscale(100%)
+          -webkit-filter: grayscale(100%)
           transform: scale(1.05)
       img
         position: absolute
