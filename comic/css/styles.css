@@ -10,11 +10,8 @@ html {
   cursor: url(../images/cursor.png), auto;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: "Bangers", serif;
-}
-h1 span:hover, h2 span:hover, h3 span:hover {
-  cursor: url(../images/circle.png), auto;
 }
 
 body {
@@ -45,6 +42,7 @@ body p {
   background-position: center top, center bottom;
   background-repeat: no-repeat;
   position: relative;
+  display: none;
 }
 
 #cover {
@@ -53,10 +51,11 @@ body p {
   height: 100%;
   background: white;
   z-index: 999;
+  display: none;
 }
 
 .wrap {
-  width: 1020px;
+  width: 75%;
   margin: auto;
 }
 
@@ -71,6 +70,7 @@ header h1 {
   user-select: text;
 }
 header h1 div {
+  color: #f39c12;
   background: url(../images/bg-bottom.png) center/contain, -webkit-gradient(linear, left top, left bottom, from(#f39c12), to(#d35400));
   background: url(../images/bg-bottom.png) center/contain, -webkit-linear-gradient(top, #f39c12, #d35400);
   background: url(../images/bg-bottom.png) center/contain, linear-gradient(top, #f39c12, #d35400);
@@ -165,9 +165,11 @@ aside.fun .thought span {
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  cursor: url(../images/text-cursor.png), auto;
 }
 aside.fun .thought .quoteAuthor {
   color: #4d2c5b;
+  padding-left: 0.5em;
 }
 aside.fun span.tod, aside.fun span.how {
   background: #e74c3c;
@@ -176,12 +178,19 @@ aside.fun span.tod, aside.fun span.how {
   line-height: 1em;
   position: absolute;
   top: -16px;
-  right: -12px;
+  right: -16px;
   font-size: 16px;
-  -webkit-box-shadow: 2px 2px 0 #2c3e50;
-  box-shadow: 2px 2px 0 #2c3e50;
-  border-right: 1px solid #b83c30;
-  border-bottom: 1px solid #b83c30;
+  border-bottom: 2px solid #2c3e50;
+}
+aside.fun span.tod:after, aside.fun span.how:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  border-top: 16px solid #2c3e50;
+  border-right: 14px solid transparent;
 }
 aside.fun span.tod span.i, aside.fun span.how span.i {
   background: white;
@@ -235,7 +244,7 @@ aside.fun span.how span.x {
 }
 #portfolio div {
   display: block;
-  height: 180px;
+  height: 220px;
   background: #eeeeee;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -263,6 +272,8 @@ aside.fun span.how span.x {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  background: #f39c12;
+  background: #f39c12 url(../images/bg-bottom.png) center/cover;
   background: url(../images/bg-bottom.png) center/cover, -webkit-gradient(linear, left top, left bottom, from(#e67e22), to(#d35400));
   background: url(../images/bg-bottom.png) center/cover, -webkit-linear-gradient(top, #e67e22, #d35400);
   background: url(../images/bg-bottom.png) center/cover, linear-gradient(top, #e67e22, #d35400);
@@ -313,6 +324,13 @@ aside.fun span.how span.x {
   cursor: pointer;
   overflow: hidden;
 }
+#portfolio .works .work:hover img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
 #portfolio .works .work img {
   position: absolute;
   top: 0;
@@ -344,6 +362,27 @@ aside.fun span.how span.x {
   box-sizing: border-box;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
+}
+#portfolio .works .work .category {
+  position: absolute;
+  font-size: 0.5em;
+  top: -24px;
+  right: -12px;
+  background: rgba(243, 156, 18, 0.8);
+  padding: 4px 12px;
+  text-shadow: none;
+  color: white;
+  border-bottom: 2px solid #d35400;
+}
+#portfolio .works .work .category:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  bottom: -14px;
+  border-top: 12px solid #d35400;
+  border-right: 11px solid transparent;
 }
 
 #skills {
@@ -408,7 +447,7 @@ aside.fun span.how span.x {
 }
 #skills .skill-bg .skill {
   position: relative;
-  padding: 10px;
+  padding: 12px;
   width: 10%;
   color: white;
   opacity: 1;

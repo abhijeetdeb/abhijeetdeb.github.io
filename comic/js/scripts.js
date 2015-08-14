@@ -1,6 +1,12 @@
 $(function() {
   
-  $('#cover').fadeOut();
+  $('#container').show();
+    
+  // scroll reveal
+  new scrollReveal({
+    reset: true,
+    vFactor: 0.25
+  });
   
   function scrollBar() {    
     var $html = $('html');  
@@ -144,23 +150,10 @@ $(function() {
       
     });
     
-    $work.on({
+    $work.on('click', function() {
       
-      mouseenter: function() {
-       $(this).find('img').css({transform: 'scale(1.025)'});
-      },
-      
-      mouseleave: function() {
-       $(this).find('img').css({transform: 'scale(1)'});
-      },
-      
-      click: function() {
-        
-        var $link = $(this).find('.project').data('link');
-        
-        window.open($link);
-        
-      }
+      var $link = $(this).find('.project').data('link');        
+      window.open($link);
       
     });
     

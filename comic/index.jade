@@ -19,18 +19,18 @@ html(lang='en')
   
     .wrap
 
-      header.wow.zoomIn
+      header(data-sr="enter top")
         .title
           h1(title="Abhijeet Deb")
             div Abhijeet Deb
 
-      nav.menu.wow.zoomIn
+      nav.menu(data-sr="enter top")
         .link(data-link="#aboutMe") About Me
         .link(data-link="#portfolio") My Portfolio
         .link(data-link="#skills") My Skills
         .link(data-link="#contactMe") Contact Me
 
-      aside.fun.wow.zoomIn
+      aside.fun(data-sr="enter bottom")
         p.thought 
           script(src='http://www.brainyquote.com/link/quotefu.js')
         p.info-block This website was created using JADE and SASS, and not using traditional HTML and CSS. Also, I used FLEXBOX for structure. I also made use of some CSS techniques, jQuery and PHP to make everything work together. As Jesse Pinkman would have said, 'Technology, yo!'
@@ -40,14 +40,14 @@ html(lang='en')
           span.x X
 
 
-      section#aboutMe.wow.fadeInUp
+      section#aboutMe(data-sr="enter bottom, move 16px")
         h2 About me
         .container
           p I guess you have figured out that I like comics. We will come back to that in a bit.
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
-      section#portfolio.wow.fadeInUp
+      section#portfolio(data-sr="enter bottom, move 16px")
         h2 Portfolio
         .prev.link
           span Prev
@@ -55,18 +55,39 @@ html(lang='en')
           .wrapper          
             .work
               img(src="images/works/glc.jpg", alt="")
-              span.project(data-link="http://globalluxuryculture.com") Global Luxury Culture
+              span.project(data-link="http://globalluxuryculture.com")
+                span.name Global Luxury Culture
+                span.category Website
             .work
               img(src="images/works/beams.jpg", alt="")
-              span.project(data-link="http://beamshospitals.com") Beams Hospitals
+              span.project(data-link="http://beamshospitals.com")
+                span Beams Hospital
+                span.category Website
             .work
               img(src="images/works/skt.jpg", alt="")
-              span.project(data-link="http://sktechconnect.com") SK Techconnect
+              span.project(data-link="http://sktechconnect.com")
+                span SK Techconnect LLP
+                span.category Website
+            .work
+              img(src="images/works/beams.jpg", alt="")
+              span.project(data-link="http://sairdentalgroup.com/beta")
+                span Sair Dental Group
+                span.category Website
+            .work
+              img(src="images/works/skt.jpg", alt="")
+              span.project(data-link="http://www.iitg.ac.in/asaikia/")
+                span IIT-G / Dr. Saikia
+                span.category Subsite
+            .work
+              img(src="images/works/beams.jpg", alt="")
+              span.project(data-link="http://abhijeetdeb.shownd.com/")
+                span Graphic Design
+                span.category Behance
         .next.link
           span Next
 
 
-      section#skills.wow.fadeInUp
+      section#skills(data-sr="enter bottom, move 16px")
         h2 Skills
         //- create overlay
         mixin overlay
@@ -103,22 +124,21 @@ html(lang='en')
           .skill(data-skill='9') Talking
 
 
-      section#contactMe.wow.fadeInUp
+      section#contactMe(data-sr="enter bottom, move 16px")
         h2 Contact Me
         .social.link.facebook(data-link="http://facebook.com/abhijeetdeb", data-newTab="blank") Facebook
         .social.link.linkedin(data-link="http://linkedin.com/in/abhijeetdeb", data-newTab="blank") Linkedin
         .social.link.twitter(data-link="http://twitter.com/abhijeetdeb", data-newTab="blank") Twitter
 
-      footer.wow.zoomIn
+      footer(data-sr="enter top")
         .link(data-link="#container") designed by me <img src="images/bolt.png" alt="Bolt" /> inspired by comics
         
       .toTop
         img(src="images/toTop.png", data-link="#container").link
-          
+    
     script(src='js/min/jquery.min.js')
     script(src='js/min/nicescroll.min.js')
-    script(src='js/min/wow.min.js')
+    script(src='js/min/scrollReveal.min.js')
     script(src='js/min/scripts.min.js')
-    script new WOW().init();
   
   

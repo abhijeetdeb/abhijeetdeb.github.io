@@ -9,10 +9,8 @@
 html  
   cursor: url(../images/cursor.png), auto
 
-h1, h2, h3
+h1, h2
   font-family: 'Bangers', serif
-  span:hover
-    cursor: url(../images/circle.png), auto
 
 body
   font-family: 'Comfortaa','Fredoka One', sans-serif
@@ -29,6 +27,7 @@ body
   background-position: center top, center bottom
   background-repeat: no-repeat
   position: relative
+  display: none
     
 #cover
   position: absolute
@@ -36,22 +35,22 @@ body
   height: 100%
   background: #fff
   z-index: 999
+  display: none
 
 .wrap
-  width: 1020px
+  width: 75%
   margin: auto
 
 header
   h1
     font-size: 6em
-    //color: #f39c12
     padding-top: 0.75em
     text-align: center
     position: relative
     user-select: text
     div
+      color: #f39c12
       background: url(../images/bg-bottom.png) center /contain, linear-gradient(top, #f39c12, #d35400)
-      //background: linear-gradient(top, #f39c12, #d35400)
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
       position: absolute
@@ -115,8 +114,10 @@ aside.fun
   .thought
     span
       user-select: text
+      cursor: url(../images/text-cursor.png), auto
     .quoteAuthor
       color: #4d2c5b
+      padding-left: 0.5em
   
   span.tod, span.how
     background: #e74c3c
@@ -125,11 +126,18 @@ aside.fun
     line-height: 1em
     position: absolute
     top: -16px
-    right: -12px
+    right: -16px
     font-size: 16px
-    box-shadow: 2px 2px 0 #2c3e50
-    border-right: 1px solid #b83c30
-    border-bottom: 1px solid #b83c30
+    border-bottom: 2px solid #2c3e50
+    &:after
+      content: ''
+      width: 0
+      height: 0
+      position: absolute
+      right: 0
+      bottom: -18px
+      border-top: 16px solid #2c3e50
+      border-right: 14px solid transparent
     span.i
       background: #fff
       border-radius: 50%
@@ -165,7 +173,7 @@ aside.fun
   justify-content: space-between
   div
     display: block
-    height: 180px
+    height: 220px
     background: #eee
     user-select: none
   .prev, .next
@@ -179,6 +187,8 @@ aside.fun
     display: inline-flex
     flex-direction: column
     justify-content: center
+    background: #f39c12
+    background: #f39c12 url(../images/bg-bottom.png) center /cover
     background: url(../images/bg-bottom.png) center /cover, linear-gradient(top, #e67e22, #d35400)
     color: #ddd
     border-right: 2px solid #a84300
@@ -207,6 +217,10 @@ aside.fun
       display: flex
       cursor: pointer
       overflow: hidden
+      &:hover
+        img
+          filter: grayscale(100%)
+          transform: scale(1.05)
       img
         position: absolute
         top: 0
@@ -230,6 +244,26 @@ aside.fun
         box-shadow: 3px 3px 0px rgba(44, 62, 80, 0.75)
         box-sizing: border-box
         transition: 0.2s ease all
+      .category
+        position: absolute
+        font-size: 0.5em
+        top: -24px
+        right: -12px
+        background: rgba(243, 156, 18, 0.8)
+        padding: 4px 12px
+        text-shadow: none
+        color: #fff
+        border-bottom: 2px solid #d35400
+        &:after
+          content: ''
+          width: 0
+          height: 0
+          position: absolute
+          right: 0
+          bottom: -14px
+          border-top: 12px solid #d35400
+          border-right: 11px solid transparent
+          
 
 #skills
   display: flex
@@ -261,7 +295,7 @@ aside.fun
         user-select: none
     .skill
       position: relative
-      padding: 10px
+      padding: 12px
       width: 10%
       color: #fff
       opacity: 1
