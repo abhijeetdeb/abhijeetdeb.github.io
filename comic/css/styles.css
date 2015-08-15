@@ -59,31 +59,30 @@ body p {
   margin: auto;
 }
 
-header div {
-  font-size: 2.5em;
-  padding-top: 0.5em;
+header h1 {
+  padding-top: 0.75em;
   text-align: center;
   position: relative;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  font-family: "Bangers", serif;
+  font-size: 6em;
 }
-header div h1 {
-  font-size: 1em;
+header h1 div {
   color: #f39c12;
   background: url(../images/bg-bottom.png) center/contain, -webkit-gradient(linear, left top, left bottom, from(#f39c12), to(#d35400));
   background: url(../images/bg-bottom.png) center/contain, -webkit-linear-gradient(top, #f39c12, #d35400);
-  background: url(../images/bg-bottom.png) center/contain, linear-gradient(to bottom, #f39c12, #d35400);
+  background: url(../images/bg-bottom.png) center/contain, linear-gradient(top, #f39c12, #d35400);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
   width: 100%;
 }
-header div:after {
+header h1:after {
   text-shadow: 4px 4px 0px #111111;
   content: attr(title);
+  color: transparent;
 }
 
 section {
@@ -328,9 +327,9 @@ aside.fun span.how span.x {
 }
 #portfolio .works .work:hover img {
   -webkit-filter: grayscale(100%);
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
 }
 #portfolio .works .work img {
   position: absolute;

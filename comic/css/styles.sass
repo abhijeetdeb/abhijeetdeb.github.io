@@ -42,17 +42,15 @@ body
   margin: auto
 
 header
-  div
-    font-size: 2.5em
-    padding-top: 0.5em
+  h1
+    padding-top: 0.75em
     text-align: center
     position: relative
     user-select: text
-    font-family: 'Bangers', serif
-    h1
-      font-size: 1em
+    font-size: 6em
+    div
       color: #f39c12
-      background: url(../images/bg-bottom.png) center /contain, linear-gradient(to bottom, #f39c12, #d35400)
+      background: url(../images/bg-bottom.png) center /contain, linear-gradient(top, #f39c12, #d35400)
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
       position: absolute
@@ -60,6 +58,7 @@ header
     &:after
       text-shadow: 4px 4px 0px #111
       content: attr(title)
+      color: transparent
   
 section
   margin: 3em auto 1.5em
@@ -222,7 +221,7 @@ aside.fun
       &:hover
         img
           -webkit-filter: grayscale(100%)
-          transform: scale(1.05)
+          transform: scale(1.25)
       img
         position: absolute
         top: 0
