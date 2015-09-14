@@ -34,9 +34,9 @@ body p {
 }
 
 #container {
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(25%, #111111), color-stop(50%, #111111), color-stop(75%, #6b0000));
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(5%, #111111), color-stop(15%, #111111), color-stop(50%, #6b0000));
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 5%, #111111 15%, #6b0000 50%);
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 5%, #111111 15%, #6b0000 50%);
   -webkit-background-size: 400%;
   background-size: 400%;
   background-position: center top, center bottom;
@@ -578,6 +578,9 @@ footer img {
 
 @media screen and (min-width: 800px) {
   #container {
+    background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(10%, #111111), color-stop(25%, #111111), color-stop(50%, #6b0000));
+    background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 10%, #111111 25%, #6b0000 50%);
+    background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 10%, #111111 25%, #6b0000 50%);
     -webkit-background-size: 300%;
     background-size: 300%;
   }
@@ -591,6 +594,12 @@ footer img {
   }
   section h2 {
     font-size: 2.75em;
+  }
+
+  nav.menu {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
 
   #portfolio .prev, #portfolio .next {
@@ -644,6 +653,9 @@ footer img {
 }
 @media screen and (min-width: 1024px) {
   #container {
+    background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(25%, #111111), color-stop(50%, #111111), color-stop(75%, #6b0000));
+    background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
+    background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
     -webkit-background-size: 150%;
     background-size: 150%;
   }
