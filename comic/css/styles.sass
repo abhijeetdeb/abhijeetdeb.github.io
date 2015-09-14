@@ -29,7 +29,7 @@ body
 
 #container
   background-image: url(../images/bg-top.png), url(../images/bg-bottom.png),linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%)
-  background-size: 150%
+  background-size: 400%
   background-position: center top, center bottom
   background-repeat: no-repeat
   position: relative
@@ -92,12 +92,13 @@ nav.menu
     display: inline-block
     background: #fff
     margin: 0 10px 16px
-    padding: 8px 12px
+    padding: 8px
     box-shadow: 4px 4px 0px #e67e22
     user-select: none
     cursor: pointer
     width: 25%
     flex-grow: 1
+    text-align: center
     &:hover
       box-shadow: 4px 4px 0px #d35400
       //cursor: url(../images/h.png), auto
@@ -388,6 +389,9 @@ footer
 
 //tablet
 @media screen and (min-width: $tablet)
+  #container
+    background-size: 300%
+    
   header
     h1
       font-size: 5em
@@ -432,6 +436,8 @@ footer
 
 //desktop
 @media screen and (min-width: $desktop)
+  #container
+    background-size: 150%
   header
     h1
       font-size: 6em

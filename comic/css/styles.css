@@ -37,8 +37,8 @@ body p {
   background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-gradient(linear, left top, left bottom, from(#6b0000), color-stop(25%, #111111), color-stop(50%, #111111), color-stop(75%, #6b0000));
   background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
   background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
-  -webkit-background-size: 150%;
-  background-size: 150%;
+  -webkit-background-size: 400%;
+  background-size: 400%;
   background-position: center top, center bottom;
   background-repeat: no-repeat;
   position: relative;
@@ -126,7 +126,7 @@ nav.menu div {
   display: inline-block;
   background: white;
   margin: 0 10px 16px;
-  padding: 8px 12px;
+  padding: 8px;
   -webkit-box-shadow: 4px 4px 0px #e67e22;
   box-shadow: 4px 4px 0px #e67e22;
   -webkit-user-select: none;
@@ -139,6 +139,7 @@ nav.menu div {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  text-align: center;
 }
 nav.menu div:hover {
   -webkit-box-shadow: 4px 4px 0px #d35400;
@@ -576,6 +577,11 @@ footer img {
 }
 
 @media screen and (min-width: 800px) {
+  #container {
+    -webkit-background-size: 300%;
+    background-size: 300%;
+  }
+
   header h1 {
     font-size: 5em;
   }
@@ -637,6 +643,11 @@ footer img {
   }
 }
 @media screen and (min-width: 1024px) {
+  #container {
+    -webkit-background-size: 150%;
+    background-size: 150%;
+  }
+
   header h1 {
     font-size: 6em;
   }
