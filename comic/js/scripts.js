@@ -5,7 +5,9 @@ $(function() {
   // scroll reveal
   new scrollReveal({
     reset: true,
-    vFactor: 0.25
+    vFactor: 0.25,
+    mobile: false,
+    delay: 'once'
   });
   
   function scrollBar() {    

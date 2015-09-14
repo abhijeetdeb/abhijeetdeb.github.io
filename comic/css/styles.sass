@@ -1,3 +1,9 @@
+// variables    
+$desktop: 1024px
+$tablet: 800px
+
+
+// fonts
 @import url(http://fonts.googleapis.com/css?family=Bangers)
 @import url(http://fonts.googleapis.com/css?family=Fredoka+One)
 @import url(http://fonts.googleapis.com/css?family=Comfortaa)
@@ -47,7 +53,7 @@ header
     text-align: center
     position: relative
     user-select: text
-    font-size: 6em
+    font-size: 3.5em
     div
       color: #f39c12
       background: url(../images/bg-bottom.png) center /contain, linear-gradient(top, #f39c12, #d35400)
@@ -61,10 +67,10 @@ header
       color: transparent
   
 section
-  margin: 3em auto 1.5em
+  margin: 1em auto 1.5em
   h2
     color: #d35400
-    font-size: 3em
+    font-size: 2.5em
     text-align: center
     text-shadow: 1px 1px 1px #fff, 4px 4px 0 #111
     margin: 0.5em auto
@@ -81,25 +87,28 @@ nav.menu
   justify-content: center
   margin-top: 1.5em
   margin-bottom: 3em
+  flex-wrap: wrap
   div
     display: inline-block
     background: #fff
-    margin: 0 10px
-    padding: 10px 16px
+    margin: 0 10px 16px
+    padding: 8px 12px
     box-shadow: 4px 4px 0px #e67e22
     user-select: none
     cursor: pointer
+    width: 25%
+    flex-grow: 1
     &:hover
       box-shadow: 4px 4px 0px #d35400
       //cursor: url(../images/h.png), auto
   .active
-    margin: 1px 9px -1px 11px 
+    margin: 1px 9px 15px 11px 
     box-shadow: 3px 3px 0px #d35400 !important
     
 aside.fun
   background: #9b59b6
   color: #fff
-  padding: 30px 20px 16px
+  padding: 30px 20px 20px
   margin-top: 3.5em
   margin-bottom: 3em
   position: relative
@@ -107,8 +116,10 @@ aside.fun
   box-shadow: 4px 4px 0 #fff
   border-right: 2px solid #7c4791
   border-bottom: 2px solid #7c4791
-  p.info-block
+  .info-block
     display: none
+    user-select: text
+    cursor: url(../images/text-cursor.png), auto
   b, br
     display: none
   
@@ -126,7 +137,7 @@ aside.fun
     padding: 10px 10px
     line-height: 1em
     position: absolute
-    top: -16px
+    top: -20px
     right: -16px
     font-size: 16px
     border-bottom: 2px solid #2c3e50
@@ -160,7 +171,7 @@ aside.fun
 #aboutMe
   .container    
     background: #fff url('../images/web.svg')
-    padding: 12px 20px
+    padding: 20px
     line-height: 1.5em
     transition: 0.2s ease all
     box-shadow: 4px 4px 0px #2c3e50
@@ -173,17 +184,20 @@ aside.fun
   justify-content: space-between
   div
     display: block
-    height: 300px
+    height: 250px
     background: #eee
     user-select: none
+    order: 0
   .prev, .next
-    word-wrap: break-word
-    width: 0.5em
+    order: 1
+    height: auto
+    width: 30%
     padding: 0 0.75em
+    margin-top: 16px
     text-transform: uppercase
     font-family: 'Bangers', serif
     font-size: 1.5em
-    line-height: 1.25em
+    line-height: 1.5em
     display: inline-flex
     flex-direction: column
     justify-content: center
@@ -200,11 +214,11 @@ aside.fun
       color: #fff
       box-shadow: 4px 4px 0px #fff
   .active
-    margin: 1px -1px -1px 1px
-    box-shadow: 3px 3px 0px #ddd !important
+    margin: 18px -2px -2px 2px
+    box-shadow: 2px 2px 0px #ddd !important
   .works
     flex-grow: 1
-    margin: 0 1em
+    width: 100%
     box-shadow: 4px 4px 0px #e67e22
     border-right: 2px solid #6B0000
     border-bottom: 2px solid #6B0000
@@ -237,7 +251,7 @@ aside.fun
         background: rgba(107, 0, 0, 0.75)
         color: #fff
         text-shadow: 1px 1px 1px #555
-        font-size: 1.5em
+        font-size: 1.25em
         padding: 0.5em 1em
         border-right: 1px solid rgba(255, 255, 255, 0.75)
         border-bottom: 1px solid rgba(255, 255, 255, 0.75)
@@ -247,7 +261,7 @@ aside.fun
       .category
         position: absolute
         font-size: 0.5em
-        top: -25px
+        top: -22px
         right: -12px
         background: rgba(243, 156, 18, 0.8)
         padding: 4px 12px
@@ -267,14 +281,14 @@ aside.fun
 
 #skills
   display: flex
-  flex-wrap: wrap
-  justify-content: space-between
+  flex-flow: column wrap
   .skill-bg
-    width: 32%
-    margin-bottom: 1.5em
+    margin-bottom: 1em
     box-shadow: 4px 4px 0px #2c3e50
     position: relative
     overflow: hidden
+    &:last-child
+      display: none
     .overlay
       display: flex
       position: absolute
@@ -295,7 +309,7 @@ aside.fun
         user-select: none
     .skill
       position: relative
-      padding: 12px
+      padding: 8px
       width: 10%
       color: #fff
       opacity: 1
@@ -305,11 +319,10 @@ aside.fun
     
 #contactMe
   display: flex
-  flex-flow: row wrap
-  justify-content: space-between
+  flex-flow: column wrap
   .social
-    padding: 1em 0.5em
-    width: 30%
+    padding: 0.75em 0.5em
+    margin-bottom: 16px
     color: #ddd
     text-align: center
     box-shadow: 4px 4px 0px #bdc3c7
@@ -341,11 +354,11 @@ aside.fun
       border-color: #15576d
       box-shadow: 4px 4px 0px #ddd
   .active
-    margin: 1px -1px -1px 1px
+    margin: 1px -1px 15px 1px
     box-shadow: 3px 3px 0px #ddd !important
       
 footer
-  padding: 3em 0 1.5em
+  padding: 1em 0 1.5em
   text-align: center
   .link
     display: inline-block
@@ -354,6 +367,8 @@ footer
     text-shadow: 1px 1px 0 #111
     transition: 0.2s ease all
     cursor: pointer
+    span.hide
+      display: none
     &:hover
       color: #fff
   img
@@ -364,7 +379,116 @@ footer
 .toTop
   position: fixed
   bottom: 16px
-  right: 24px
+  right: 4px
   display: none
   img
     cursor: pointer
+    width: 75%
+
+
+//tablet
+@media screen and (min-width: $tablet)
+  header
+    h1
+      font-size: 5em
+      
+  section
+    margin: 2em auto 1.5em
+    h2
+      font-size: 2.75em
+  
+  #portfolio
+    .prev, .next
+      width: 43%
+    
+  #skills
+    flex-flow: row wrap
+    justify-content: space-between
+    .skill-bg
+      width: 48%
+      margin-bottom: 1.5em
+      .skill
+        padding: 12px
+        
+  #contactMe
+    flex-flow: row wrap
+    justify-content: space-between
+    .social
+      padding: 1em 0.5em
+      width: 28%
+      
+  footer
+    padding: 1em 0 1.5em
+    .link
+      span.hide
+        display: inline-block
+      
+  .toTop
+    right: 24px
+    img
+      width: auto
+      
+      
+
+//desktop
+@media screen and (min-width: $desktop)
+  header
+    h1
+      font-size: 6em
+      
+  section
+    margin: 3em auto 1.5em
+    h2
+      font-size: 3em
+      
+  nav.menu
+    display: flex
+    justify-content: center
+    margin-top: 1.5em
+    margin-bottom: 3em
+    div
+      margin: 0 10px
+      padding: 10px 16px
+      flex-grow: initial
+      width: auto
+      &:hover
+        box-shadow: 4px 4px 0px #d35400
+        //cursor: url(../images/h.png), auto
+    .active
+      margin: 1px 9px -1px 11px 
+      box-shadow: 3px 3px 0px #d35400 !important
+      
+  aside.fun
+    padding: 30px 20px 24px
+  
+  #portfolio
+    div
+      height: 300px
+    .prev, .next
+      height: 300px
+      order: 0
+      margin: 0
+      word-wrap: break-word
+      width: 0.5em
+      line-height: 1.25em      
+    .active
+      margin: 1px -1px -1px 1px
+      box-shadow: 3px 3px 0px #ddd !important
+    .works
+      width: auto
+      margin: 0 1em
+      .work
+        .project
+          font-size: 1.5em
+        .category
+          top: -25px
+    
+  #skills
+    .skill-bg
+      width: 32%
+      &:last-child
+        display: inline
+        
+  #contactMe
+    .social
+      width: 30%

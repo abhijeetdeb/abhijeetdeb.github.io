@@ -67,7 +67,7 @@ header h1 {
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  font-size: 6em;
+  font-size: 3.5em;
 }
 header h1 div {
   color: #f39c12;
@@ -86,11 +86,11 @@ header h1:after {
 }
 
 section {
-  margin: 3em auto 1.5em;
+  margin: 1em auto 1.5em;
 }
 section h2 {
   color: #d35400;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
   text-shadow: 1px 1px 1px white, 4px 4px 0 #111111;
   margin: 0.5em auto;
@@ -118,12 +118,15 @@ nav.menu {
   justify-content: center;
   margin-top: 1.5em;
   margin-bottom: 3em;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 nav.menu div {
   display: inline-block;
   background: white;
-  margin: 0 10px;
-  padding: 10px 16px;
+  margin: 0 10px 16px;
+  padding: 8px 12px;
   -webkit-box-shadow: 4px 4px 0px #e67e22;
   box-shadow: 4px 4px 0px #e67e22;
   -webkit-user-select: none;
@@ -131,13 +134,18 @@ nav.menu div {
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  width: 25%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 nav.menu div:hover {
   -webkit-box-shadow: 4px 4px 0px #d35400;
   box-shadow: 4px 4px 0px #d35400;
 }
 nav.menu .active {
-  margin: 1px 9px -1px 11px;
+  margin: 1px 9px 15px 11px;
   -webkit-box-shadow: 3px 3px 0px #d35400 !important;
   box-shadow: 3px 3px 0px #d35400 !important;
 }
@@ -145,7 +153,7 @@ nav.menu .active {
 aside.fun {
   background: #9b59b6;
   color: white;
-  padding: 30px 20px 16px;
+  padding: 30px 20px 20px;
   margin-top: 3.5em;
   margin-bottom: 3em;
   position: relative;
@@ -155,8 +163,13 @@ aside.fun {
   border-right: 2px solid #7c4791;
   border-bottom: 2px solid #7c4791;
 }
-aside.fun p.info-block {
+aside.fun .info-block {
   display: none;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: url(../images/text-cursor.png), auto;
 }
 aside.fun b, aside.fun br {
   display: none;
@@ -178,7 +191,7 @@ aside.fun span.tod, aside.fun span.how {
   padding: 10px 10px;
   line-height: 1em;
   position: absolute;
-  top: -16px;
+  top: -20px;
   right: -16px;
   font-size: 16px;
   border-bottom: 2px solid #2c3e50;
@@ -216,7 +229,7 @@ aside.fun span.how span.x {
 
 #aboutMe .container {
   background: white url("../images/web.svg");
-  padding: 12px 20px;
+  padding: 20px;
   line-height: 1.5em;
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
@@ -244,21 +257,30 @@ aside.fun span.how span.x {
 }
 #portfolio div {
   display: block;
-  height: 300px;
+  height: 250px;
   background: #eeeeee;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
 }
 #portfolio .prev, #portfolio .next {
-  word-wrap: break-word;
-  width: 0.5em;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  height: auto;
+  width: 30%;
   padding: 0 0.75em;
+  margin-top: 16px;
   text-transform: uppercase;
   font-family: "Bangers", serif;
   font-size: 1.5em;
-  line-height: 1.25em;
+  line-height: 1.5em;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -291,16 +313,16 @@ aside.fun span.how span.x {
   box-shadow: 4px 4px 0px white;
 }
 #portfolio .active {
-  margin: 1px -1px -1px 1px;
-  -webkit-box-shadow: 3px 3px 0px #dddddd !important;
-  box-shadow: 3px 3px 0px #dddddd !important;
+  margin: 18px -2px -2px 2px;
+  -webkit-box-shadow: 2px 2px 0px #dddddd !important;
+  box-shadow: 2px 2px 0px #dddddd !important;
 }
 #portfolio .works {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin: 0 1em;
+  width: 100%;
   -webkit-box-shadow: 4px 4px 0px #e67e22;
   box-shadow: 4px 4px 0px #e67e22;
   border-right: 2px solid #6b0000;
@@ -350,7 +372,7 @@ aside.fun span.how span.x {
   background: rgba(107, 0, 0, 0.75);
   color: white;
   text-shadow: 1px 1px 1px #555555;
-  font-size: 1.5em;
+  font-size: 1.25em;
   padding: 0.5em 1em;
   border-right: 1px solid rgba(255, 255, 255, 0.75);
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
@@ -365,7 +387,7 @@ aside.fun span.how span.x {
 #portfolio .works .work .category {
   position: absolute;
   font-size: 0.5em;
-  top: -25px;
+  top: -22px;
   right: -12px;
   background: rgba(243, 156, 18, 0.8);
   padding: 4px 12px;
@@ -389,21 +411,19 @@ aside.fun span.how span.x {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 #skills .skill-bg {
-  width: 32%;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   -webkit-box-shadow: 4px 4px 0px #2c3e50;
   box-shadow: 4px 4px 0px #2c3e50;
   position: relative;
   overflow: hidden;
+}
+#skills .skill-bg:last-child {
+  display: none;
 }
 #skills .skill-bg .overlay {
   display: -webkit-box;
@@ -446,7 +466,7 @@ aside.fun span.how span.x {
 }
 #skills .skill-bg .skill {
   position: relative;
-  padding: 12px;
+  padding: 8px;
   width: 10%;
   color: white;
   opacity: 1;
@@ -463,17 +483,13 @@ aside.fun span.how span.x {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 #contactMe .social {
-  padding: 1em 0.5em;
-  width: 30%;
+  padding: 0.75em 0.5em;
+  margin-bottom: 16px;
   color: #dddddd;
   text-align: center;
   -webkit-box-shadow: 4px 4px 0px #bdc3c7;
@@ -517,13 +533,13 @@ aside.fun span.how span.x {
   box-shadow: 4px 4px 0px #dddddd;
 }
 #contactMe .active {
-  margin: 1px -1px -1px 1px;
+  margin: 1px -1px 15px 1px;
   -webkit-box-shadow: 3px 3px 0px #dddddd !important;
   box-shadow: 3px 3px 0px #dddddd !important;
 }
 
 footer {
-  padding: 3em 0 1.5em;
+  padding: 1em 0 1.5em;
   text-align: center;
 }
 footer .link {
@@ -534,6 +550,9 @@ footer .link {
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
   cursor: pointer;
+}
+footer .link span.hide {
+  display: none;
 }
 footer .link:hover {
   color: white;
@@ -548,9 +567,160 @@ footer img {
 .toTop {
   position: fixed;
   bottom: 16px;
-  right: 24px;
+  right: 4px;
   display: none;
 }
 .toTop img {
   cursor: pointer;
+  width: 75%;
+}
+
+@media screen and (min-width: 800px) {
+  header h1 {
+    font-size: 5em;
+  }
+
+  section {
+    margin: 2em auto 1.5em;
+  }
+  section h2 {
+    font-size: 2.75em;
+  }
+
+  #portfolio .prev, #portfolio .next {
+    width: 43%;
+  }
+
+  #skills {
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #skills .skill-bg {
+    width: 48%;
+    margin-bottom: 1.5em;
+  }
+  #skills .skill-bg .skill {
+    padding: 12px;
+  }
+
+  #contactMe {
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #contactMe .social {
+    padding: 1em 0.5em;
+    width: 28%;
+  }
+
+  footer {
+    padding: 1em 0 1.5em;
+  }
+  footer .link span.hide {
+    display: inline-block;
+  }
+
+  .toTop {
+    right: 24px;
+  }
+  .toTop img {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 6em;
+  }
+
+  section {
+    margin: 3em auto 1.5em;
+  }
+  section h2 {
+    font-size: 3em;
+  }
+
+  nav.menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+  }
+  nav.menu div {
+    margin: 0 10px;
+    padding: 10px 16px;
+    -webkit-box-flex: initial;
+    -webkit-flex-grow: initial;
+    -ms-flex-positive: initial;
+    flex-grow: initial;
+    width: auto;
+  }
+  nav.menu div:hover {
+    -webkit-box-shadow: 4px 4px 0px #d35400;
+    box-shadow: 4px 4px 0px #d35400;
+  }
+  nav.menu .active {
+    margin: 1px 9px -1px 11px;
+    -webkit-box-shadow: 3px 3px 0px #d35400 !important;
+    box-shadow: 3px 3px 0px #d35400 !important;
+  }
+
+  aside.fun {
+    padding: 30px 20px 24px;
+  }
+
+  #portfolio div {
+    height: 300px;
+  }
+  #portfolio .prev, #portfolio .next {
+    height: 300px;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    margin: 0;
+    word-wrap: break-word;
+    width: 0.5em;
+    line-height: 1.25em;
+  }
+  #portfolio .active {
+    margin: 1px -1px -1px 1px;
+    -webkit-box-shadow: 3px 3px 0px #dddddd !important;
+    box-shadow: 3px 3px 0px #dddddd !important;
+  }
+  #portfolio .works {
+    width: auto;
+    margin: 0 1em;
+  }
+  #portfolio .works .work .project {
+    font-size: 1.5em;
+  }
+  #portfolio .works .work .category {
+    top: -25px;
+  }
+
+  #skills .skill-bg {
+    width: 32%;
+  }
+  #skills .skill-bg:last-child {
+    display: inline;
+  }
+
+  #contactMe .social {
+    width: 30%;
+  }
 }
