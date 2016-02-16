@@ -23,6 +23,8 @@ $(function() {
   
   scrollBar();
   
+  
+  // scroll to top  
   function toTop() {
     
     var $toTop = $('.toTop'),
@@ -43,6 +45,8 @@ $(function() {
   
   toTop();
   
+  
+  // link handling  
   function links() {
     
     $('.link').on({
@@ -81,6 +85,8 @@ $(function() {
   
   links();
   
+  
+  // quote handling  
   function quote() {
     var $quote = $('.thought'),
         $author = $quote.find('a').text();
@@ -90,6 +96,8 @@ $(function() {
   
   quote();
   
+  
+  // how site was created  
   function how() {
     $('.tod .i').on('click', function() {
       $('.tod').fadeOut();
@@ -108,6 +116,8 @@ $(function() {
   }
   how();
   
+  
+  // portfolio
   function portfolio() {
     
     var $portfolio = $('#portfolio'),
@@ -121,7 +131,8 @@ $(function() {
         $totalWorks = $wrapper.find('.work').length,
         $totalWorksHeight = $totalWorks * $worksHeight,
         $workCount = 1;
-        
+    
+    // on previous button click
     $prev.on('click', function() {
       
       $wrapper.animate({marginTop: '+='+$worksHeight}, 0, function() {
@@ -137,6 +148,7 @@ $(function() {
       
     });
     
+    // on next button click
     $next.on('click', function() {
       
       $wrapper.animate({marginTop: '-='+$worksHeight}, 0, function() {
@@ -152,10 +164,22 @@ $(function() {
       
     });
     
-    $work.on('click', function() {
+    
+    // project events
+    $work.on({
       
-      var $link = $(this).find('.project').data('link');        
-      window.open($link);
+      mouseenter: function() {
+        $(this).find('img').css({transition: '10s linear top', top: '-150px'});
+      },
+      
+      mouseleave: function() {
+        $(this).find('img').css({transition: '0.25s ease top',top: '0'});
+      },
+      
+      click: function() {
+        var $link = $(this).find('.project').data('link');        
+        window.open($link);
+      }
       
     });
     
@@ -163,6 +187,8 @@ $(function() {
   
   portfolio();
   
+  
+  // skills handling
   function skills() {
     var $skills = $('#skills');
     $skills.find('.skill').each(function(){
@@ -172,17 +198,5 @@ $(function() {
   }
   skills();
   
-  function contactForm() {
-    var $contactMe = $('#contactMe');
-    $contactMe.find('input, textarea').not('input.submit').on({
-      focus: function() {
-        $(this).parent().css({boxShadow: '-8px -24px 0px 8px #f39c12'});
-      },
-      focusout: function() {
-        $(this).parent().css({boxShadow: '-8px -24px 0px 8px #f1c40f'});
-      }
-    })
-  }
-  contactForm();
   
 });
