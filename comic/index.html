@@ -8,211 +8,220 @@
     <meta name="author" content="Abhijeet Deb">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
     <!--if lt IE 9 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
   </head>
-  <body id="container">
-    <div id="cover"></div>
-    <div class="wrap">
-      <header data-sr="enter top">
-        <div class="title">
-          <h1 title="Abhijeet Deb">
-            <div>Abhijeet Deb</div>
-          </h1>
+  <body>
+    <div id="cover">
+      <div class="loading-wrap">
+        <div class="loading">
+          <p><img src="images/bolt.png" alt="Loading" class="bolt"></p>
+          <p>Loading.....</p>
         </div>
-      </header>
-      <nav data-sr="enter top" class="menu">
-        <div data-link="#aboutMe" class="link">About Me</div>
-        <div data-link="#portfolio" class="link">My Portfolio</div>
-        <div data-link="#skills" class="link">My Skills</div>
-        <div data-link="#contactMe" class="link">Contact Me</div>
-      </nav>
-      <aside data-sr="enter bottom" class="fun">
-        <div class="thought"> 
-          <script src="http://www.brainyquote.com/link/quotefu.js"></script>
-        </div>
-        <div class="info-block">
-          <p>Aren't you the curious one?</p>
-          <p>Well, since you are here I'd like to tell you how and why this site was made.</p>
-          <p>First the why. I wanted to have design a website for myself but I wanted it to be themed. And since I love how comics are laid out, I decided to make this site look like a comics page.</p>
-          <p>This website was created using JADE and SASS, and not using traditional HTML and CSS. Also, I used FLEXBOX for structure. I also made use of some CSS techniques and jQuery to make everything work together.</p>
-        </div><span class="tod">Quote of the day <span class="i">i</span></span><span class="how">How this site was made <span class="x">X</span></span>
-      </aside>
-      <section id="aboutMe" data-sr="enter bottom, move 16px">
-        <h2>About me</h2>
-        <div class="container">
-          <p>I guess you have figured out that I like comics. Here is a bit more about me..</p>
-          <p>I was born in Shillong, a beautiful city located in the North-Eastern state of Meghalaya. I spent my younger days playing and roaming in its streets, and then I moved to Bangalore - now known as Bengaluru. But not before I developed a keen interest in design.</p>
-          <p>When I came to Bangalore, priorities changed and I started working in a MNC. Then I changed a few jobs, till the time I got one where I joined as a designer. Previously all were IT related jobs but once I started designing, I realized that I was working at the wrong places! Soon after that, I learned the skills required to become a competant web designer and in the process I learnt about web development as well.</p>
-          <p>Now after a few years of learning, I think I can say I make pretty cool websites. I personally like to believe this is one of them :P</p>
-        </div>
-      </section>
-      <section id="portfolio" data-sr="enter bottom, move 16px">
-        <h2>Portfolio</h2>
-        <div class="prev link"><span>Prev</span></div>
-        <div class="works">
-          <div class="wrapper">         
-            <div class="work"><img src="images/works/glc.jpg" alt=""><span data-link="http://globalluxuryculture.com" class="project"><span class="name">Global Luxury Culture</span><span class="category">Website</span></span></div>
-            <div class="work"><img src="images/works/skt.jpg" alt=""><span data-link="http://sktechconnect.com/beta" class="project"><span>SK Techconnect</span><span class="category">Website</span></span></div>
-            <div class="work"><img src="images/works/beams.jpg" alt=""><span data-link="http://beamshospitals.com" class="project"><span>Beams Hospital</span><span class="category">Website</span></span></div>
-            <div class="work"><img src="images/works/sair.jpg" alt=""><span data-link="http://sairdentalgroup.com" class="project"><span>Sair Dental Group</span><span class="category">Website</span></span></div>
-            <div class="work"><img src="images/works/asaikia.jpg" alt=""><span data-link="http://www.iitg.ac.in/asaikia/" class="project"><span>IIT-Guwahati / Dr. Saikia</span><span class="category">Subsite</span></span></div>
-            <div class="work"><img src="images/works/beams.jpg" alt=""><span data-link="http://abhijeetdeb.shownd.com/" class="project"><span>Graphic Design</span><span class="category">Behance</span></span></div>
-            <div class="work"><img src="images/works/beams.jpg" alt=""><span data-link="http://www.iitg.ac.in/asaikia/" class="project"><span>Beams Hospital</span><span class="category">Brochure</span></span></div>
-            <div class="work"><img src="images/works/beams.jpg" alt=""><span data-link="http://www.iitg.ac.in/asaikia/" class="project"><span>SK Techconnect</span><span class="category">Business Card</span></span></div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="wrap">
+        <header data-sr="enter top">
+          <div class="title">
+            <h1 title="Abhijeet Deb">
+              <div>Abhijeet Deb</div>
+            </h1>
           </div>
-        </div>
-        <div class="next link"><span>Next</span></div>
-      </section>
-      <section id="skills" data-sr="enter bottom, move 16px">
-        <h2>Skills</h2>
-        <div class="skill-bg">
-                  <div class="overlay">
-                    <div data-skill-level='1' class="val">1</div>
-                    <div data-skill-level='2' class="val">2</div>
-                    <div data-skill-level='3' class="val">3</div>
-                    <div data-skill-level='4' class="val">4</div>
-                    <div data-skill-level='5' class="val">5</div>
-                    <div data-skill-level='6' class="val">6</div>
-                    <div data-skill-level='7' class="val">7</div>
-                    <div data-skill-level='8' class="val">8</div>
-                    <div data-skill-level='9' class="val">9</div>
-                    <div data-skill-level='10' class="val">10</div>
-                  </div>
-          <div data-skill="9" class="skill">HTML5</div>
-        </div>
-        <div class="skill-bg">
-                  <div class="overlay">
-                    <div data-skill-level='1' class="val">1</div>
-                    <div data-skill-level='2' class="val">2</div>
-                    <div data-skill-level='3' class="val">3</div>
-                    <div data-skill-level='4' class="val">4</div>
-                    <div data-skill-level='5' class="val">5</div>
-                    <div data-skill-level='6' class="val">6</div>
-                    <div data-skill-level='7' class="val">7</div>
-                    <div data-skill-level='8' class="val">8</div>
-                    <div data-skill-level='9' class="val">9</div>
-                    <div data-skill-level='10' class="val">10</div>
-                  </div>
-          <div data-skill="9" class="skill">CSS3</div>
-        </div>
-        <div class="skill-bg">
-                  <div class="overlay">
-                    <div data-skill-level='1' class="val">1</div>
-                    <div data-skill-level='2' class="val">2</div>
-                    <div data-skill-level='3' class="val">3</div>
-                    <div data-skill-level='4' class="val">4</div>
-                    <div data-skill-level='5' class="val">5</div>
-                    <div data-skill-level='6' class="val">6</div>
-                    <div data-skill-level='7' class="val">7</div>
-                    <div data-skill-level='8' class="val">8</div>
-                    <div data-skill-level='9' class="val">9</div>
-                    <div data-skill-level='10' class="val">10</div>
-                  </div>
-          <div data-skill="8" class="skill">jQuery</div>
-        </div>
-        <div class="skill-bg">
-                  <div class="overlay">
-                    <div data-skill-level='1' class="val">1</div>
-                    <div data-skill-level='2' class="val">2</div>
-                    <div data-skill-level='3' class="val">3</div>
-                    <div data-skill-level='4' class="val">4</div>
-                    <div data-skill-level='5' class="val">5</div>
-                    <div data-skill-level='6' class="val">6</div>
-                    <div data-skill-level='7' class="val">7</div>
-                    <div data-skill-level='8' class="val">8</div>
-                    <div data-skill-level='9' class="val">9</div>
-                    <div data-skill-level='10' class="val">10</div>
-                  </div>
-          <div data-skill="8" class="skill">Jade</div>
-        </div>
-        <div class="skill-bg">
-                  <div class="overlay">
-                    <div data-skill-level='1' class="val">1</div>
-                    <div data-skill-level='2' class="val">2</div>
-                    <div data-skill-level='3' class="val">3</div>
-                    <div data-skill-level='4' class="val">4</div>
-                    <div data-skill-level='5' class="val">5</div>
-                    <div data-skill-level='6' class="val">6</div>
-                    <div data-skill-level='7' class="val">7</div>
-                    <div data-skill-level='8' class="val">8</div>
-                    <div data-skill-level='9' class="val">9</div>
-                    <div data-skill-level='10' class="val">10</div>
-                  </div>
-          <div data-skill="8" class="skill">SASS/SCSS</div>
-        </div>
-        <div class="skill-bg">
-                  <div class="overlay">
-                    <div data-skill-level='1' class="val">1</div>
-                    <div data-skill-level='2' class="val">2</div>
-                    <div data-skill-level='3' class="val">3</div>
-                    <div data-skill-level='4' class="val">4</div>
-                    <div data-skill-level='5' class="val">5</div>
-                    <div data-skill-level='6' class="val">6</div>
-                    <div data-skill-level='7' class="val">7</div>
-                    <div data-skill-level='8' class="val">8</div>
-                    <div data-skill-level='9' class="val">9</div>
-                    <div data-skill-level='10' class="val">10</div>
-                  </div>
-          <div data-skill="7" class="skill">PHP</div>
-        </div>
-        <div class="skill-bg">
-                  <div class="overlay">
-                    <div data-skill-level='1' class="val">1</div>
-                    <div data-skill-level='2' class="val">2</div>
-                    <div data-skill-level='3' class="val">3</div>
-                    <div data-skill-level='4' class="val">4</div>
-                    <div data-skill-level='5' class="val">5</div>
-                    <div data-skill-level='6' class="val">6</div>
-                    <div data-skill-level='7' class="val">7</div>
-                    <div data-skill-level='8' class="val">8</div>
-                    <div data-skill-level='9' class="val">9</div>
-                    <div data-skill-level='10' class="val">10</div>
-                  </div>
-          <div data-skill="7" class="skill">Photoshop</div>
-        </div>
-        <div class="skill-bg">
-                  <div class="overlay">
-                    <div data-skill-level='1' class="val">1</div>
-                    <div data-skill-level='2' class="val">2</div>
-                    <div data-skill-level='3' class="val">3</div>
-                    <div data-skill-level='4' class="val">4</div>
-                    <div data-skill-level='5' class="val">5</div>
-                    <div data-skill-level='6' class="val">6</div>
-                    <div data-skill-level='7' class="val">7</div>
-                    <div data-skill-level='8' class="val">8</div>
-                    <div data-skill-level='9' class="val">9</div>
-                    <div data-skill-level='10' class="val">10</div>
-                  </div>
-          <div data-skill="8" class="skill">WordPress</div>
-        </div>
-        <div class="skill-bg">
-                  <div class="overlay">
-                    <div data-skill-level='1' class="val">1</div>
-                    <div data-skill-level='2' class="val">2</div>
-                    <div data-skill-level='3' class="val">3</div>
-                    <div data-skill-level='4' class="val">4</div>
-                    <div data-skill-level='5' class="val">5</div>
-                    <div data-skill-level='6' class="val">6</div>
-                    <div data-skill-level='7' class="val">7</div>
-                    <div data-skill-level='8' class="val">8</div>
-                    <div data-skill-level='9' class="val">9</div>
-                    <div data-skill-level='10' class="val">10</div>
-                  </div>
-          <div data-skill="9" class="skill">Talking</div>
-        </div>
-      </section>
-      <section id="contactMe" data-sr="enter bottom, move 16px">
-        <h2>Contact Me</h2>
-        <div data-link="http://facebook.com/abhijeetdeb" data-newTab="blank" class="social link facebook">Facebook</div>
-        <div data-link="http://linkedin.com/in/abhijeetdeb" data-newTab="blank" class="social link linkedin">Linkedin</div>
-        <div data-link="http://twitter.com/abhijeetdeb" data-newTab="blank" class="social link twitter">Twitter</div>
-      </section>
-      <footer data-sr="enter top">
-        <div data-link="#container" class="link"><span>designed by me<span class="hide"><img src="images/bolt.png" alt="Bolt" /> inspired by comics</span></span></div>
-      </footer>
-      <div class="toTop"><img src="images/toTop.png" data-link="#container" alt="Top" class="link"></div>
+        </header>
+        <nav data-sr="enter top" class="menu">
+          <div data-link="#aboutMe" class="link">About Me</div>
+          <div data-link="#portfolio" class="link">My Portfolio</div>
+          <div data-link="#skills" class="link">My Skills</div>
+          <div data-link="#contactMe" class="link">Contact Me</div>
+        </nav>
+        <aside data-sr="enter bottom" class="fun">
+          <div class="thought"> 
+            <script src="http://www.brainyquote.com/link/quotefu.js"></script>
+          </div>
+          <div class="info-block">
+            <p>Aren't you the curious one?</p>
+            <p>Well, since you are here I'd like to tell you how this site was made and why.</p>
+            <p>How - This website was created using JADE and SASS, and not using traditional HTML and CSS. Also, I used FLEXBOX for structure. I also made use of some CSS techniques and jQuery to make everything work together.</p>
+            <p>Why - I wanted to design a personal website but I also wanted it to be themed. And since I love how comics are laid out, I decided to try and let the two come together in this one.</p>
+          </div><span class="tod">Quote of the day <span class="i">i</span></span><span class="how">How this site was made <span class="x">X</span></span>
+        </aside>
+        <section id="aboutMe" data-sr="enter bottom, move 16px">
+          <h2>About me</h2>
+          <div class="container">
+            <p>Hi, there. Glad to see you here. Let me introduce myself.</p>
+            <p>I was born in Shillong. I moved to Bangalore in 2007 and have been staying here since.</p>
+            <p>I have worked in few IT companies in technical profile but once I started designing, I realized that I was working at all the wrong places! Soon after that, I learned the basic skills required to become a competant web designer and in the process I learnt about web development as well.</p>
+            <p>During all these, I also completed my BSc-IT and MCA. This has helped me in understanding how technology works, which I try to implement on the projects I work on.</p>
+            <p>I am still learning about more complex technologies, but I think I can now say that I make pretty cool websites. I personally like to believe this is one of them :P</p>
+          </div>
+        </section>
+        <section id="portfolio" data-sr="enter bottom, move 16px">
+          <h2>Portfolio</h2>
+          <div class="prev link"><span>Prev</span></div>
+          <div class="works">
+            <div class="wrapper">         
+              <div class="work"><img src="images/works/glc.jpg" alt=""><span data-link="http://globalluxuryculture.com" class="project"><span class="name">Global Luxury Culture</span><span class="category">Website</span></span></div>
+              <div class="work"><img src="images/works/skt.jpg" alt=""><span data-link="http://sktechconnect.com/beta" class="project"><span>SK Techconnect</span><span class="category">Website</span></span></div>
+              <div class="work"><img src="images/works/beams.jpg" alt=""><span data-link="http://beamshospitals.com" class="project"><span>Beams Hospital</span><span class="category">Website</span></span></div>
+              <div class="work"><img src="images/works/sair.jpg" alt=""><span data-link="http://sairdentalgroup.com" class="project"><span>Sair Dental Group</span><span class="category">Website</span></span></div>
+              <div class="work"><img src="images/works/asaikia.jpg" alt=""><span data-link="http://www.iitg.ac.in/asaikia/" class="project"><span>IIT-Guwahati / Dr. Saikia</span><span class="category">Subsite</span></span></div>
+              <div class="work"><img src="images/works/beams.jpg" alt=""><span data-link="http://behance.com/abhijeetdeb" class="project"><span>Graphic Design</span><span class="category">Behance</span></span></div>
+              <div class="work"><img src="images/works/beams.jpg" alt=""><span data-link="http://www.iitg.ac.in/asaikia/" class="project"><span>Beams Hospital</span><span class="category">Brochure</span></span></div>
+              <div class="work"><img src="images/works/beams.jpg" alt=""><span data-link="http://www.iitg.ac.in/asaikia/" class="project"><span>SK Techconnect</span><span class="category">Business Card</span></span></div>
+            </div>
+          </div>
+          <div class="next link"><span>Next</span></div>
+        </section>
+        <section id="skills" data-sr="enter bottom, move 16px">
+          <h2>Skills</h2>
+          <div class="skill-bg">
+                      <div class="overlay">
+                        <div data-skill-level='1' class="val">1</div>
+                        <div data-skill-level='2' class="val">2</div>
+                        <div data-skill-level='3' class="val">3</div>
+                        <div data-skill-level='4' class="val">4</div>
+                        <div data-skill-level='5' class="val">5</div>
+                        <div data-skill-level='6' class="val">6</div>
+                        <div data-skill-level='7' class="val">7</div>
+                        <div data-skill-level='8' class="val">8</div>
+                        <div data-skill-level='9' class="val">9</div>
+                        <div data-skill-level='10' class="val">10</div>
+                      </div>
+            <div data-skill="9" class="skill">HTML5</div>
+          </div>
+          <div class="skill-bg">
+                      <div class="overlay">
+                        <div data-skill-level='1' class="val">1</div>
+                        <div data-skill-level='2' class="val">2</div>
+                        <div data-skill-level='3' class="val">3</div>
+                        <div data-skill-level='4' class="val">4</div>
+                        <div data-skill-level='5' class="val">5</div>
+                        <div data-skill-level='6' class="val">6</div>
+                        <div data-skill-level='7' class="val">7</div>
+                        <div data-skill-level='8' class="val">8</div>
+                        <div data-skill-level='9' class="val">9</div>
+                        <div data-skill-level='10' class="val">10</div>
+                      </div>
+            <div data-skill="9" class="skill">CSS3</div>
+          </div>
+          <div class="skill-bg">
+                      <div class="overlay">
+                        <div data-skill-level='1' class="val">1</div>
+                        <div data-skill-level='2' class="val">2</div>
+                        <div data-skill-level='3' class="val">3</div>
+                        <div data-skill-level='4' class="val">4</div>
+                        <div data-skill-level='5' class="val">5</div>
+                        <div data-skill-level='6' class="val">6</div>
+                        <div data-skill-level='7' class="val">7</div>
+                        <div data-skill-level='8' class="val">8</div>
+                        <div data-skill-level='9' class="val">9</div>
+                        <div data-skill-level='10' class="val">10</div>
+                      </div>
+            <div data-skill="8" class="skill">jQuery</div>
+          </div>
+          <div class="skill-bg">
+                      <div class="overlay">
+                        <div data-skill-level='1' class="val">1</div>
+                        <div data-skill-level='2' class="val">2</div>
+                        <div data-skill-level='3' class="val">3</div>
+                        <div data-skill-level='4' class="val">4</div>
+                        <div data-skill-level='5' class="val">5</div>
+                        <div data-skill-level='6' class="val">6</div>
+                        <div data-skill-level='7' class="val">7</div>
+                        <div data-skill-level='8' class="val">8</div>
+                        <div data-skill-level='9' class="val">9</div>
+                        <div data-skill-level='10' class="val">10</div>
+                      </div>
+            <div data-skill="8" class="skill">Jade</div>
+          </div>
+          <div class="skill-bg">
+                      <div class="overlay">
+                        <div data-skill-level='1' class="val">1</div>
+                        <div data-skill-level='2' class="val">2</div>
+                        <div data-skill-level='3' class="val">3</div>
+                        <div data-skill-level='4' class="val">4</div>
+                        <div data-skill-level='5' class="val">5</div>
+                        <div data-skill-level='6' class="val">6</div>
+                        <div data-skill-level='7' class="val">7</div>
+                        <div data-skill-level='8' class="val">8</div>
+                        <div data-skill-level='9' class="val">9</div>
+                        <div data-skill-level='10' class="val">10</div>
+                      </div>
+            <div data-skill="8" class="skill">SASS/SCSS</div>
+          </div>
+          <div class="skill-bg">
+                      <div class="overlay">
+                        <div data-skill-level='1' class="val">1</div>
+                        <div data-skill-level='2' class="val">2</div>
+                        <div data-skill-level='3' class="val">3</div>
+                        <div data-skill-level='4' class="val">4</div>
+                        <div data-skill-level='5' class="val">5</div>
+                        <div data-skill-level='6' class="val">6</div>
+                        <div data-skill-level='7' class="val">7</div>
+                        <div data-skill-level='8' class="val">8</div>
+                        <div data-skill-level='9' class="val">9</div>
+                        <div data-skill-level='10' class="val">10</div>
+                      </div>
+            <div data-skill="7" class="skill">PHP</div>
+          </div>
+          <div class="skill-bg">
+                      <div class="overlay">
+                        <div data-skill-level='1' class="val">1</div>
+                        <div data-skill-level='2' class="val">2</div>
+                        <div data-skill-level='3' class="val">3</div>
+                        <div data-skill-level='4' class="val">4</div>
+                        <div data-skill-level='5' class="val">5</div>
+                        <div data-skill-level='6' class="val">6</div>
+                        <div data-skill-level='7' class="val">7</div>
+                        <div data-skill-level='8' class="val">8</div>
+                        <div data-skill-level='9' class="val">9</div>
+                        <div data-skill-level='10' class="val">10</div>
+                      </div>
+            <div data-skill="7" class="skill">Photoshop</div>
+          </div>
+          <div class="skill-bg">
+                      <div class="overlay">
+                        <div data-skill-level='1' class="val">1</div>
+                        <div data-skill-level='2' class="val">2</div>
+                        <div data-skill-level='3' class="val">3</div>
+                        <div data-skill-level='4' class="val">4</div>
+                        <div data-skill-level='5' class="val">5</div>
+                        <div data-skill-level='6' class="val">6</div>
+                        <div data-skill-level='7' class="val">7</div>
+                        <div data-skill-level='8' class="val">8</div>
+                        <div data-skill-level='9' class="val">9</div>
+                        <div data-skill-level='10' class="val">10</div>
+                      </div>
+            <div data-skill="8" class="skill">WordPress</div>
+          </div>
+          <div class="skill-bg">
+                      <div class="overlay">
+                        <div data-skill-level='1' class="val">1</div>
+                        <div data-skill-level='2' class="val">2</div>
+                        <div data-skill-level='3' class="val">3</div>
+                        <div data-skill-level='4' class="val">4</div>
+                        <div data-skill-level='5' class="val">5</div>
+                        <div data-skill-level='6' class="val">6</div>
+                        <div data-skill-level='7' class="val">7</div>
+                        <div data-skill-level='8' class="val">8</div>
+                        <div data-skill-level='9' class="val">9</div>
+                        <div data-skill-level='10' class="val">10</div>
+                      </div>
+            <div data-skill="1" class="skill">Laravel</div>
+          </div>
+        </section>
+        <section id="contactMe" data-sr="enter bottom, move 16px">
+          <h2>Contact Me</h2>
+          <div data-link="http://facebook.com/abhijeetdeb" data-newTab="blank" class="social link facebook">Facebook</div>
+          <div data-link="http://linkedin.com/in/abhijeetdeb" data-newTab="blank" class="social link linkedin">Linkedin</div>
+          <div data-link="http://twitter.com/abhijeetdeb" data-newTab="blank" class="social link twitter">Twitter</div>
+        </section>
+        <footer data-sr="enter top">
+          <div data-link="#container" class="link"><span>designed by me<span class="hide"><img src="images/bolt.png" alt="Bolt" /> inspired by comics</span></span></div>
+        </footer>
+        <div class="toTop"><img src="images/toTop.png" data-link="#container" alt="Top" class="link"></div>
+      </div>
     </div>
     <script src="js/min/jquery.min.js"></script>
     <script src="js/min/nicescroll.min.js"></script>

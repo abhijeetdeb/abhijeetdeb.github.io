@@ -1,4 +1,17 @@
-$(function() {
+$(window).load(function() {
+  
+  var $cover = $('#cover'),
+      $loading = $cover.find('.loading');
+  
+  setInterval(function(){
+    $loading.toggleClass('blinkOff');
+  }, 3000);
+  
+  $('#cover').animate({opacity: 0, top: '-100%'});
+  
+});
+
+$(function() {  
   
   $('#container').show();
     
