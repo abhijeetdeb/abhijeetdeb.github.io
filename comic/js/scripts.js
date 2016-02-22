@@ -7,14 +7,16 @@ $(window).load(function() {
     $loading.toggleClass('blinkOff');
   }, 3000);
   
-  $('#cover').animate({opacity: 0, top: '-100%'});
+  $cover.animate({opacity: 0, top: '-100%'}, {complete: function() {
+    $cover.addClass('s');
+  }});
   
 });
 
 $(function() {  
   
   $('#container').show();
-    
+  
   // scroll reveal
   new scrollReveal({
     reset: true,
