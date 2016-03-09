@@ -22,7 +22,7 @@ body
   font-family: 'Comfortaa','Fredoka One', sans-serif
   user-select: none
   ::selection
-    background: rgb(107,0,0)
+    background: #6b0000
     color: #f39c12
   p
     margin: 0 0 0.75em 0
@@ -140,6 +140,16 @@ aside.fun
     display: none
     user-select: text
     cursor: url(../images/text-cursor.png), auto
+    a
+      color: #fff
+      text-decoration: none
+      padding-bottom: 1px
+      border-bottom: 1px dotted #fff
+      &:hover
+        color: #6b0000
+        color: #f39c12
+        border-bottom: 1px dotted #6b0000
+        border-bottom: 1px dotted #f39c12
   b, br
     display: none
   
@@ -204,7 +214,7 @@ aside.fun
   justify-content: space-between
   div
     display: block
-    height: 250px
+    height: 180px
     background: #eee
     user-select: none
     order: 0
@@ -425,6 +435,8 @@ footer
     flex-wrap: nowrap
   
   #portfolio
+    div
+      height: 250px
     .prev, .next
       width: 43%
     
