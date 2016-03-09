@@ -7,9 +7,7 @@ $(window).load(function() {
     $loading.toggleClass('blinkOff');
   }, 3000);
   
-  $cover.animate({opacity: 0, top: '-100%'}, {complete: function() {
-    $cover.addClass('s');
-  }});
+  $cover.css({opacity: 0, top: '-100%', height: '100vh'});
   
 });
 
