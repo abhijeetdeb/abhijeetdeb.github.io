@@ -1,33 +1,75 @@
-<table cellspacing="0" cellpadding="0" width="500" style="font-family:arial, sans-serif; margin:0; padding:0; max-width:600px">
-  <tr>
-    <td colspan="2" style="padding:10px; color: #b39150; background: #000">This candidate wants to join Global Luxury Culture</td>
-  </tr>  
-  <tr>
-   <td style="padding:10px; font-weight:bold; border-bottom:1px dotted #ab853d; border-right:1px dotted #ab853d;" width="150">Name</td>
-   <td style="padding:10px; border-bottom:1px dotted #ab853d;" width= "450">[title] [fname] [lname]</td>
-  </tr>
-  <tr>
-   <td style="padding:10px; font-weight:bold; border-bottom:1px dotted #ab853d; border-right:1px dotted #ab853d;">Email</td>
-   <td style="padding:10px; border-bottom:1px dotted #ab853d;">[email]</td>
-  </tr>
-  <tr>
-   <td style="padding:10px; font-weight:bold; border-bottom:1px dotted #ab853d; border-right:1px dotted #ab853d;">Phone</td>
-   <td style="padding:10px; border-bottom:1px dotted #ab853d;">[phone]</td>
-  </tr>
-  <tr>
-   <td style="padding:10px; font-weight:bold; border-bottom:1px dotted #ab853d; border-right:1px dotted #ab853d;">Position</td>
-   <td style="padding:10px; border-bottom:1px dotted #ab853d;">[pos]</td>
-  </tr>
-  <tr>
-   <td style="padding:10px; font-weight:bold; border-bottom:1px dotted #ab853d; border-right:1px dotted #ab853d;">Experience</td>
-   <td style="padding:10px; border-bottom:1px dotted #ab853d;">[exp] years</td>
-  </tr>
-   <td style="padding:10px; font-weight:bold; border-bottom:1px dotted #ab853d; border-right:1px dotted #ab853d;">City</td>
-   <td style="padding:10px; border-bottom:1px dotted #ab853d;">[city]</td>
-  </tr>
-  <tr>
-   <td style="padding:10px; font-weight:bold; border-bottom:1px dotted #ab853d; border-right:1px dotted #ab853d;">Country</td>
-   <td style="padding:10px; border-bottom:1px dotted #ab853d;">[country]</td>
-  </tr>
-    <td colspan="2" style="padding:10px 0; color: #ab853d; text-align: right">Global Luxury Culture, LLP</td>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shubhojit Deb</title>
+  <style>
+    
+    table td {
+      border: 1px solid #444;
+      border-collapse: collapse;
+    }
+    
+    .table {
+      display: flex;
+      border-collapse: collapse;
+      width: 600px;
+      margin: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .table .row {
+      flex: 1;
+      display: inline-flex;
+    }
+    
+    .table .row .cell {
+      flex: 1;
+      border: 1px solid #444;
+      width: 50%;      
+    }
+    
+    .table .row .rc {
+      flex: 2;
+    }
+    
+    
+    
+  </style>
+</head>
+<body>
+  
+  <table cellspacing=0>
+    <tr>
+      <td>Row 1</td>
+      <td>Row 1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Row 2</td>
+    </tr>
+    <tr>
+      <td>Row 3</td>
+      <td>Row 3</td>
+    </tr>
+  </table>
+  
+  <br>
+  
+  <div class="table">
+    <div class="row">
+      <div class="cell rc">Row 1</div>
+      <div class="cell">Row 1</div>
+    </div>
+    <div class="row">
+      <div class="cell">Row 2</div>
+    </div>
+    <div class="row">
+      <div class="cell">Row 3</div>
+      <div class="cell">Row 3</div>
+      <div class="cell">Row 3</div>
+    </div>
+  </div>
+  
+</body>
+</html>
