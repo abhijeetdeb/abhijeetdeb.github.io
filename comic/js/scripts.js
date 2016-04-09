@@ -182,11 +182,13 @@ $(function() {
     $work.on({
       
       mouseenter: function() {
-        $(this).find('img').css({transition: '10s linear top', top: '-150px'});
+        var $image = $(this).find('img'),
+            $moveTo = $image.height() - $worksHeight;
+        $image.css({transition: '10s linear top', top: -$moveTo+'px'});
       },
       
       mouseleave: function() {
-        $(this).find('img').css({transition: '0.25s ease top',top: '0'});
+        $(this).find('img').css({transition: '0.25s ease top',top: '0px'});
       },
       
       click: function() {
