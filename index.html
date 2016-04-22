@@ -12,7 +12,7 @@
     <!--if lt IE 9 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
   </head>
   <body>
-    <div id="cover">
+    <div class="cover">
       <div class="loading-wrap">
         <div class="loading">
           <p><img src="comic/images/bolt.png" alt="Loading" class="bolt"></p>
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div id="container">
+    <div class="container">
       <div class="wrap">
         <header data-sr="enter top">
           <div class="title">
@@ -28,10 +28,10 @@
           </div>
         </header>
         <nav data-sr="enter top" class="menu">
-          <div data-link="#aboutMe" class="link">About Me</div>
-          <div data-link="#portfolio" class="link">My Projects</div>
-          <div data-link="#skills" class="link">My Skills</div>
-          <div data-link="#contactMe" class="link">Contact Me</div>
+          <div data-link=".aboutMe" class="link">About Me</div>
+          <div data-link=".portfolio" class="link">My Projects</div>
+          <div data-link=".skills" class="link">My Skills</div>
+          <div data-link=".contactMe" class="link">Contact Me</div>
         </nav>
         <aside data-sr="enter bottom" class="fun">
           <div class="thought"> 
@@ -44,7 +44,7 @@
             <p>Why - I wanted to design a personal website but I also wanted it to be themed. And since I love comics, I decided to try and make the two come together in this one.</p>
           </div><span class="tod">Quote of the day <span class="i">i</span></span><span class="how">How this site was made <span class="x">X</span></span>
         </aside>
-        <section id="aboutMe" data-sr="enter bottom, move 16px">
+        <section data-sr="enter bottom, move 16px" class="aboutMe">
           <h2>About me</h2>
           <div class="container">
             <p>Hi, there. Glad to see you here. Let me introduce myself.</p>
@@ -54,7 +54,7 @@
             <p>I am still learning about more complex technologies, but I think I can now say that I make pretty cool websites. I like to believe this is one of them :P</p>
           </div>
         </section>
-        <section id="portfolio" data-sr="enter bottom, move 16px">
+        <section data-sr="enter bottom, move 16px" class="portfolio">
           <h2>Projects</h2>
           <div class="prev link"><span>Prev</span></div>
           <div class="works">
@@ -69,7 +69,7 @@
           </div>
           <div class="next link"><span>Next</span></div>
         </section>
-        <section id="skills" data-sr="enter bottom, move 16px">
+        <section data-sr="enter bottom, move 16px" class="skills">
           <h2>Skills</h2>
           <div class="skill-bg">
                       <div class="overlay">
@@ -207,17 +207,17 @@
             <div data-skill="10" class="skill">Eating</div>
           </div>
         </section>
-        <section id="contactMe" data-sr="enter bottom, move 16px">
+        <section data-sr="enter bottom, move 16px" class="contactMe">
           <h2>Contact Me</h2>
           <div data-link="http://facebook.com/abhijeetdeb" data-newTab="blank" class="social link facebook">Facebook</div>
           <div data-link="http://linkedin.com/in/abhijeetdeb" data-newTab="blank" class="social link linkedin">Linkedin</div>
           <div data-link="http://twitter.com/abhijeetdeb" data-newTab="blank" class="social link twitter">Twitter</div>
         </section>
         <footer data-sr="enter top">
-          <div data-link="#container" class="link"><span>designed by me<span class="hide"><img src="comic/images/bolt.png" alt="Bolt" /> inspired by comics</span></span></div>
+          <div data-link=".container" class="link"><span>designed by me<span class="hide"><img src="comic/images/bolt.png" alt="Bolt" /> inspired by comics</span></span></div>
         </footer>
       </div>
-      <div class="toTop"><img src="comic/images/toTop.png" data-link="#container" alt="Top" class="link"></div>
+      <div class="toTop"><img src="comic/images/toTop.png" data-link=".container" alt="Top" class="link"></div>
     </div>
     <script src="comic/js/min/jquery.min.js"></script>
     <script src="comic/js/min/nicescroll.min.js"></script>

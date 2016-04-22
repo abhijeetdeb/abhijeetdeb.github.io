@@ -1,6 +1,6 @@
 $(window).load(function() {
   
-  var $cover = $('#cover'),
+  var $cover = $('.cover'),
       $loading = $cover.find('.loading');
   
   setInterval(function(){
@@ -13,7 +13,7 @@ $(window).load(function() {
 
 $(function() {  
   
-  $('#container').show();
+  $('.container').show();
   
   // scroll reveal
   new scrollReveal({
@@ -133,7 +133,7 @@ $(function() {
   // portfolio
   function portfolio() {
     
-    var $portfolio = $('#portfolio'),
+    var $portfolio = $('.portfolio'),
         $prev = $portfolio.find('.prev'),
         $next = $portfolio.find('.next'),
         $works = $portfolio.find('.works'),
@@ -205,7 +205,7 @@ $(function() {
   
   // skills handling
   function skills() {
-    var $skills = $('#skills');
+    var $skills = $('.skills');
     $skills.find('.skill').each(function(){
       var $val = $(this).data('skill')*10 + '%';
       $(this).css({width: $val, background: '#d35400', opacity: '0.8'});

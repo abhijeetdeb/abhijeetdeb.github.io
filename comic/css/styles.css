@@ -36,7 +36,7 @@ body p {
   margin: 0 0 0.75em 0;
 }
 
-#cover {
+.cover {
   position: absolute;
   top: 0;
   right: 0;
@@ -50,7 +50,7 @@ body p {
   display: flex;
 }
 
-#cover .loading-wrap {
+.cover .loading-wrap {
   background: linear-gradient(to bottom, #6b0000, #111111);
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,23 +64,23 @@ body p {
   width: 100%;
 }
 
-#cover .loading-wrap .loading {
+.cover .loading-wrap .loading {
   transition: 0.5s ease all;
   opacity: 1;
 }
 
-#cover .loading-wrap .loading p {
+.cover .loading-wrap .loading p {
   color: #fff;
   margin: 8px 0;
   font-size: 24px;
   text-align: center;
 }
 
-#cover .loading-wrap .loading.blinkOff {
+.cover .loading-wrap .loading.blinkOff {
   opacity: 0;
 }
 
-#container {
+.container {
   background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 5%, #111111 15%, #6b0000 50%);
   background-size: 400%;
   background-position: center top, center bottom;
@@ -286,7 +286,7 @@ aside.fun span.how span.x {
   cursor: pointer;
 }
 
-#aboutMe .container {
+.aboutMe .container {
   background: #fff url("../images/web.svg");
   padding: 20px;
   line-height: 1.5em;
@@ -299,7 +299,7 @@ aside.fun span.how span.x {
   cursor: url(../images/text-cursor.png), auto;
 }
 
-#portfolio {
+.portfolio {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +311,7 @@ aside.fun span.how span.x {
           justify-content: space-between;
 }
 
-#portfolio div {
+.portfolio div {
   display: block;
   height: 180px;
   background: #eee;
@@ -324,7 +324,7 @@ aside.fun span.how span.x {
           order: 0;
 }
 
-#portfolio .prev, #portfolio .next {
+.portfolio .prev, .portfolio .next {
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
@@ -354,17 +354,17 @@ aside.fun span.how span.x {
   cursor: pointer;
 }
 
-#portfolio .prev:hover, #portfolio .next:hover {
+.portfolio .prev:hover, .portfolio .next:hover {
   color: #fff;
   box-shadow: 4px 4px 0 #fff;
 }
 
-#portfolio .active {
+.portfolio .active {
   margin: 18px -2px -2px 2px;
   box-shadow: 2px 2px 0 #ddd !important;
 }
 
-#portfolio .works {
+.portfolio .works {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -375,11 +375,11 @@ aside.fun span.how span.x {
   overflow: hidden;
 }
 
-#portfolio .works:hover {
+.portfolio .works:hover {
   box-shadow: 4px 4px 0 #d35400;
 }
 
-#portfolio .works .work {
+.portfolio .works .work {
   position: relative;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -391,7 +391,7 @@ aside.fun span.how span.x {
   overflow: hidden;
 }
 
-#portfolio .works .work img {
+.portfolio .works .work img {
   position: absolute;
   top: 0;
   left: 0;
@@ -402,7 +402,7 @@ aside.fun span.how span.x {
   transition: 0.2s ease all;
 }
 
-#portfolio .works .work .project {
+.portfolio .works .work .project {
   position: relative;
   z-index: 1;
   -webkit-align-self: center;
@@ -420,7 +420,7 @@ aside.fun span.how span.x {
   transition: 0.2s ease all;
 }
 
-#portfolio .works .work .category {
+.portfolio .works .work .category {
   position: absolute;
   font-size: 0.5em;
   top: -22px;
@@ -432,7 +432,7 @@ aside.fun span.how span.x {
   border-bottom: 2px solid #d35400;
 }
 
-#portfolio .works .work .category:after {
+.portfolio .works .work .category:after {
   content: '';
   width: 0;
   height: 0;
@@ -443,7 +443,7 @@ aside.fun span.how span.x {
   border-right: 11px solid transparent;
 }
 
-#skills {
+.skills {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -452,18 +452,18 @@ aside.fun span.how span.x {
           flex-flow: column wrap;
 }
 
-#skills .skill-bg {
+.skills .skill-bg {
   margin-bottom: 1em;
   box-shadow: 4px 4px 0 #2c3e50;
   position: relative;
   overflow: hidden;
 }
 
-#skills .skill-bg:last-child {
+.skills .skill-bg:last-child {
   display: none;
 }
 
-#skills .skill-bg .overlay {
+.skills .skill-bg .overlay {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -474,7 +474,7 @@ aside.fun span.how span.x {
   left: 0;
 }
 
-#skills .skill-bg .overlay .val {
+.skills .skill-bg .overlay .val {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -498,7 +498,7 @@ aside.fun span.how span.x {
           user-select: none;
 }
 
-#skills .skill-bg .skill {
+.skills .skill-bg .skill {
   position: relative;
   padding: 8px;
   width: 10%;
@@ -509,7 +509,7 @@ aside.fun span.how span.x {
   transition: 2s ease all;
 }
 
-#contactMe {
+.contactMe {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +518,7 @@ aside.fun span.how span.x {
           flex-flow: column wrap;
 }
 
-#contactMe .social {
+.contactMe .social {
   padding: 0.75em 0.5em;
   margin-bottom: 16px;
   color: #ddd;
@@ -530,44 +530,44 @@ aside.fun span.how span.x {
   cursor: pointer;
 }
 
-#contactMe .social:hover {
+.contactMe .social:hover {
   color: #fff;
 }
 
-#contactMe .facebook {
+.contactMe .facebook {
   background: #3b5998;
   border-color: #2f4779;
 }
 
-#contactMe .facebook:hover {
+.contactMe .facebook:hover {
   background: #2f4779;
   border-color: #23355b;
   box-shadow: 4px 4px 0 #ddd;
 }
 
-#contactMe .linkedin {
+.contactMe .linkedin {
   background: #4875B4;
   border-color: #395d90;
 }
 
-#contactMe .linkedin:hover {
+.contactMe .linkedin:hover {
   background: #395d90;
   border-color: #2b466c;
   box-shadow: 4px 4px 0 #ddd;
 }
 
-#contactMe .twitter {
+.contactMe .twitter {
   background: #2492b7;
   border-color: #1c7492;
 }
 
-#contactMe .twitter:hover {
+.contactMe .twitter:hover {
   background: #1c7492;
   border-color: #15576d;
   box-shadow: 4px 4px 0 #ddd;
 }
 
-#contactMe .active {
+.contactMe .active {
   margin: 1px -1px 15px 1px;
   box-shadow: 3px 3px 0 #ddd !important;
 }
@@ -614,7 +614,7 @@ footer img {
 }
 
 @media screen and (min-width: 800px) {
-  #container {
+  .container {
     background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 10%, #111111 25%, #6b0000 50%);
     background-size: 300%;
   }
@@ -632,13 +632,13 @@ footer img {
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
   }
-  #portfolio div {
+  .portfolio div {
     height: 250px;
   }
-  #portfolio .prev, #portfolio .next {
+  .portfolio .prev, .portfolio .next {
     width: 43%;
   }
-  #skills {
+  .skills {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
@@ -646,14 +646,14 @@ footer img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #skills .skill-bg {
+  .skills .skill-bg {
     width: 48%;
     margin-bottom: 1.5em;
   }
-  #skills .skill-bg .skill {
+  .skills .skill-bg .skill {
     padding: 12px;
   }
-  #contactMe {
+  .contactMe {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
@@ -661,7 +661,7 @@ footer img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  #contactMe .social {
+  .contactMe .social {
     padding: 1em 0.5em;
     width: 28%;
   }
@@ -680,7 +680,7 @@ footer img {
 }
 
 @media screen and (min-width: 1024px) {
-  #container {
+  .container {
     background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
     background-size: 150%;
   }
@@ -721,10 +721,10 @@ footer img {
   aside.fun {
     padding: 30px 20px 24px;
   }
-  #portfolio div {
+  .portfolio div {
     height: 300px;
   }
-  #portfolio .prev, #portfolio .next {
+  .portfolio .prev, .portfolio .next {
     height: 300px;
     -webkit-order: 0;
         -ms-flex-order: 0;
@@ -734,27 +734,27 @@ footer img {
     width: 0.5em;
     line-height: 1.25em;
   }
-  #portfolio .active {
+  .portfolio .active {
     margin: 1px -1px -1px 1px;
     box-shadow: 3px 3px 0 #ddd !important;
   }
-  #portfolio .works {
+  .portfolio .works {
     width: auto;
     margin: 0 1em;
   }
-  #portfolio .works .work .project {
+  .portfolio .works .work .project {
     font-size: 1.5em;
   }
-  #portfolio .works .work .category {
+  .portfolio .works .work .category {
     top: -25px;
   }
-  #skills .skill-bg {
+  .skills .skill-bg {
     width: 32%;
   }
-  #skills .skill-bg:last-child {
+  .skills .skill-bg:last-child {
     display: inline;
   }
-  #contactMe .social {
+  .contactMe .social {
     width: 30%;
   }
 }

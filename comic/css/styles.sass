@@ -27,7 +27,7 @@ body
   p
     margin: 0 0 0.75em 0
 
-#cover
+.cover
   position: absolute
   top: 0
   right: 0
@@ -54,7 +54,7 @@ body
     .loading.blinkOff
       opacity: 0
 
-#container
+.container
   background-image: url(../images/bg-top.png), url(../images/bg-bottom.png),linear-gradient(to bottom, #6b0000 0%, #111111 5%, #111111 15%, #6b0000 50%)
   background-size: 400%
   background-position: center top, center bottom
@@ -199,7 +199,7 @@ aside.fun
       font-size: 14px
       cursor: pointer
     
-#aboutMe
+.aboutMe
   .container    
     background: #fff url('../images/web.svg')
     padding: 20px
@@ -209,7 +209,7 @@ aside.fun
     user-select: text
     cursor: url(../images/text-cursor.png), auto
   
-#portfolio
+.portfolio
   display: flex
   flex-wrap: wrap
   justify-content: space-between
@@ -308,7 +308,7 @@ aside.fun
           border-right: 11px solid transparent
           
 
-#skills
+.skills
   display: flex
   flex-flow: column wrap
   .skill-bg
@@ -346,7 +346,7 @@ aside.fun
       box-sizing: border-box
       transition: 2s ease all
     
-#contactMe
+.contactMe
   display: flex
   flex-flow: column wrap
   .social
@@ -417,7 +417,7 @@ footer
 
 //tablet
 @media screen and (min-width: $tablet)
-  #container
+  .container
     background-image: url(../images/bg-top.png), url(../images/bg-bottom.png),linear-gradient(to bottom, #6b0000 0%, #111111 10%, #111111 25%, #6b0000 50%)
     background-size: 300%
     
@@ -433,13 +433,13 @@ footer
   nav.menu
     flex-wrap: nowrap
   
-  #portfolio
+  .portfolio
     div
       height: 250px
     .prev, .next
       width: 43%
     
-  #skills
+  .skills
     flex-flow: row wrap
     justify-content: space-between
     .skill-bg
@@ -448,7 +448,7 @@ footer
       .skill
         padding: 12px
         
-  #contactMe
+  .contactMe
     flex-flow: row wrap
     justify-content: space-between
     .social
@@ -470,7 +470,7 @@ footer
 
 //desktop
 @media screen and (min-width: $desktop)
-  #container
+  .container
     background-image: url(../images/bg-top.png), url(../images/bg-bottom.png),linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%)
     background-size: 150%
   header
@@ -502,7 +502,7 @@ footer
   aside.fun
     padding: 30px 20px 24px
   
-  #portfolio
+  .portfolio
     div
       height: 300px
     .prev, .next
@@ -524,12 +524,12 @@ footer
         .category
           top: -25px
     
-  #skills
+  .skills
     .skill-bg
       width: 32%
       &:last-child
         display: inline
         
-  #contactMe
+  .contactMe
     .social
       width: 30%
