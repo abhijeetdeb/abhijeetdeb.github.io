@@ -44,26 +44,20 @@ body p {
   left: 0;
   z-index: 999;
   opacity: 1;
-  -webkit-transition: 1.5s ease all;
-          transition: 1.5s ease all;
-  display: -webkit-box;
+  transition: 1.5s ease all;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
 #cover .loading-wrap {
-  background: -webkit-linear-gradient(top, #6b0000, #111111);
   background: linear-gradient(to bottom, #6b0000, #111111);
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -71,8 +65,7 @@ body p {
 }
 
 #cover .loading-wrap .loading {
-  -webkit-transition: 0.5s ease all;
-          transition: 0.5s ease all;
+  transition: 0.5s ease all;
   opacity: 1;
 }
 
@@ -88,7 +81,6 @@ body p {
 }
 
 #container {
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 5%, #111111 15%, #6b0000 50%);
   background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 5%, #111111 15%, #6b0000 50%);
   background-size: 400%;
   background-position: center top, center bottom;
@@ -113,10 +105,10 @@ header h1 {
   font-size: 3.5em;
 }
 
-header h1 div {
+header h1 span {
+  display: inherit;
   color: #f39c12;
-  background: url(../images/bg-bottom.png) center/contain, -webkit-linear-gradient(top, #f39c12, #d35400);
-  background: url(../images/bg-bottom.png) center/contain, linear-gradient(top, #f39c12, #d35400);
+  background: url(../images/bg-bottom.png) center/contain, linear-gradient(to bottom, #f39c12, #d35400);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
@@ -155,11 +147,9 @@ section h2:after {
 }
 
 nav.menu {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -182,7 +172,6 @@ nav.menu div {
           user-select: none;
   cursor: pointer;
   width: 25%;
-  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -301,8 +290,7 @@ aside.fun span.how span.x {
   background: #fff url("../images/web.svg");
   padding: 20px;
   line-height: 1.5em;
-  -webkit-transition: 0.2s ease all;
-          transition: 0.2s ease all;
+  transition: 0.2s ease all;
   box-shadow: 4px 4px 0px #2c3e50;
   -webkit-user-select: text;
      -moz-user-select: text;
@@ -312,14 +300,12 @@ aside.fun span.how span.x {
 }
 
 #portfolio {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -333,14 +319,12 @@ aside.fun span.how span.x {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-box-ordinal-group: 1;
   -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
 }
 
 #portfolio .prev, #portfolio .next {
-  -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
@@ -352,22 +336,17 @@ aside.fun span.how span.x {
   font-family: 'Bangers', serif;
   font-size: 1.5em;
   line-height: 1.5em;
-  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   background: #f39c12;
   background: #f39c12 url(../images/bg-bottom.png) center/cover;
-  background: url(../images/bg-bottom.png) center/cover, -webkit-linear-gradient(top, #e67e22, #d35400);
   background: url(../images/bg-bottom.png) center/cover, linear-gradient(to bottom, #e67e22, #d35400);
   color: #ddd;
   border-right: 2px solid #a84300;
@@ -388,7 +367,6 @@ aside.fun span.how span.x {
 }
 
 #portfolio .works {
-  -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -405,11 +383,9 @@ aside.fun span.how span.x {
 
 #portfolio .works .work {
   position: relative;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -425,8 +401,7 @@ aside.fun span.how span.x {
   max-width: 100%;
   z-index: 0;
   opacity: 0.5;
-  -webkit-transition: 0.2s ease all;
-          transition: 0.2s ease all;
+  transition: 0.2s ease all;
 }
 
 #portfolio .works .work .project {
@@ -444,8 +419,7 @@ aside.fun span.how span.x {
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
   box-shadow: 3px 3px 0px rgba(44, 62, 80, 0.75);
   box-sizing: border-box;
-  -webkit-transition: 0.2s ease all;
-          transition: 0.2s ease all;
+  transition: 0.2s ease all;
 }
 
 #portfolio .works .work .category {
@@ -472,7 +446,6 @@ aside.fun span.how span.x {
 }
 
 #skills {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -493,7 +466,6 @@ aside.fun span.how span.x {
 }
 
 #skills .skill-bg .overlay {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -505,21 +477,16 @@ aside.fun span.how span.x {
 }
 
 #skills .skill-bg .overlay .val {
-  -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -541,12 +508,10 @@ aside.fun span.how span.x {
   opacity: 1;
   z-index: 99;
   box-sizing: border-box;
-  -webkit-transition: 2s ease all;
-          transition: 2s ease all;
+  transition: 2s ease all;
 }
 
 #contactMe {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -619,8 +584,7 @@ footer .link {
   color: #ccc;
   text-align: center;
   text-shadow: 1px 1px 0 #111;
-  -webkit-transition: 0.2s ease all;
-          transition: 0.2s ease all;
+  transition: 0.2s ease all;
   cursor: pointer;
 }
 
@@ -653,7 +617,6 @@ footer img {
 
 @media screen and (min-width: 800px) {
   #container {
-    background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 10%, #111111 25%, #6b0000 50%);
     background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 10%, #111111 25%, #6b0000 50%);
     background-size: 300%;
   }
@@ -681,7 +644,6 @@ footer img {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -697,7 +659,6 @@ footer img {
     -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -722,7 +683,6 @@ footer img {
 
 @media screen and (min-width: 1024px) {
   #container {
-    background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), -webkit-linear-gradient(top, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
     background-image: url(../images/bg-top.png), url(../images/bg-bottom.png), linear-gradient(to bottom, #6b0000 0%, #111111 25%, #111111 50%, #6b0000 75%);
     background-size: 150%;
   }
@@ -736,11 +696,9 @@ footer img {
     font-size: 3em;
   }
   nav.menu {
-    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -750,7 +708,6 @@ footer img {
   nav.menu div {
     margin: 0 10px;
     padding: 10px 16px;
-    -webkit-box-flex: initial;
     -webkit-flex-grow: initial;
         -ms-flex-positive: initial;
             flex-grow: initial;
@@ -771,7 +728,6 @@ footer img {
   }
   #portfolio .prev, #portfolio .next {
     height: 300px;
-    -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
         -ms-flex-order: 0;
             order: 0;
