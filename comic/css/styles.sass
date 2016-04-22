@@ -82,7 +82,7 @@ header
       position: absolute
       width: 100%
     &:after
-      text-shadow: 4px 4px 0px #111
+      text-shadow: 4px 4px 0 #111
       content: attr(title)
       color: transparent
   
@@ -113,18 +113,18 @@ nav.menu
     background: #fff
     margin: 0 10px 16px
     padding: 8px
-    box-shadow: 4px 4px 0px #e67e22
+    box-shadow: 4px 4px 0 #e67e22
     user-select: none
     cursor: pointer
     width: 25%
     flex-grow: 1
     text-align: center
     &:hover
-      box-shadow: 4px 4px 0px #d35400
+      box-shadow: 4px 4px 0 #d35400
       //cursor: url(../images/h.png), auto
   .active
     margin: 1px 9px 15px 11px 
-    box-shadow: 3px 3px 0px #d35400 !important
+    box-shadow: 3px 3px 0 #d35400 !important
     
 aside.fun
   background: #9b59b6
@@ -205,7 +205,7 @@ aside.fun
     padding: 20px
     line-height: 1.5em
     transition: 0.2s ease all
-    box-shadow: 4px 4px 0px #2c3e50
+    box-shadow: 4px 4px 0 #2c3e50
     user-select: text
     cursor: url(../images/text-cursor.png), auto
   
@@ -232,30 +232,28 @@ aside.fun
     display: inline-flex
     flex-direction: column
     justify-content: center
-    background: #f39c12
-    background: #f39c12 url(../images/bg-bottom.png) center /cover
     background: url(../images/bg-bottom.png) center /cover, linear-gradient(to bottom, #e67e22, #d35400)
     color: #ddd
     border-right: 2px solid #a84300
     border-bottom: 2px solid #a84300
     text-shadow: 1px 1px 1px #111
-    box-shadow: 4px 4px 0px #ddd
+    box-shadow: 4px 4px 0 #ddd
     cursor: pointer
     &:hover
       color: #fff
-      box-shadow: 4px 4px 0px #fff
+      box-shadow: 4px 4px 0 #fff
   .active
     margin: 18px -2px -2px 2px
-    box-shadow: 2px 2px 0px #ddd !important
+    box-shadow: 2px 2px 0 #ddd !important
   .works
     flex-grow: 1
     width: 100%
-    box-shadow: 4px 4px 0px #e67e22
+    box-shadow: 4px 4px 0 #e67e22
     border-right: 2px solid #6B0000
     border-bottom: 2px solid #6B0000
     overflow: hidden
     &:hover
-      box-shadow: 4px 4px 0px #d35400
+      box-shadow: 4px 4px 0 #d35400
     .work
       position: relative
       justify-content: center
@@ -268,7 +266,7 @@ aside.fun
           //transform: scale(1.25)
       img
         position: absolute
-        top: 0px
+        top: 0
         left: 0
         width: 100%
         max-width: 100%
@@ -286,7 +284,7 @@ aside.fun
         padding: 0.5em 1em
         border-right: 1px solid rgba(255, 255, 255, 0.75)
         border-bottom: 1px solid rgba(255, 255, 255, 0.75)
-        box-shadow: 3px 3px 0px rgba(44, 62, 80, 0.75)
+        box-shadow: 3px 3px 0 rgba(44, 62, 80, 0.75)
         box-sizing: border-box
         transition: 0.2s ease all
       .category
@@ -315,7 +313,7 @@ aside.fun
   flex-flow: column wrap
   .skill-bg
     margin-bottom: 1em
-    box-shadow: 4px 4px 0px #2c3e50
+    box-shadow: 4px 4px 0 #2c3e50
     position: relative
     overflow: hidden
     &:last-child
@@ -356,7 +354,7 @@ aside.fun
     margin-bottom: 16px
     color: #ddd
     text-align: center
-    box-shadow: 4px 4px 0px #bdc3c7
+    box-shadow: 4px 4px 0 #bdc3c7
     border-right: 3px solid
     border-bottom: 3px solid
     text-decoration: none
@@ -369,24 +367,24 @@ aside.fun
     &:hover
       background: #2f4779
       border-color: #23355b
-      box-shadow: 4px 4px 0px #ddd
+      box-shadow: 4px 4px 0 #ddd
   .linkedin
     background: #4875B4
     border-color: #395d90
     &:hover
       background: #395d90
       border-color: #2b466c
-      box-shadow: 4px 4px 0px #ddd
+      box-shadow: 4px 4px 0 #ddd
   .twitter
     background: #2492b7
     border-color: #1c7492
     &:hover
       background: #1c7492
       border-color: #15576d
-      box-shadow: 4px 4px 0px #ddd
+      box-shadow: 4px 4px 0 #ddd
   .active
     margin: 1px -1px 15px 1px
-    box-shadow: 3px 3px 0px #ddd !important
+    box-shadow: 3px 3px 0 #ddd !important
       
 footer
   padding: 1em 0 1.5em
@@ -495,11 +493,11 @@ footer
       flex-grow: initial
       width: auto
       &:hover
-        box-shadow: 4px 4px 0px #d35400
+        box-shadow: 4px 4px 0 #d35400
         //cursor: url(../images/h.png), auto
     .active
       margin: 1px 9px -1px 11px 
-      box-shadow: 3px 3px 0px #d35400 !important
+      box-shadow: 3px 3px 0 #d35400 !important
       
   aside.fun
     padding: 30px 20px 24px
@@ -516,7 +514,7 @@ footer
       line-height: 1.25em      
     .active
       margin: 1px -1px -1px 1px
-      box-shadow: 3px 3px 0px #ddd !important
+      box-shadow: 3px 3px 0 #ddd !important
     .works
       width: auto
       margin: 0 1em

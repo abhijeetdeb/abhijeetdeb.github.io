@@ -116,7 +116,7 @@ header h1 span {
 }
 
 header h1:after {
-  text-shadow: 4px 4px 0px #111;
+  text-shadow: 4px 4px 0 #111;
   content: attr(title);
   color: transparent;
 }
@@ -165,7 +165,7 @@ nav.menu div {
   background: #fff;
   margin: 0 10px 16px;
   padding: 8px;
-  box-shadow: 4px 4px 0px #e67e22;
+  box-shadow: 4px 4px 0 #e67e22;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -179,12 +179,12 @@ nav.menu div {
 }
 
 nav.menu div:hover {
-  box-shadow: 4px 4px 0px #d35400;
+  box-shadow: 4px 4px 0 #d35400;
 }
 
 nav.menu .active {
   margin: 1px 9px 15px 11px;
-  box-shadow: 3px 3px 0px #d35400 !important;
+  box-shadow: 3px 3px 0 #d35400 !important;
 }
 
 aside.fun {
@@ -291,7 +291,7 @@ aside.fun span.how span.x {
   padding: 20px;
   line-height: 1.5em;
   transition: 0.2s ease all;
-  box-shadow: 4px 4px 0px #2c3e50;
+  box-shadow: 4px 4px 0 #2c3e50;
   -webkit-user-select: text;
      -moz-user-select: text;
       -ms-user-select: text;
@@ -345,25 +345,23 @@ aside.fun span.how span.x {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #f39c12;
-  background: #f39c12 url(../images/bg-bottom.png) center/cover;
   background: url(../images/bg-bottom.png) center/cover, linear-gradient(to bottom, #e67e22, #d35400);
   color: #ddd;
   border-right: 2px solid #a84300;
   border-bottom: 2px solid #a84300;
   text-shadow: 1px 1px 1px #111;
-  box-shadow: 4px 4px 0px #ddd;
+  box-shadow: 4px 4px 0 #ddd;
   cursor: pointer;
 }
 
 #portfolio .prev:hover, #portfolio .next:hover {
   color: #fff;
-  box-shadow: 4px 4px 0px #fff;
+  box-shadow: 4px 4px 0 #fff;
 }
 
 #portfolio .active {
   margin: 18px -2px -2px 2px;
-  box-shadow: 2px 2px 0px #ddd !important;
+  box-shadow: 2px 2px 0 #ddd !important;
 }
 
 #portfolio .works {
@@ -371,14 +369,14 @@ aside.fun span.how span.x {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 100%;
-  box-shadow: 4px 4px 0px #e67e22;
+  box-shadow: 4px 4px 0 #e67e22;
   border-right: 2px solid #6B0000;
   border-bottom: 2px solid #6B0000;
   overflow: hidden;
 }
 
 #portfolio .works:hover {
-  box-shadow: 4px 4px 0px #d35400;
+  box-shadow: 4px 4px 0 #d35400;
 }
 
 #portfolio .works .work {
@@ -395,7 +393,7 @@ aside.fun span.how span.x {
 
 #portfolio .works .work img {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   width: 100%;
   max-width: 100%;
@@ -417,7 +415,7 @@ aside.fun span.how span.x {
   padding: 0.5em 1em;
   border-right: 1px solid rgba(255, 255, 255, 0.75);
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
-  box-shadow: 3px 3px 0px rgba(44, 62, 80, 0.75);
+  box-shadow: 3px 3px 0 rgba(44, 62, 80, 0.75);
   box-sizing: border-box;
   transition: 0.2s ease all;
 }
@@ -456,7 +454,7 @@ aside.fun span.how span.x {
 
 #skills .skill-bg {
   margin-bottom: 1em;
-  box-shadow: 4px 4px 0px #2c3e50;
+  box-shadow: 4px 4px 0 #2c3e50;
   position: relative;
   overflow: hidden;
 }
@@ -525,7 +523,7 @@ aside.fun span.how span.x {
   margin-bottom: 16px;
   color: #ddd;
   text-align: center;
-  box-shadow: 4px 4px 0px #bdc3c7;
+  box-shadow: 4px 4px 0 #bdc3c7;
   border-right: 3px solid;
   border-bottom: 3px solid;
   text-decoration: none;
@@ -544,7 +542,7 @@ aside.fun span.how span.x {
 #contactMe .facebook:hover {
   background: #2f4779;
   border-color: #23355b;
-  box-shadow: 4px 4px 0px #ddd;
+  box-shadow: 4px 4px 0 #ddd;
 }
 
 #contactMe .linkedin {
@@ -555,7 +553,7 @@ aside.fun span.how span.x {
 #contactMe .linkedin:hover {
   background: #395d90;
   border-color: #2b466c;
-  box-shadow: 4px 4px 0px #ddd;
+  box-shadow: 4px 4px 0 #ddd;
 }
 
 #contactMe .twitter {
@@ -566,12 +564,12 @@ aside.fun span.how span.x {
 #contactMe .twitter:hover {
   background: #1c7492;
   border-color: #15576d;
-  box-shadow: 4px 4px 0px #ddd;
+  box-shadow: 4px 4px 0 #ddd;
 }
 
 #contactMe .active {
   margin: 1px -1px 15px 1px;
-  box-shadow: 3px 3px 0px #ddd !important;
+  box-shadow: 3px 3px 0 #ddd !important;
 }
 
 footer {
@@ -714,11 +712,11 @@ footer img {
     width: auto;
   }
   nav.menu div:hover {
-    box-shadow: 4px 4px 0px #d35400;
+    box-shadow: 4px 4px 0 #d35400;
   }
   nav.menu .active {
     margin: 1px 9px -1px 11px;
-    box-shadow: 3px 3px 0px #d35400 !important;
+    box-shadow: 3px 3px 0 #d35400 !important;
   }
   aside.fun {
     padding: 30px 20px 24px;
@@ -738,7 +736,7 @@ footer img {
   }
   #portfolio .active {
     margin: 1px -1px -1px 1px;
-    box-shadow: 3px 3px 0px #ddd !important;
+    box-shadow: 3px 3px 0 #ddd !important;
   }
   #portfolio .works {
     width: auto;
