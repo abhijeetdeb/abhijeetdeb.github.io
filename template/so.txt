@@ -1,0 +1,23 @@
+I am new to Gulp and I am unable to figure something out.
+
+I have the following gulp task code for Pug..
+
+    var gulp = require('gulp'),
+        pug = require('gulp-pug');
+
+    gulp.task('pugCompile', function() {
+      return gulp.src($pugSource)
+        // get the file name that is being changed and set variable
+        .pipe(pug())
+        .pipe(gulp.dest($pugDestination))
+    });
+
+    gulp.task('another-task', function() {
+      // use variable here
+    });
+
+I would like to find out which particular file from $pugSource was compiled. Also I want to save the file name to a variable so that I can use it in another gulp task.
+
+So far I have come across few gulp plugins* which allow me to output the file name to console but none can save to a variable, or may be I just could not follow the instructions properly.
+
+*gulp-changed, gulp-ng-annotate, gulp-tap, gulp-filelog, gulp-filenames

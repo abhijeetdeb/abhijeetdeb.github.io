@@ -1,0 +1,156 @@
+doctype
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Abhijeet Deb
+    meta(name='description',content='Abhijeet Deb - Web Designer and Developer based off Bangalore')
+    meta(name='author',content='Abhijeet Deb')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='shortcut icon',href='images/favicon.png')
+    link(rel='stylesheet',href='css/styles.css')
+    //if lt IE 9 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    
+  body
+  
+    .cover
+      .loading-wrap
+        .loading
+          p
+            img.bolt(src="images/bolt.png" alt="Loading")
+          p Loading.....
+  
+    .container
+  
+      .wrap
+
+        header(data-sr="enter top")
+          .title
+            h1(title="Abhijeet Deb")
+              span Abhijeet Deb
+
+        nav.menu(data-sr="enter top")
+          .link(data-link=".aboutMe") About Me
+          .link(data-link=".portfolio") My Projects
+          .link(data-link=".skills") My Skills
+          .link(data-link=".contactMe") Contact Me
+
+        aside.fun(data-sr="enter bottom")
+          .thought 
+            script(src='http://www.brainyquote.com/link/quotefu.js')
+          .info-block
+            p Aren't you the curious one?
+            p Well, since you are here I'd like to tell you how this site was made and why.
+            p How - I made this website using Jade, Sass and jQuery. I used Flexbox for structure. The quote of the day is taken from the <a href="http://brainyquotes.com" target="_blank">Brainy Quote</a> website.
+            p Why - I wanted to design a personal website but I also wanted it to be themed. And since I love comics, I decided to try and make the two come together in this one.
+          span.tod Quote of the day 
+            span.i i
+          span.how How this site was made 
+            span.x X
+
+
+        section.aboutMe(data-sr="enter bottom, move 16px")
+          h2 About me
+          .container
+            p Hi, there. Glad to see you here. Let me introduce myself.
+            p I was born in Shillong. I moved to Bangalore in 2007 and have been staying here since.
+            p I have worked in few IT companies in technical roles but once I started designing, I realized that I was working at all the wrong places! Soon after that, I learned the basic skills required to become a competant web designer and in the process I learnt about web development as well.
+            p During all these, I also completed my BSc-IT and MCA. This has helped me to understand how technology works, which I try to implement on the projects I work on.
+            p I am still learning about more complex technologies, but I think I can now say that I make pretty cool websites. I like to believe this is one of them :P
+
+        section.portfolio(data-sr="enter bottom, move 16px")
+          h2 Projects
+          .prev.link
+            span Prev
+          .works
+            .wrapper          
+              .work
+                img(src="images/works/glc.png", alt="Global Luxury Culture")
+                span.project(data-link="http://globalluxuryculture.com/")
+                  span.name Global Luxury Culture
+                  span.category Website
+              .work
+                img(src="images/works/skt.png", alt="SK Techconnect")
+                span.project(data-link="http://sktechconnect.com/")
+                  span SK Techconnect
+                  span.category Website
+              .work
+                img(src="images/works/beams.png", alt="Beams Hospital")
+                span.project(data-link="http://beamshospitals.com/")
+                  span Beams Hospital
+                  span.category Website
+              .work
+                img(src="images/works/sair.png", alt="Sair Dental Group")
+                span.project(data-link="http://sairdentalgroup.com/")
+                  span Sair Dental Group
+                  span.category Website
+              .work
+                img(src="images/works/asaikia.png", alt="IIT-Guwahati / Dr. Saikia")
+                span.project(data-link="http://www.iitg.ac.in/asaikia/")
+                  span IIT-Guwahati / Dr. Saikia
+                  span.category Subsite
+              .work
+                img(src="images/works/behance.jpg", alt="Graphic Design")
+                span.project(data-link="http://behance.com/abhijeetdeb")
+                  span Graphic Design
+                  span.category Behance
+          .next.link
+            span Next
+
+
+        section.skills(data-sr="enter bottom, move 16px")
+          h2 Skills
+          //- create overlay
+          mixin overlay
+            .overlay
+              - for (var val=1; val <= 10; val ++)
+                .val(data-skill-level=val)=val
+          //- the skill list
+          .skill-bg
+            +overlay
+            .skill(data-skill='9') HTML5
+          .skill-bg
+            +overlay
+            .skill(data-skill='9') CSS3
+          .skill-bg
+            +overlay
+            .skill(data-skill='8') jQuery
+          .skill-bg
+            +overlay
+            .skill(data-skill='8') Jade
+          .skill-bg
+            +overlay
+            .skill(data-skill='8') Sass/SCSS
+          .skill-bg
+            +overlay
+            .skill(data-skill='7') PHP
+          .skill-bg
+            +overlay
+            .skill(data-skill='7') Photoshop
+          .skill-bg
+            +overlay
+            .skill(data-skill='8') WordPress
+          .skill-bg
+            +overlay
+            .skill(data-skill='10') Eating
+
+
+        section.contactMe(data-sr="enter bottom, move 16px")
+          h2 Contact Me
+          .social.link.facebook(data-link="http://facebook.com/abhijeetdeb", data-newTab="blank") Facebook
+          .social.link.linkedin(data-link="http://linkedin.com/in/abhijeetdeb", data-newTab="blank") Linkedin
+          .social.link.twitter(data-link="http://twitter.com/abhijeetdeb", data-newTab="blank") Twitter
+
+        footer(data-sr="enter top")
+          .link(data-link=".container")
+            span designed by me
+              span.hide <img src="images/bolt.png" alt="Bolt" /> inspired by comics
+
+      .toTop
+        img(src="images/toTop.png", data-link=".container" alt="Top").link
+    
+    script(src='js/min/jquery.min.js')
+    script(src='js/min/nicescroll.min.js')
+    script(src='js/min/scrollReveal.min.js')
+    script(src='js/scripts.js')
